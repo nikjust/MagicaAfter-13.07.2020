@@ -1,0 +1,1827 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "MGC",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "mgc"
+    },
+    {
+      "name": "MagicQuartzGenerator",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_quartz_generator"
+    },
+    {
+      "name": "MagicQuartz",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_quartz"
+    },
+    {
+      "name": "MagicQuartzGeneratorUpdateTick",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_quartz_generator_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MOverlay",
+      "type": "overlay",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "m_overlay"
+    },
+    {
+      "name": "MagicaTabletItemInHandTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_tablet_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicaTabletOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_tablet_on_player_stopped_using",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicaTablet",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_tablet"
+    },
+    {
+      "name": "MagicaTabletRightClickedInAir",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_tablet_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicMeat",
+      "type": "food",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_meat"
+    },
+    {
+      "name": "CookedMagicMeat",
+      "type": "food",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_magic_meat"
+    },
+    {
+      "name": "Mgy",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "mgy"
+    },
+    {
+      "name": "MagicaFurnaceUpdateTick",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_furnace_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicaFurnace",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_furnace"
+    },
+    {
+      "name": "MagicaWandBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_wand_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicaWand",
+      "type": "gun",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_wand"
+    },
+    {
+      "name": "MagicQuartzBlock",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_quartz_block"
+    },
+    {
+      "name": "BD",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bd"
+    },
+    {
+      "name": "BookDestroyerUpdateTick",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "book_destroyer_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BookDestroyer",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "book_destroyer"
+    },
+    {
+      "name": "FirstSteps",
+      "type": "achievement",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "first_steps"
+    },
+    {
+      "name": "FirstGenerator",
+      "type": "achievement",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "first_generator"
+    },
+    {
+      "name": "MagicFurnace",
+      "type": "achievement",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_furnace"
+    },
+    {
+      "name": "ICanViewTheMagic",
+      "type": "achievement",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "i_can_view_the_magic"
+    },
+    {
+      "name": "MagicaWandUnchargedItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_wand_uncharged_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicaWandUncharged",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_wand_uncharged"
+    },
+    {
+      "name": "DirtyMagicQuartzOre",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirty_magic_quartz_ore"
+    },
+    {
+      "name": "MagicQuartzOre",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_quartz_ore"
+    },
+    {
+      "name": "DirtyMagicQuartzOreOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirty_magic_quartz_ore_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dash",
+      "type": "fluid",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dash"
+    },
+    {
+      "name": "HeartiumGrass",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heartium_grass"
+    },
+    {
+      "name": "Heartium",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heartium"
+    },
+    {
+      "name": "HeartiumPortalBlock",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heartium_portal_block"
+    },
+    {
+      "name": "Hearti",
+      "type": "biome",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hearti"
+    },
+    {
+      "name": "GoodIngot",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "good_ingot"
+    },
+    {
+      "name": "GoodSword",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "good_sword"
+    },
+    {
+      "name": "SoulShard",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_shard"
+    },
+    {
+      "name": "GoodSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "good_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkSoulShard",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_soul_shard"
+    },
+    {
+      "name": "DarkIngot",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_ingot"
+    },
+    {
+      "name": "DarkSword",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_sword"
+    },
+    {
+      "name": "DarkSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShurikenOfLight",
+      "type": "gun",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shuriken_of_light"
+    },
+    {
+      "name": "ShurikenOfDark",
+      "type": "gun",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shuriken_of_dark"
+    },
+    {
+      "name": "MysteryCreeper",
+      "type": "mob",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystery_creeper"
+    },
+    {
+      "name": "CleanserGunRangedItemUsed",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cleanser_gun_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CleanserGun",
+      "type": "gun",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cleanser_gun"
+    },
+    {
+      "name": "Cleanser",
+      "type": "mob",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cleanser"
+    },
+    {
+      "name": "Boof",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boof",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HammerOfFate",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hammer_of_fate"
+    },
+    {
+      "name": "RangedBoof",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ranged_boof",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicHammer",
+      "type": "gun",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_hammer"
+    },
+    {
+      "name": "MagicHammerBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_hammer_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jeff",
+      "type": "mob",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jeff"
+    },
+    {
+      "name": "JeffPhase2",
+      "type": "mob",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jeff_phase_2"
+    },
+    {
+      "name": "JeffPhase3",
+      "type": "mob",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jeff_phase_3"
+    },
+    {
+      "name": "JeffArm",
+      "type": "mob",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jeff_arm"
+    },
+    {
+      "name": "JeffEntityDies",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jeff_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JeffPhase2EntityDies",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jeff_phase_2_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JeffStatue",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jeff_statue"
+    },
+    {
+      "name": "GlukoMushroomFoodEaten",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gluko_mushroom_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlukoMushroom",
+      "type": "food",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gluko_mushroom"
+    },
+    {
+      "name": "BadTrip",
+      "type": "achievement",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bad_trip"
+    },
+    {
+      "name": "GhostMagicalTombstoneUpdateTick",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ghost_magical_tombstone_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicalTombstoneOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magical_tombstone_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcidUpdateTick",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acid_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcidMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acid_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcidBlockAdded",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acid_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CreeperSearchAmulet",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creeper_search_amulet"
+    },
+    {
+      "name": "CreeperSearchAmuletItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creeper_search_amulet_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmuletOfSalvation",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amulet_of_salvation"
+    },
+    {
+      "name": "AmuletOfSalvationActive",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amulet_of_salvation_active"
+    },
+    {
+      "name": "AmuletOfSalvationActiveItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amulet_of_salvation_active_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmuletOfSalvationRightClickedInAir",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amulet_of_salvation_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AOSA",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aosa",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UngrowedCrystalLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ungrowed_crystal_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UngrowedCrystal",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ungrowed_crystal"
+    },
+    {
+      "name": "BloodyCrystal",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bloody_crystal"
+    },
+    {
+      "name": "HeartiumDim",
+      "type": "dimension",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heartium_dim"
+    },
+    {
+      "name": "KillingVoidPortalBlock",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killing_void_portal_block"
+    },
+    {
+      "name": "KillingVoidStone",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killing_void_stone"
+    },
+    {
+      "name": "KillingVoid",
+      "type": "biome",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killing_void"
+    },
+    {
+      "name": "KillingVoidDim",
+      "type": "dimension",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killing_void_dim"
+    },
+    {
+      "name": "UngrowedCrystalRightClickedInAir",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ungrowed_crystal_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
+    },
+    {
+      "name": "MineRush",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mine_rush",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MineRushKey",
+      "type": "keybind",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mine_rush_key"
+    },
+    {
+      "name": "StableSoul",
+      "type": "item",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stable_soul"
+    },
+    {
+      "name": "SoulCatcherBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_catcher_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulCatcherWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_catcher_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulCatcher",
+      "type": "gun",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_catcher"
+    },
+    {
+      "name": "MagicTombstone",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tombstone"
+    },
+    {
+      "name": "GHOSTmAGICALtOMBSTONE",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ghos_tm_agica_lt_ombstone"
+    },
+    {
+      "name": "KamikazePlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kamikaze_player_collides_with_this_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kamikaze",
+      "type": "mob",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kamikaze"
+    },
+    {
+      "name": "FloveryOfNether",
+      "type": "biome",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flovery_of_nether"
+    },
+    {
+      "name": "ColosusHeartBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colosus_heart_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ColosusHeartBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colosus_heart_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ColosusHeart",
+      "type": "gun",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colosus_heart"
+    },
+    {
+      "name": "BloodBladeRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blood_blade_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodBlade",
+      "type": "tool",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blood_blade"
+    },
+    {
+      "name": "BloodBladeClosedRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blood_blade_closed_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodBladeClosed",
+      "type": "item",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blood_blade_closed"
+    },
+    {
+      "name": "Spit",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpitKeybind",
+      "type": "keybind",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spit_keybind"
+    },
+    {
+      "name": "DashUpdateTick",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dash_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Entia",
+      "type": "dimension",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entia"
+    },
+    {
+      "name": "GammaStableSoul",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gamma_stable_soul"
+    },
+    {
+      "name": "MagicQuartzGeneratorCraft",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_quartz_generator_craft"
+    },
+    {
+      "name": "MagicaTabletCraft",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_tablet_craft"
+    },
+    {
+      "name": "MagicaFurnaceCraft",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_furnace_craft"
+    },
+    {
+      "name": "MagicQuartzBlockRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_quartz_block_recipe"
+    },
+    {
+      "name": "HeartiumPortalBlockCraft",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heartium_portal_block_craft"
+    },
+    {
+      "name": "MagicaWandCraft",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_wand_craft"
+    },
+    {
+      "name": "GoodIngotCraft",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "good_ingot_craft"
+    },
+    {
+      "name": "DarkIngotCraft0",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_ingot_craft_0"
+    },
+    {
+      "name": "DarkIngotCraft1",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_ingot_craft_1"
+    },
+    {
+      "name": "BloodEnchant",
+      "type": "enchantment",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blood_enchant"
+    },
+    {
+      "name": "Magica",
+      "type": "tab",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica"
+    },
+    {
+      "name": "SoulSplitter",
+      "type": "enchantment",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_splitter"
+    },
+    {
+      "name": "Ent",
+      "type": "mob",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ent"
+    },
+    {
+      "name": "HyperEnt",
+      "type": "mob",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyper_ent"
+    },
+    {
+      "name": "EntiaBiome",
+      "type": "biome",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entia_biome"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "GlobalMagic",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Overlay",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Gradus",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "jumbo",
+      "type": "number",
+      "scope": "map",
+      "value": "5.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.magica.jeff_statue": "Jeff Statue",
+      "block.magica.ghos_tm_agica_lt_ombstone": "Ghost Magical Tombstone",
+      "advancements.i_can_view_the_magic.descr": "Get a Magica Tablet",
+      "advancements.first_steps.descr": "Have a Magic Quartz",
+      "item.magica.cooked_magic_meat": "Cooked Magic Meat",
+      "item.magica.magic_quartz": "Magic Quartz",
+      "item.magica.hyper_ent": "Hyper Ent Spawn Egg",
+      "item.magica.hammer_of_fate": "Hammer Of Fate",
+      "item.magica.ent": "Ent Spawn Egg",
+      "key.mcreator.spit_keybind": "Spit Keybind",
+      "item.magica.mystery_creeper": "Mystery Creeper Spawn Egg",
+      "death.attack.dryout": "Get out his(her) Blood",
+      "item.magica.magic_meat": "Magic Meat",
+      "item.magica.good_ingot": "Good Ingot",
+      "item.magica.cleanser": "Cleanser Spawn Egg",
+      "item.magica.shuriken_of_dark": "Shuriken Of Dark",
+      "item.magica.good_sword": "Good Sword",
+      "item.magica.amulet_of_salvation_active": "Amulet Of Salvation",
+      "item.magica.dark_ingot": "Dark Ingot",
+      "advancements.first_steps.title": "First Steps",
+      "block.magica.heartium_grass": "Heartium Grass",
+      "item.magica.bloody_crystal": "Bloody Crystal",
+      "itemGroup.tabmagica": "Magica",
+      "advancements.first_generator.descr": "Have Magic Quartz Generator",
+      "item.magica.dash_bucket": "Dash Bucket",
+      "key.mcreator.mine_rush_key": "Mine Rush Ability",
+      "item.magica.amulet_of_salvation": "Amulet Of Salvation",
+      "entity.magica.ent": "Ent",
+      "advancements.magic_furnace.descr": "Get a magic furnace",
+      "entity.magica.jeff_phase_2": "Jeff Phase 2",
+      "entity.magica.jeff_phase_3": "Jeff Phase 3",
+      "block.magica.magic_tombstone": "Magic Tombstone",
+      "item.magica.gluko_mushroom": "Gluko Mushroom",
+      "advancements.i_can_view_the_magic.title": "I Can View The Magic",
+      "block.magica.killing_void_stone": "Killing Void Stone",
+      "block.magica.book_destroyer": "Enchant Destroyer",
+      "item.magica.magica_tablet": "Magica Tablet",
+      "item.magica.creeper_search_amulet": "Creeper Search Amulet",
+      "item.magica.killing_void_dim": "Biting Shears",
+      "item.magica.soul_catcher": "Soul Catcher",
+      "entity.magica.cleanser": "Cleanser",
+      "item.magica.dark_sword": "Dark Sword",
+      "item.magica.ungrowed_crystal": "Ungrowed Crystal",
+      "entity.magica.hyper_ent": "Hyper Ent",
+      "advancements.bad_trip.descr": "Have A Bad Trip",
+      "item.magica.stable_soul": "Stable Soul",
+      "item.magica.magica_wand_uncharged": "Magica Wand Uncharged",
+      "block.magica.heartium_portal_block": "Heartium Portal Block",
+      "item.magica.jeff_phase_2": "Jeff Phase 2 Spawn Egg",
+      "block.magica.killing_void_portal_block": "Killing Void Portal Block",
+      "item.magica.jeff_phase_3": "Jeff Phase 3 Spawn Egg",
+      "item.magica.test": "Test",
+      "item.magica.magica_wand": "Magica Wand",
+      "advancements.bad_trip.title": "Bad Trip",
+      "item.magica.dark_soul_shard": "Dark Soul Shard",
+      "entity.magica.jeff": "Jeff",
+      "item.magica.soul_shard": "Light Soul Shard",
+      "entity.magica.mystery_creeper": "Mystery Creeper",
+      "block.magica.magic_quartz_block": "Magic Quartz Block",
+      "enchantment.magica.soul_splitter": "Soul Splitter",
+      "enchantment.magica.blood_enchant": "Blood Enchant",
+      "fluid.dash": "Dash",
+      "block.magica.dirty_magic_quartz_ore": "Dirty Magic Quartz Ore",
+      "item.magica.cleanser_gun": "Cleanser Gun",
+      "item.magica.jeff_arm": "Jeff Arm Spawn Egg",
+      "item.magica.magic_hammer": "Magic Hammer",
+      "advancements.first_generator.title": "First Generator ?",
+      "advancements.magic_furnace.title": "Magic Furnace",
+      "item.magica.jeff": "Jeff Spawn Egg",
+      "item.magica.kamikaze": "Kamikaze Spawn Egg",
+      "item.magica.entia": "Gamma Stable Soul",
+      "block.magica.magic_quartz_generator": "Magic Quartz Generator",
+      "block.magica.magic_quartz_ore": "Magic Quartz Ore",
+      "entity.magica.jeff_arm": "Jeff Arm",
+      "block.magica.heartium": "Heartium",
+      "item.magica.colosus_heart": "Colosus\u0027s Heart",
+      "block.magica.magica_furnace": "Magica Furnace",
+      "item.magica.heartium_dim": "Heartium Dim Portal Igniter",
+      "item.magica.blood_blade": "Blood Blade",
+      "item.magica.blood_blade_closed": "Blood Blade Bracelet",
+      "item.magica.shuriken_of_light": "Shuriken Of Light",
+      "entity.magica.kamikaze": "Kamikaze"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "magica",
+    "modName": "Magica",
+    "version": "1.0.0",
+    "author": "Ник, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.14.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.magica",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000428114
+}

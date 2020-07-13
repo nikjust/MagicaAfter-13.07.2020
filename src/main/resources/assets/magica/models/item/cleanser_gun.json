@@ -1,0 +1,7 @@
+{
+  "parent": "magica:custom/cleanser",
+  "textures": {
+    "0": "magica:blocks/cleansergun",
+    "particle": "magica:items/cleanser"
+  }
+}

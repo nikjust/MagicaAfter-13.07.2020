@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:stable_soul"
+    },
+    "1": {
+      "item": "magica:bloody_crystal"
+    },
+    "2": {
+      "item": "magica:stable_soul"
+    },
+    "3": {
+      "item": "minecraft:ender_eye"
+    },
+    "4": {
+      "item": "minecraft:clock"
+    },
+    "5": {
+      "item": "minecraft:compass"
+    },
+    "6": {
+      "item": "magica:stable_soul"
+    },
+    "7": {
+      "item": "magica:stable_soul"
+    },
+    "8": {
+      "item": "magica:stable_soul"
+    }
+  },
+  "result": {
+    "item": "magica:entia",
+    "count": 1
+  }
+}

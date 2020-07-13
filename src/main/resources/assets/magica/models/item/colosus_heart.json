@@ -1,0 +1,8 @@
+{
+  "parent": "magica:custom/collosusheart",
+  "textures": {
+    "0": "magica:blocks/blood",
+    "1": "magica:blocks/q",
+    "particle": "magica:items/soulshard"
+  }
+}

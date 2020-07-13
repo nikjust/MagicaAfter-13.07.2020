@@ -1,0 +1,9 @@
+{
+  "group": "magica",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "magica:magic_quartz_block"
+  },
+  "result": "magica:magica_wand_uncharged"
+}

@@ -1,0 +1,16 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magica:dark_soul_shard"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "magica:dark_ingot",
+    "count": 1
+  }
+}

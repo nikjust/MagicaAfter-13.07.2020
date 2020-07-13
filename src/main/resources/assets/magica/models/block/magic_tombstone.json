@@ -1,0 +1,8 @@
+{
+  "parent": "magica:custom/magicaltombstone",
+  "textures": {
+    "all": "magica:blocks/ev",
+    "particle": "magica:blocks/ev",
+    "0": "magica:blocks/jeff2"
+  }
+}

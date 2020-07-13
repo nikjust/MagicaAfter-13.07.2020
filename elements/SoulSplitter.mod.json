@@ -1,0 +1,17 @@
+{
+  "_fv": 10,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Soul Splitter",
+    "type": "ARMOR",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 10,
+    "damageModifier": 10,
+    "compatibleEnchantments": [],
+    "compatibleItems": [],
+    "isTreasureEnchantment": true,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:stone"
+    },
+    "1": {
+      "tag": "forge:stone"
+    },
+    "2": {
+      "tag": "forge:stone"
+    },
+    "3": {
+      "item": "magica:magic_quartz"
+    },
+    "4": {
+      "item": "magica:magic_quartz_block"
+    },
+    "5": {
+      "item": "magica:magic_quartz"
+    },
+    "6": {
+      "tag": "forge:stone"
+    },
+    "7": {
+      "tag": "forge:stone"
+    },
+    "8": {
+      "tag": "forge:stone"
+    }
+  },
+  "result": {
+    "item": "magica:magica_tablet",
+    "count": 1
+  }
+}

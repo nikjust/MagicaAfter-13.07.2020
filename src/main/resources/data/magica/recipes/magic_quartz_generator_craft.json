@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz_block"
+    },
+    "1": {
+      "item": "minecraft:glass"
+    },
+    "2": {
+      "item": "minecraft:quartz_block"
+    },
+    "3": {
+      "item": "minecraft:quartz_block"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "minecraft:quartz_block"
+    },
+    "6": {
+      "item": "minecraft:quartz_block"
+    },
+    "7": {
+      "item": "magica:magic_quartz"
+    },
+    "8": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "result": {
+    "item": "magica:magic_quartz_generator",
+    "count": 1
+  }
+}

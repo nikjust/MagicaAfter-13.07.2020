@@ -1,0 +1,35 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "shurikenofdark",
+    "customModelName": "bloodblade:default",
+    "name": "Blood Blade",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 10.0,
+    "enchantability": 2,
+    "damageVsEntity": 10.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BloodBladeRightClickedOnBlock"
+    },
+    "onRightClickedOnBlock": {
+      "name": "BloodBladeRightClickedOnBlock"
+    },
+    "onStoppedUsing": {
+      "name": "BloodBladeRightClickedOnBlock"
+    }
+  }
+}

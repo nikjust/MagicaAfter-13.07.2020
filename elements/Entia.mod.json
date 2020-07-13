@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "Blocks.LOG#0"
+    },
+    "portalParticles": {
+      "value": "FLAME"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.grass.step"
+    },
+    "igniterName": "Gamma Stable Soul",
+    "igniterTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "texture": "stablesoul",
+    "portalTexture": "entiaportal",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:EntiaBiome"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -16737997,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "DENY",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": true
+  }
+}

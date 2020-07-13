@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "magica:block/killing_void_dim_portal_ew"
+    },
+    "axis=x": {
+      "model": "magica:block/killing_void_dim_portal_ns"
+    }
+  }
+}

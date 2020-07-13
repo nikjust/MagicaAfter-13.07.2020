@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:StableSoul"
+      },
+      {
+        "value": "CUSTOM:BloodyCrystal"
+      },
+      {
+        "value": "CUSTOM:StableSoul"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Items.CLOCK"
+      },
+      {
+        "value": "Items.COMPASS"
+      },
+      {
+        "value": "CUSTOM:StableSoul"
+      },
+      {
+        "value": "CUSTOM:StableSoul"
+      },
+      {
+        "value": "CUSTOM:StableSoul"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Entia"
+    },
+    "name": "gamma_stable_soul",
+    "namespace": "mod"
+  }
+}

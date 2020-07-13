@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "U",
+    "keyBindingName": "Mine Rush Ability",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "MineRush"
+    }
+  }
+}

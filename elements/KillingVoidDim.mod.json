@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:KillingVoidPortalBlock"
+    },
+    "portalParticles": {
+      "value": "FALLING_NECTAR"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Biting Shears",
+    "igniterTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "texture": "killingvoidactuator",
+    "portalTexture": "killingvoidportal",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:KillingVoid"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:KillingVoidStone"
+    },
+    "fluidBlock": {
+      "value": "Blocks.SEA_LANTERN"
+    },
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false
+  }
+}

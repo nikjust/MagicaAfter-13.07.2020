@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MagicQuartz"
+      },
+      {
+        "value": "Blocks.FURNACE"
+      },
+      {
+        "value": "CUSTOM:MagicQuartz"
+      },
+      {
+        "value": "Blocks.QUARTZ_BLOCK"
+      },
+      {
+        "value": "Blocks.FURNACE"
+      },
+      {
+        "value": "Blocks.QUARTZ_BLOCK"
+      },
+      {
+        "value": "CUSTOM:MagicQuartzBlock"
+      },
+      {
+        "value": "Blocks.FURNACE"
+      },
+      {
+        "value": "CUSTOM:MagicQuartzBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MagicaFurnace"
+    },
+    "name": "magica_furnace_craft",
+    "namespace": "mod"
+  }
+}

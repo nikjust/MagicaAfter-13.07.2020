@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Spit Keybind",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "Spit"
+    }
+  }
+}

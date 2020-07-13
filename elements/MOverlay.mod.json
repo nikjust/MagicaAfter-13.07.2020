@@ -1,0 +1,25 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Magica: <VAR:GlobalMagic>",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "Magica: <VAR:GlobalMagic>",
+          "x": 293,
+          "y": 12
+        }
+      }
+    ],
+    "baseTexture": "",
+    "baseTextureW": 0,
+    "baseTextureH": 0
+  }
+}

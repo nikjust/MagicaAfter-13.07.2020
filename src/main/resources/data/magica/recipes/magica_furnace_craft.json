@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:magic_quartz"
+    },
+    "1": {
+      "item": "minecraft:furnace"
+    },
+    "2": {
+      "item": "magica:magic_quartz"
+    },
+    "3": {
+      "tag": "forge:ores/quartz"
+    },
+    "4": {
+      "item": "minecraft:furnace"
+    },
+    "5": {
+      "tag": "forge:ores/quartz"
+    },
+    "6": {
+      "item": "magica:magic_quartz_block"
+    },
+    "7": {
+      "item": "minecraft:furnace"
+    },
+    "8": {
+      "item": "magica:magic_quartz_block"
+    }
+  },
+  "result": {
+    "item": "magica:magica_furnace",
+    "count": 1
+  }
+}

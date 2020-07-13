@@ -1,0 +1,12 @@
+{
+  "group": "magica",
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "magica:good_ingot"
+  },
+  "result": {
+    "item": "magica:dark_ingot"
+  }
+}

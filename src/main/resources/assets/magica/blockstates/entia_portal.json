@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "magica:block/entia_portal_ew"
+    },
+    "axis=x": {
+      "model": "magica:block/entia_portal_ns"
+    }
+  }
+}

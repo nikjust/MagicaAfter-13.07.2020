@@ -1,0 +1,8 @@
+{
+  "parent": "magica:custom/ghostmagicaltombstone",
+  "textures": {
+    "all": "magica:blocks/mgfurntop",
+    "particle": "magica:blocks/mgfurntop",
+    "0": "magica:blocks/texture"
+  }
+}

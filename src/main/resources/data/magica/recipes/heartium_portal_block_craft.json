@@ -1,0 +1,12 @@
+{
+  "group": "magica",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "magica:magic_quartz_block"
+  },
+  "result": {
+    "item": "magica:heartium_portal_block"
+  }
+}

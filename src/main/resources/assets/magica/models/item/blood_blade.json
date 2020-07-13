@@ -1,0 +1,8 @@
+{
+  "parent": "magica:custom/bloodblade",
+  "textures": {
+    "0": "magica:blocks/leather",
+    "1": "magica:blocks/leather1",
+    "particle": "magica:items/shurikenofdark"
+  }
+}

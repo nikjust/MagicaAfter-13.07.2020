@@ -1,0 +1,37 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    },
+    {
+      "item": "magica:magic_quartz"
+    }
+  ],
+  "result": {
+    "item": "magica:magic_quartz_block",
+    "count": 1
+  }
+}

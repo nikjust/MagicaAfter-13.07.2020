@@ -1,0 +1,37 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "ungrowedcrystal",
+    "customModelName": "Normal",
+    "name": "Ungrowed Crystal",
+    "creativeTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 2.0,
+    "specialInfo": [
+      "Hit Creatures Or Mob To Grow",
+      "<ENBT:number:Grown>"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "UngrowedCrystalRightClickedInAir"
+    },
+    "onEntityHitWith": {
+      "name": "UngrowedCrystalLivingEntityIsHitWithItem"
+    }
+  }
+}
