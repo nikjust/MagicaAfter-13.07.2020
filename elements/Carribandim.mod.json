@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "Blocks.STAINED_HARDENED_CLAY#0"
+    },
+    "portalParticles": {
+      "value": "LAVA"
+    },
+    "portalLuminance": 1.0,
+    "portalSound": {
+      "value": "block.lava.ambient"
+    },
+    "igniterName": "karriban Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "texture": "bloodycrystal",
+    "portalTexture": "karriban",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Korriban"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.SAND#1"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "airColor": {
+      "value": -3368704,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true
+  }
+}

@@ -2,7 +2,7 @@
   "_fv": 10,
   "_type": "block",
   "definition": {
-    "texture": "mqo",
+    "texture": "runeofpower",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -22,19 +22,17 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Dirty Magic Quartz Ore",
-    "specialInfo": [
-      "§6 Click and Click and Click"
-    ],
-    "hardness": 3.0,
+    "name": "Rune Of Power",
+    "specialInfo": [],
+    "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": true,
+    "hasGravity": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Magica"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:DirtyMagicQuartzOre"
+      "value": ""
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -45,7 +43,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -54,6 +52,10 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "beaconColorModifier": {
+      "value": -16777063,
+      "falpha": 0.0
+    },
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -61,17 +63,17 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
-    "spawnParticles": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "WATER_DROP"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
+    "particleSpawningRadious": 2.0,
     "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -91,18 +93,14 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "DirtyMagicQuartzOreOnBlockRightClicked"
+      "name": "RuneOfPowerOnBlockRightClicked"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.GRAVEL"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 128
+    "maxGenerateHeight": 64
   }
 }

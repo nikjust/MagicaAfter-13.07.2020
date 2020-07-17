@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magica:blocks/runeofpower",
+    "particle": "magica:blocks/runeofpower"
+  }
+}

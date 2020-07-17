@@ -1,0 +1,78 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "onSlotChanged": {
+            "name": "ZugurukTrade"
+          },
+          "name": "Slot #0",
+          "x": 300,
+          "y": 132
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "name": "Slot #1",
+          "x": 480,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "----------",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "----------",
+          "x": 354,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "emer",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "emer",
+          "x": 300,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "?",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "?",
+          "x": 498,
+          "y": 96
+        }
+      }
+    ]
+  }
+}

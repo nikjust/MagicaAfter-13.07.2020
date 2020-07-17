@@ -40,6 +40,10 @@ public class MOverlayOverlay extends MagicaModElements.ModElement {
 			if (true) {
 				Minecraft.getInstance().fontRenderer.drawString("Magica: " + (MagicaModVariables.MapVariables.get(world).GlobalMagic) + "",
 						posX + -66, posY + -114, -10092442);
+				Minecraft.getInstance().fontRenderer.drawString("Red Magica:" + (entity.getPersistentData().getDouble("RedMagica")) + "", posX + -67,
+						posY + -102, -6750208);
+				Minecraft.getInstance().fontRenderer.drawString("Blue Magica:" + (entity.getPersistentData().getDouble("BlueMagica")) + "",
+						posX + -67, posY + -90, -16777063);
 			}
 		}
 	}

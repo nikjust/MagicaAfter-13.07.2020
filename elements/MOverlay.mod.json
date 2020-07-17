@@ -16,6 +16,32 @@
           "x": 293,
           "y": 12
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Red Magica:<ENBT:number:RedMagica>",
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "name": "Red Magica:<ENBT:number:RedMagica>",
+          "x": 292,
+          "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Blue Magica:<ENBT:number:BlueMagica>",
+          "color": {
+            "value": -16777063,
+            "falpha": 0.0
+          },
+          "name": "Blue Magica:<ENBT:number:BlueMagica>",
+          "x": 291,
+          "y": 60
+        }
       }
     ],
     "baseTexture": "",

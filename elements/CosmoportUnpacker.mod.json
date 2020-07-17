@@ -1,0 +1,39 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "cosmoport",
+    "customModelName": "Normal",
+    "name": "Cosmoport Unpacker",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:CosmoportUnpacker"
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:CosmoportUnpacker"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "CosmoportUnpackerBulletHitsBlock"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "_fv": 10,
+  "_type": "function",
+  "definition": {
+    "code": "data merge block ~ ~ ~ {LootTable:\"chests/shipwreck_treasure\"}",
+    "name": "treaschest",
+    "namespace": "minecraft"
+  }
+}

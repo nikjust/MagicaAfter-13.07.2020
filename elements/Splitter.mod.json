@@ -1,0 +1,94 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "split",
+          "onClick": {
+            "name": "Split"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "split",
+          "x": 371,
+          "y": 166
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:RedMagica>",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:RedMagica>",
+          "x": 311,
+          "y": 230
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:BlueMagica>",
+          "color": {
+            "value": -14348033,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:BlueMagica>",
+          "x": 306,
+          "y": 257
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:GlobalMagic>",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "<VAR:GlobalMagic>",
+          "x": 338,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Split 10",
+          "onClick": {
+            "name": "Split10"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Split 10",
+          "x": 344,
+          "y": 284
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "split 100",
+          "onClick": {
+            "name": "Split100"
+          },
+          "width": 180,
+          "height": 40,
+          "name": "split 100",
+          "x": 331,
+          "y": 328
+        }
+      }
+    ]
+  }
+}

@@ -3,10 +3,10 @@
   "_type": "biome",
   "definition": {
     "groundBlock": {
-      "value": "CUSTOM:HeartiumGrass"
+      "value": "Blocks.SAND#1"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Heartium"
+      "value": "Blocks.STAINED_HARDENED_CLAY#7"
     },
     "generateLakes": true,
     "treeType": 1,
@@ -17,24 +17,20 @@
       "value": "Blocks.AIR"
     },
     "treeStem": {
-      "value": "Blocks.LOG"
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
       "value": "Blocks.AIR"
     },
-    "airColor": {
-      "value": -5953605,
-      "falpha": 0.0
-    },
     "grassColor": {
-      "value": -13261999,
+      "value": -6750208,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -14329397,
+      "value": -16764058,
       "falpha": 0.0
     },
     "treesPerChunk": 3,
@@ -50,18 +46,20 @@
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "spawnBiome": true,
-    "biomeWeight": 0,
-    "biomeType": "ICY",
-    "biomeCategory": "NONE",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeType": "DESERT",
+    "biomeCategory": "MESA",
     "parent": {
       "value": "No parent"
     },
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "MESA"
+    ],
     "spawnEntries": [
       {
         "entity": {
-          "value": "EntityAnimal"
+          "value": "CUSTOM:Zuguruk"
         },
         "minGroup": 4,
         "maxGroup": 4,

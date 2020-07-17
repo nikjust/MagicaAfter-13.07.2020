@@ -1,0 +1,27 @@
+{
+  "_fv": 10,
+  "_type": "structure",
+  "definition": {
+    "structure": "cosmoport",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 1000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Carribandim"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Korriban"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK",
+    "onStructureGenerated": {
+      "name": "CosmoportCarribanOnStructureInstanceGenerated"
+    }
+  }
+}

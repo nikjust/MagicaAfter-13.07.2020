@@ -5,9 +5,12 @@ loaderVersion="[28,)"
 modId="magica"
 version="1.0.0"
 displayName="Magica"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="ÕËÍ, MCreator"
+credits="Created By NikJust(or Õ» , nikki, nikjust08)"
+displayURL="MCREATOR: https://mcreator.net"
+authors="NikJust"
+description='''
+Adds Techno-magic by Global Magica and red & blue magica
+'''
 
 [[dependencies.magica]]
     modId="minecraft"

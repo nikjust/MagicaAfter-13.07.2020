@@ -2,7 +2,7 @@
   "_fv": 10,
   "_type": "block",
   "definition": {
-    "texture": "mqo",
+    "texture": "xpreaper",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "itemTexture": "",
     "hasTransparency": false,
-    "connectedSides": false,
+    "connectedSides": true,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -22,19 +22,17 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Dirty Magic Quartz Ore",
-    "specialInfo": [
-      "§6 Click and Click and Click"
-    ],
-    "hardness": 3.0,
+    "name": "Xp Reaper",
+    "specialInfo": [],
+    "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": true,
+    "hasGravity": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Magica"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:DirtyMagicQuartzOre"
+      "value": ""
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -64,8 +62,8 @@
       "value": "GROUND"
     },
     "luminance": 0.0,
-    "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "unbreakable": true,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -91,18 +89,14 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "DirtyMagicQuartzOreOnBlockRightClicked"
+      "name": "XpReaperOnBlockRightClicked"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.GRAVEL"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 128
+    "maxGenerateHeight": 64
   }
 }
