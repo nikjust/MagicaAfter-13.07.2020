@@ -1,0 +1,12 @@
+{
+  "group": "magica",
+  "type": "minecraft:smelting",
+  "experience": 2.8,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "magica:cortosis_ore"
+  },
+  "result": {
+    "item": "magica:cortosis_ingot"
+  }
+}

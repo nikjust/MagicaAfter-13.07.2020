@@ -1,0 +1,7 @@
+{
+  "parent": "magica:custom/lightgun",
+  "textures": {
+    "0": "magica:blocks/lightgun",
+    "particle": "magica:items/stablemoney"
+  }
+}

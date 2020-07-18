@@ -74,7 +74,7 @@ public class KorribanBiome extends MagicaModElements.ModElement {
 					new GrassFeatureConfig(Blocks.GRASS.getDefaultState()), Placement.COUNT_HEIGHTMAP_DOUBLE, new FrequencyConfig(4)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(new CustomTreeFeature(),
 					IFeatureConfig.NO_FEATURE_CONFIG, Placement.COUNT_EXTRA_HEIGHTMAP, new AtSurfaceWithExtraConfig(3, 0.1F, 1)));
-			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(ZugurukEntity.entity, 20, 4, 4));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(ZugurukEntity.entity, 2, 4, 4));
 		}
 
 		@OnlyIn(Dist.CLIENT)

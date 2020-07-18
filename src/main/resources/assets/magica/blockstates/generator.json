@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "magica:block/generator"
+    },
+    "facing=east": {
+      "model": "magica:block/generator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "magica:block/generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magica:block/generator",
+      "y": 270
+    }
+  }
+}

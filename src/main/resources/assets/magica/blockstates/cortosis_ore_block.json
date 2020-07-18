@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "magica:block/cortosis_ore_block"
+    }
+  }
+}

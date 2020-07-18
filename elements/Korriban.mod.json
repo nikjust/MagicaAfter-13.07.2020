@@ -63,8 +63,8 @@
         },
         "minGroup": 4,
         "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
+        "weight": 2,
+        "spawnType": "creature"
       }
     ]
   }

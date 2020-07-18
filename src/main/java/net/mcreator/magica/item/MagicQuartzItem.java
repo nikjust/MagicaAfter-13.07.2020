@@ -3,12 +3,18 @@ package net.mcreator.magica.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.magica.procedures.MagicQuartzItemInInventoryTickProcedure;
 import net.mcreator.magica.itemgroup.MagicaItemGroup;
 import net.mcreator.magica.MagicaModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @MagicaModElements.ModElement.Tag
 public class MagicQuartzItem extends MagicaModElements.ModElement {
@@ -41,6 +47,23 @@ public class MagicQuartzItem extends MagicaModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MagicQuartzItemInInventoryTickProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

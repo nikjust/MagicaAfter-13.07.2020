@@ -1,0 +1,7 @@
+{
+  "parent": "magica:custom/lightgunrico",
+  "textures": {
+    "0": "magica:blocks/ricochetlightgun",
+    "particle": "magica:items/splitter"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "nightmare",
+    "name": "Avenged Sevenfold - Nightmare",
+    "description": "Avenged Sevenfold - Nightmare",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:nightmare"
+    },
+    "specialInfo": [
+      "Memory of James Sullivan"
+    ],
+    "hasGlow": true
+  }
+}

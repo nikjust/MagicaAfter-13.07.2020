@@ -1,0 +1,19 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "bitnightmare",
+    "name": "Avenged Sevenfold - Nightmare(Minecraft remix)",
+    "description": "Avenged Sevenfold - Nightmare(Minecraft remix)",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:nightmarecraft"
+    },
+    "specialInfo": [
+      "Memory of James Sullivan"
+    ],
+    "hasGlow": true
+  }
+}

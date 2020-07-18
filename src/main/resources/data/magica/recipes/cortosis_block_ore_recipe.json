@@ -1,0 +1,13 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magica:cortosis_ore_block"
+    }
+  ],
+  "result": {
+    "item": "magica:cortosis_ingot",
+    "count": 9
+  }
+}

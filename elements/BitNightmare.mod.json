@@ -1,0 +1,19 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "bitnightmare",
+    "name": "Avenged Sevenfold - Nightmare(Nikjust remix)",
+    "description": "Avenged Sevenfold - Nightmare(Nikjust remix)",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:bitnightmare"
+    },
+    "specialInfo": [
+      "Memory of James Sullivan"
+    ],
+    "hasGlow": true
+  }
+}

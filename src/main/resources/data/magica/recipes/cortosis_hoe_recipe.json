@@ -1,0 +1,27 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:cortosis_ingot"
+    },
+    "1": {
+      "item": "magica:cortosis_ingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "magica:cortosis_hoe",
+    "count": 1
+  }
+}

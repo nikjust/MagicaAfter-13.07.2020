@@ -1,0 +1,29 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:cortosis_ingot"
+    },
+    "1": {
+      "item": "minecraft:iron_boots"
+    },
+    "2": {
+      "item": "magica:cortosis_ingot"
+    },
+    "3": {
+      "item": "magica:cortosis_ingot"
+    },
+    "5": {
+      "item": "magica:cortosis_ingot"
+    }
+  },
+  "result": {
+    "item": "magica:cortosis_armorboots",
+    "count": 1
+  }
+}

@@ -45,6 +45,10 @@ public class MagicaModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public MagicaModElements() {
+		sounds.put(new ResourceLocation("magica", "nightmare"), new net.minecraft.util.SoundEvent(new ResourceLocation("magica", "nightmare")));
+		sounds.put(new ResourceLocation("magica", "nightmarecraft"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("magica", "nightmarecraft")));
+		sounds.put(new ResourceLocation("magica", "bitnightmare"), new net.minecraft.util.SoundEvent(new ResourceLocation("magica", "bitnightmare")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("magica").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

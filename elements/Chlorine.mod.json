@@ -1,0 +1,24 @@
+{
+  "_fv": 10,
+  "_type": "fluid",
+  "definition": {
+    "name": "Chlorine",
+    "textureStill": "chlorine",
+    "textureFlowing": "chlorine",
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": true,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "onEntityCollides": {
+      "name": "ChlorineMobplayerCollidesBlock"
+    }
+  }
+}

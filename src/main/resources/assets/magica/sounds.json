@@ -1,1 +1,29 @@
-{}
+{
+  "nightmare": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "magica:avenged_sevenfold_-_nightmare_official_music_video",
+        "stream": false
+      }
+    ]
+  },
+  "nightmarecraft": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "magica:nightmare",
+        "stream": false
+      }
+    ]
+  },
+  "bitnightmare": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "magica:avenged_sevenfold_--_nightmare_midistock.ru_1",
+        "stream": false
+      }
+    ]
+  }
+}

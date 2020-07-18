@@ -1,0 +1,20 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 2.8,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:CortosisOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CortosisIngot"
+    },
+    "name": "cortosis_ore_smelting",
+    "namespace": "mod"
+  }
+}

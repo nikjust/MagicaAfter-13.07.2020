@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:cortosis_ingot"
+    },
+    "1": {
+      "item": "magica:cortosis_ingot"
+    },
+    "2": {
+      "item": "magica:cortosis_ingot"
+    },
+    "3": {
+      "item": "magica:cortosis_ingot"
+    },
+    "4": {
+      "item": "magica:cortosis_ingot"
+    },
+    "5": {
+      "item": "magica:cortosis_ingot"
+    },
+    "6": {
+      "item": "magica:cortosis_ingot"
+    },
+    "7": {
+      "item": "magica:cortosis_ingot"
+    },
+    "8": {
+      "item": "magica:cortosis_ingot"
+    }
+  },
+  "result": {
+    "item": "magica:cortosis_ore_block",
+    "count": 1
+  }
+}

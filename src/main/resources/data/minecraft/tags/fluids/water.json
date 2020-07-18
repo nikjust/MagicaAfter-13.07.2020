@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "magica:dash",
-    "magica:dash_flowing"
+    "magica:dash_flowing",
+    "magica:chlorine",
+    "magica:chlorine_flowing"
   ]
 }
