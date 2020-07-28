@@ -2509,6 +2509,463 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "generator"
+    },
+    {
+      "name": "GeneratoeGui",
+      "type": "gui",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generatoe_gui"
+    },
+    {
+      "name": "GeneratorStart",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generator_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DraconicArmor",
+      "type": "armor",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "draconic_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "ParallelWorld",
+      "type": "dimension",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "parallel_world"
+    },
+    {
+      "name": "UltimateRenamerGUI",
+      "type": "gui",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ultimate_renamer_gui"
+    },
+    {
+      "name": "Rename",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rename",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "URItem",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ur_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UltimateRenamer",
+      "type": "block",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ultimate_renamer"
+    },
+    {
+      "name": "HyperTowerRune",
+      "type": "block",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyper_tower_rune"
+    },
+    {
+      "name": "HyperTower",
+      "type": "mob",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyper_tower"
+    },
+    {
+      "name": "HyperTowerRuneBlockAdded",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyper_tower_rune_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HyperTowerRuneBlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyper_tower_rune_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HyperthermiaOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyperthermia_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hyperthermia",
+      "type": "potion",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hyperthermia"
+    },
+    {
+      "name": "TermometerWarm",
+      "type": "item",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "termometer_warm"
+    },
+    {
+      "name": "TermometerCold",
+      "type": "item",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "termometer_cold"
+    },
+    {
+      "name": "TermometerHot",
+      "type": "item",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "termometer_hot"
+    },
+    {
+      "name": "TermometerWarmItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "termometer_warm_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coldrtermo",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coldrtermo",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hottermo",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hottermo",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sausage",
+      "type": "block",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sausage"
+    },
+    {
+      "name": "Sausagia",
+      "type": "biome",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sausagia"
+    },
+    {
+      "name": "SausagesDimension",
+      "type": "dimension",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sausages_dimension"
+    },
+    {
+      "name": "SausageUpdateTick",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sausage_update_tick",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "EvilScull",
+      "type": "mob",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evil_scull"
+    },
+    {
+      "name": "EndermanCultist",
+      "type": "mob",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderman_cultist"
+    },
+    {
+      "name": "EndermanCultistMagicBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderman_cultist_magic_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EndermanCultistMagic",
+      "type": "gun",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderman_cultist_magic"
     }
   ],
   "variable_elements": [
@@ -2560,7 +3017,11 @@
       "item.magica.mystery_creeper": "Mystery Creeper Spawn Egg",
       "key.mcreator.spit_keybind": "Spit Keybind",
       "death.attack.dryout": "@p Get out all Blood",
+      "item.magica.draconic_armorboots": "Draconic Armor Boots",
+      "block.magica.sausage": "Sausage",
+      "item.magica.termometer_hot": "Termometer",
       "item.magica.bit_nightmare": "Avenged Sevenfold - Nightmare(Nikjust remix)",
+      "item.magica.enderman_cultist": "Enderman\u0027s Cultist Spawn Egg",
       "item.magica.dark_ingot": "Dark Ingot",
       "advancements.first_steps.title": "First Steps",
       "block.magica.heartium_grass": "Heartium Grass",
@@ -2568,14 +3029,17 @@
       "item.magica.rico_light_bullet": "Rico Light Gun",
       "advancements.first_generator.descr": "Have Magic Quartz Generator",
       "key.mcreator.mine_rush_key": "Mine Rush Ability",
+      "item.minecraft.lingering_potion.effect.hyperthermia": "Lingering Hyperthermia",
       "entity.magica.ent": "Ent",
       "advancements.magic_furnace.descr": "Get a magic furnace",
       "block.magica.magic_tombstone": "Magic Tombstone",
       "item.magica.gluko_mushroom": "Gluko Mushroom",
       "item.magica.glorious_roll": "Glorious Roll",
       "advancements.i_can_view_the_magic.title": "I Can View The Magic",
+      "item.minecraft.potion.effect.hyperthermia": "Hyperthermia",
       "block.magica.killing_void_stone": "Killing Void Stone",
       "item.magica.cortosis_shovel": "Cortosis Shovel",
+      "item.magica.draconic_armorbody": "Draconic Armor Body",
       "item.magica.magica_tablet": "Magica Tablet",
       "item.magica.creeper_search_amulet": "Creeper Search Amulet",
       "item.magica.killing_void_dim": "Biting Shears",
@@ -2588,9 +3052,12 @@
       "item.magica.jeff_phase_3": "Jeff Phase 3 Spawn Egg",
       "item.magica.test": "Test",
       "item.magica.magica_wand": "Magica Wand",
+      "item.magica.draconic_armorlegs": "Draconic Armor Leggings",
+      "entity.magica.hyper_tower": "Hyper Tower",
       "item.magica.dark_soul_shard": "Dark Soul Shard",
       "entity.magica.jeff": "Jeff",
       "item.magica.soul_shard": "Light Soul Shard",
+      "item.magica.termometer_cold": "Termometer",
       "entity.magica.mystery_creeper": "Mystery Creeper",
       "block.magica.magic_quartz_block": "Magic Quartz Block",
       "item.magica.craftnightmare.desc": "Avenged Sevenfold - Nightmare(Minecraft remix)",
@@ -2599,11 +3066,16 @@
       "item.magica.nightmare": "Avenged Sevenfold - Nightmare",
       "block.magica.dirty_magic_quartz_ore": "Dirty Magic Quartz Ore",
       "item.magica.magic_hammer": "Magic Hammer",
+      "effect.hyperthermia": "Hyperthermia",
+      "entity.magica.evil_scull": "Evil Skull",
       "item.magica.cortosis_armorlegs": "Iron-Cortosis Leggings",
       "item.magica.kamikaze": "Kamikaze Spawn Egg",
       "item.magica.light_gun": "Light Gun",
+      "item.magica.enderman_cultist_magic": "Enderman Cultist Magic",
       "entity.magica.jeff_arm": "Jeff Arm",
       "item.magica.colosus_heart": "Colosus\u0027s Heart",
+      "block.magica.ultimate_renamer": "Ultimate Renamer",
+      "item.magica.hyper_tower": "Hyper Tower Spawn Egg",
       "item.magica.blood_blade": "Blood Blade",
       "item.magica.heartium_dim": "Heartium Dim Portal Igniter",
       "item.magica.cortosis_armorhelmet": "Iron-Cortosis Helmet",
@@ -2634,12 +3106,17 @@
       "item.magica.amulet_of_salvation": "Amulet Of Salvation",
       "entity.magica.jeff_phase_2": "Jeff Phase 2",
       "entity.magica.jeff_phase_3": "Jeff Phase 3",
+      "item.magica.sausages_dimension": "Sausages Dimension Portal Igniter",
       "item.magica.splitter_item": "Splitter Item",
+      "block.magica.hyper_tower_rune": "Hyper Tower Rune",
+      "item.magica.termometer_warm": "Termometer",
       "block.magica.book_destroyer": "Enchant Destroyer",
       "item.magica.craftnightmare": "Avenged Sevenfold - Nightmare(Minecraft remix)",
       "item.magica.cortosis_katana": "Cortosis Katana",
       "block.magica.rune_of_power": "Rune Of Power",
+      "item.magica.parallel_world": "Parallel World Element",
       "item.magica.nightmare.desc": "Avenged Sevenfold - Nightmare",
+      "item.minecraft.tipped_arrow.effect.hyperthermia": "Arrow of Hyperthermia",
       "item.magica.octospider": "Octospider Spawn Egg",
       "item.magica.soul_catcher": "Soul Catcher",
       "item.magica.dark_sword": "Dark Sword",
@@ -2649,16 +3126,19 @@
       "block.magica.heartium_portal_block": "Heartium Portal Block",
       "block.magica.killing_void_portal_block": "Killing Void Portal Block",
       "advancements.bad_trip.title": "Bad Trip",
+      "item.magica.draconic_armorhelmet": "Draconic Armor Helmet",
       "item.magica.zuguruk": "Zuguruk Spawn Egg",
       "block.magica.generator": "Generator",
       "item.magica.cortosis_armorbody": "Iron-Cortosis Chestplate",
       "item.magica.cortosis_axe": "Cortosis Axe",
+      "entity.magica.enderman_cultist": "Enderman\u0027s Cultist",
       "block.magica.cortosis_ore_block": "Block of Cortosis",
       "fluid.dash": "Dash",
       "item.magica.cleanser_gun": "Cleanser Gun",
       "item.magica.jeff_arm": "Jeff Arm Spawn Egg",
       "item.magica.cortosis_hoe": "Cortosis Hoe",
       "item.magica.cortosis_armorboots": "Iron-Cortosis Boots",
+      "item.magica.evil_scull": "Evil Skull Spawn Egg",
       "item.magica.chlorine_bucket": "Chlorine Bucket",
       "advancements.first_generator.title": "First Generator ?",
       "advancements.magic_furnace.title": "Magic Furnace",
@@ -2666,6 +3146,7 @@
       "item.magica.entia": "Gamma Stable Soul",
       "block.magica.magic_quartz_generator": "Magic Quartz Generator",
       "item.magica.cosmoport_unpacker": "Cosmoport Unpacker",
+      "item.minecraft.splash_potion.effect.hyperthermia": "Splash Hyperthermia",
       "block.magica.magic_quartz_ore": "Magic Quartz Ore",
       "block.magica.heartium": "Heartium",
       "block.magica.magica_furnace": "Magica Furnace",
@@ -2692,5 +3173,5 @@
     "modElementsPackage": "net.mcreator.magica",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000428114
+  "mcreatorVersion": 202000430417
 }

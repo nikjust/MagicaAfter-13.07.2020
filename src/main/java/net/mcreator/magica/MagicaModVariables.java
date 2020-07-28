@@ -8,7 +8,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraft.world.storage.WorldSavedData;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.dimension.DimensionType;
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -63,15 +63,16 @@ public class MagicaModVariables {
 			return nbt;
 		}
 
-		public void syncData(World world) {
+		public void syncData(IWorld world) {
 			this.markDirty();
-			if (!world.isRemote)
-				MagicaMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType), new WorldSavedDataSyncMessage(1, this));
+			if (!world.getWorld().isRemote)
+				MagicaMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.getWorld().dimension::getType),
+						new WorldSavedDataSyncMessage(1, this));
 		}
 		static WorldVariables clientSide = new WorldVariables();
-		public static WorldVariables get(World world) {
-			if (world instanceof ServerWorld) {
-				return ((ServerWorld) world).getSavedData().getOrCreate(WorldVariables::new, DATA_NAME);
+		public static WorldVariables get(IWorld world) {
+			if (world.getWorld() instanceof ServerWorld) {
+				return ((ServerWorld) world.getWorld()).getSavedData().getOrCreate(WorldVariables::new, DATA_NAME);
 			} else {
 				return clientSide;
 			}
@@ -109,15 +110,15 @@ public class MagicaModVariables {
 			return nbt;
 		}
 
-		public void syncData(World world) {
+		public void syncData(IWorld world) {
 			this.markDirty();
-			if (!world.isRemote)
+			if (!world.getWorld().isRemote)
 				MagicaMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
 		}
 		static MapVariables clientSide = new MapVariables();
-		public static MapVariables get(World world) {
-			if (world instanceof ServerWorld) {
-				return world.getServer().getWorld(DimensionType.OVERWORLD).getSavedData().getOrCreate(MapVariables::new, DATA_NAME);
+		public static MapVariables get(IWorld world) {
+			if (world.getWorld() instanceof ServerWorld) {
+				return world.getWorld().getServer().getWorld(DimensionType.OVERWORLD).getSavedData().getOrCreate(MapVariables::new, DATA_NAME);
 			} else {
 				return clientSide;
 			}

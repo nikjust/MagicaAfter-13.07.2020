@@ -2,7 +2,7 @@ package net.mcreator.magica.procedures;
 
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -30,7 +30,7 @@ public class MagicaWandUnchargedItemInInventoryTickProcedure extends MagicaModEl
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		if ((0 < (MagicaModVariables.MapVariables.get(world).GlobalMagic))) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).inventory

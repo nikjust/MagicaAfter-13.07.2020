@@ -1,0 +1,55 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "<BNBT:text:current>",
+          "width": 240,
+          "height": 40,
+          "name": "name",
+          "x": 314,
+          "y": 95
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "URItem"
+          },
+          "name": "Slot #0",
+          "x": 415,
+          "y": 145
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Rename",
+          "onClick": {
+            "name": "Rename"
+          },
+          "width": 120,
+          "height": 40,
+          "name": "Rename",
+          "x": 370,
+          "y": 189
+        }
+      }
+    ]
+  }
+}

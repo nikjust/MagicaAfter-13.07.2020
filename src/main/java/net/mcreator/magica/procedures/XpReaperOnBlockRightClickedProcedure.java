@@ -1,6 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.item.ExperienceBottleEntity;
@@ -41,13 +42,13 @@ public class XpReaperOnBlockRightClickedProcedure extends MagicaModElements.ModE
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		double timer = 0;
 		for (int index0 = 0; index0 < (int) (200); index0++) {
 			if ((20 == (timer))) {
 				timer = (double) 0;
-				if (!world.isRemote) {
-					Entity entityToSpawn = new ExperienceBottleEntity(EntityType.EXPERIENCE_BOTTLE, world);
+				if (world instanceof World && !world.getWorld().isRemote) {
+					Entity entityToSpawn = new ExperienceBottleEntity(EntityType.EXPERIENCE_BOTTLE, world.getWorld());
 					entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
 					entityToSpawn.setMotion(0, 2, 0);
 					if (entityToSpawn instanceof MobEntity)

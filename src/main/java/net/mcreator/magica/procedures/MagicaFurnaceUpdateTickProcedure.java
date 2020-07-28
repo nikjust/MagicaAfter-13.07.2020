@@ -4,7 +4,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.CapabilityItemHandler;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -12,6 +12,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.magica.item.MagicMeatItem;
 import net.mcreator.magica.MagicaModVariables;
@@ -47,7 +48,7 @@ public class MagicaFurnaceUpdateTickProcedure extends MagicaModElements.ModEleme
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		if ((((new Object() {
 			public int getAmount(BlockPos pos, int sltid) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -112,7 +113,7 @@ public class MagicaFurnaceUpdateTickProcedure extends MagicaModElements.ModEleme
 			}
 			MagicaModVariables.MapVariables.get(world).GlobalMagic = (double) ((MagicaModVariables.MapVariables.get(world).GlobalMagic) - 1);
 			MagicaModVariables.MapVariables.get(world).syncData(world);
-			world.playSound((PlayerEntity) null, x, y, z,
+			world.playSound(world.getWorld().isRemote ? Minecraft.getInstance().player : (PlayerEntity) null, new BlockPos(x, y, z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.furnace.fire_crackle")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		}

@@ -1,6 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -26,9 +27,9 @@ public class RicoLightBulletBulletHitsLivingEntityProcedure extends MagicaModEle
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		World world = (World) dependencies.get("world");
-		if (!world.isRemote && entity instanceof LivingEntity) {
-			RicoLightBulletItem.shoot(world, (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 5);
+		IWorld world = (IWorld) dependencies.get("world");
+		if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
+			RicoLightBulletItem.shoot(world.getWorld(), (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 5);
 		}
 	}
 }

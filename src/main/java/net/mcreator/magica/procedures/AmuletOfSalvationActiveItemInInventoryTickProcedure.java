@@ -1,6 +1,6 @@
 package net.mcreator.magica.procedures;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
@@ -45,20 +45,26 @@ public class AmuletOfSalvationActiveItemInInventoryTickProcedure extends MagicaM
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		if (((4 >= ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1))
 				&& (0 < (MagicaModVariables.MapVariables.get(world).GlobalMagic)))) {
-			if ((world.getEntitiesWithinAABB(MonsterEntity.class, new AxisAlignedBB(x - 10, y - 10, z - 10, x + 10, y + 10, z + 10), null).stream()
-					.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
+			if ((world
+					.getEntitiesWithinAABB(MonsterEntity.class,
+							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
+					.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
 				((LivingEntity) (world
-						.getEntitiesWithinAABB(MonsterEntity.class, new AxisAlignedBB(x - 10, y - 10, z - 10, x + 10, y + 10, z + 10), null).stream()
-						.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+						.getEntitiesWithinAABB(MonsterEntity.class,
+								new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
+						.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 100));
-			if ((world.getEntitiesWithinAABB(MonsterEntity.class, new AxisAlignedBB(x - 10, y - 10, z - 10, x + 10, y + 10, z + 10), null).stream()
-					.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
+			if ((world
+					.getEntitiesWithinAABB(MonsterEntity.class,
+							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
+					.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
 				((LivingEntity) (world
-						.getEntitiesWithinAABB(MonsterEntity.class, new AxisAlignedBB(x - 10, y - 10, z - 10, x + 10, y + 10, z + 10), null).stream()
-						.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+						.getEntitiesWithinAABB(MonsterEntity.class,
+								new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
+						.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 60, (int) 100));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20, (int) 3, (false), (false)));

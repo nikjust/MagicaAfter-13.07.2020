@@ -44,8 +44,6 @@
         }
       }
     ],
-    "baseTexture": "",
-    "baseTextureW": 0,
-    "baseTextureH": 0
+    "baseTexture": ""
   }
 }

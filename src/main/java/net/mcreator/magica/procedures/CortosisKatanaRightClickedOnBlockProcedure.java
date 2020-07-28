@@ -1,7 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.particles.ParticleTypes;
@@ -50,7 +50,7 @@ public class CortosisKatanaRightClickedOnBlockProcedure extends MagicaModElement
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 400, (int) 1, (false), (false)));
 		if (world instanceof ServerWorld) {

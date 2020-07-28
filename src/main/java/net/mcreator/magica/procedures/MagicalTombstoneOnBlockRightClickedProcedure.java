@@ -1,6 +1,6 @@
 package net.mcreator.magica.procedures;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.block.Blocks;
 
@@ -34,7 +34,7 @@ public class MagicalTombstoneOnBlockRightClickedProcedure extends MagicaModEleme
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (20); index0++) {
 			world.setBlockState(new BlockPos((int) (x + (10 * Math.random())), (int) (70 + y), (int) (z + (10 * Math.random()))),
 					Blocks.SAND.getDefaultState(), 3);

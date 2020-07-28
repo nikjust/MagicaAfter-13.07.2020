@@ -81,7 +81,7 @@ public class UngrowedCrystalItem extends MagicaModElements.ModElement {
 
 		@Override
 		public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-			super.hitEntity(itemstack, entity, sourceentity);
+			boolean retval = super.hitEntity(itemstack, entity, sourceentity);
 			double x = entity.posX;
 			double y = entity.posY;
 			double z = entity.posZ;
@@ -91,7 +91,7 @@ public class UngrowedCrystalItem extends MagicaModElements.ModElement {
 				$_dependencies.put("entity", entity);
 				UngrowedCrystalLivingEntityIsHitWithItemProcedure.executeProcedure($_dependencies);
 			}
-			return true;
+			return retval;
 		}
 	}
 }

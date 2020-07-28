@@ -1,0 +1,84 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "Blocks.WITHER_SKELETON_WALL_SKULL"
+    },
+    "portalParticles": {
+      "value": "END_ROD"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "entity.wither.ambient"
+    },
+    "igniterName": "Parallel World Element",
+    "igniterTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "texture": "pwi",
+    "portalTexture": "pwg",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "nether"
+      },
+      {
+        "value": "CUSTOM:FloveryOfNether"
+      },
+      {
+        "value": "the_end"
+      },
+      {
+        "value": "mutated_extreme_hills"
+      },
+      {
+        "value": "CUSTOM:EntiaBiome"
+      },
+      {
+        "value": "ocean"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "badlands_plateau"
+      },
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "small_end_islands"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "fluidBlock": {
+      "value": "Blocks.DIRT#1"
+    },
+    "airColor": {
+      "value": -4138753,
+      "frgbvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "fvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "falpha": 1.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true
+  }
+}

@@ -2,7 +2,8 @@ package net.mcreator.magica.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Items;
@@ -12,6 +13,7 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.magica.item.GloriousRollItem;
@@ -51,7 +53,7 @@ public class ZugurukTradeProcedure extends MagicaModElements.ModElement {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		if ((new ItemStack(GloriousRollItem.block, (int) (1)).getItem() == (new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
@@ -159,11 +161,11 @@ public class ZugurukTradeProcedure extends MagicaModElements.ModElement {
 					}
 				}
 			}
-			world.playSound((PlayerEntity) null, x, y, z,
+			world.playSound(world.getWorld().isRemote ? Minecraft.getInstance().player : (PlayerEntity) null, new BlockPos(x, y, z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.evoker.cast_spell")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		} else {
-			world.playSound((PlayerEntity) null, x, y, z,
+			world.playSound(world.getWorld().isRemote ? Minecraft.getInstance().player : (PlayerEntity) null, new BlockPos(x, y, z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ghast.shoot")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		}

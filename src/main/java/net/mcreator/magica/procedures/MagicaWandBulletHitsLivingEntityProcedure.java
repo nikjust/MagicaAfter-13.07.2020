@@ -2,7 +2,7 @@ package net.mcreator.magica.procedures;
 
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -30,7 +30,7 @@ public class MagicaWandBulletHitsLivingEntityProcedure extends MagicaModElements
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		if (((MagicaModVariables.MapVariables.get(world).GlobalMagic) <= 0)) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(MagicaWandItem.block, (int) (1)).getItem() == p.getItem(),

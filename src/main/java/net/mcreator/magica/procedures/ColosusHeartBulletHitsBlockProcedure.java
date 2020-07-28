@@ -1,7 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.entity.effect.LightningBoltEntity;
 
 import net.mcreator.magica.MagicaModElements;
@@ -34,10 +34,10 @@ public class ColosusHeartBulletHitsBlockProcedure extends MagicaModElements.ModE
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (20); index0++) {
 			if (world instanceof ServerWorld)
-				((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world, (int) x, (int) y, (int) z, false));
+				((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) x, (int) y, (int) z, false));
 		}
 	}
 }

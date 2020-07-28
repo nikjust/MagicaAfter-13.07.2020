@@ -1,6 +1,6 @@
 package net.mcreator.magica.procedures;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.magica.MagicaModVariables;
@@ -24,7 +24,7 @@ public class SplitProcedure extends MagicaModElements.ModElement {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		MagicaModVariables.MapVariables.get(world).GlobalMagic = (double) ((MagicaModVariables.MapVariables.get(world).GlobalMagic) - 1);
 		MagicaModVariables.MapVariables.get(world).syncData(world);
 		entity.getPersistentData().putDouble("RedMagica", (1 + (entity.getPersistentData().getDouble("RedMagica"))));

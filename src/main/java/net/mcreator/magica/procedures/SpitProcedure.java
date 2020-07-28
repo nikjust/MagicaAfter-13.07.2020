@@ -1,6 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.nbt.CompoundNBT;
@@ -43,19 +44,27 @@ public class SpitProcedure extends MagicaModElements.ModElement {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
-		if (!world.isRemote) {
-			Entity entityToSpawn = new DragonFireballEntity(EntityType.DRAGON_FIREBALL, world);
+		IWorld world = (IWorld) dependencies.get("world");
+		if (world instanceof World && !world.getWorld().isRemote) {
+			Entity entityToSpawn = new DragonFireballEntity(EntityType.DRAGON_FIREBALL, world.getWorld());
 			entityToSpawn.setLocationAndAngles(x, y, z,
-					(float) ((world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB(x - 2, y - 2, z - 2, x + 2, y + 2, z + 2), null)
+					(float) ((world
+							.getEntitiesWithinAABB(PlayerEntity.class,
+									new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null)
 							.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).rotationYaw),
-					(float) ((world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB(x - 2, y - 2, z - 2, x + 2, y + 2, z + 2), null)
+					(float) ((world
+							.getEntitiesWithinAABB(PlayerEntity.class,
+									new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null)
 							.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).rotationPitch));
-			entityToSpawn.setMotion(
-					((world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB(x - 2, y - 2, z - 2, x + 2, y + 2, z + 2), null).stream()
-							.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).getMotion().getX()),
-					0, ((world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB(x - 2, y - 2, z - 2, x + 2, y + 2, z + 2), null).stream()
-							.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).getMotion().getZ()));
+			entityToSpawn
+					.setMotion(((world
+							.getEntitiesWithinAABB(
+									PlayerEntity.class, new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null)
+							.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).getMotion().getX()),
+							0,
+							((world.getEntitiesWithinAABB(PlayerEntity.class,
+									new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null).stream()
+									.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).getMotion().getZ()));
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

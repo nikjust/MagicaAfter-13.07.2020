@@ -1,6 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -32,10 +33,10 @@ public class CortosisSwordRightClickedInAirProcedure extends MagicaModElements.M
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (20); index0++) {
-			if (!world.isRemote && entity instanceof LivingEntity) {
-				ArrowEntity entityToSpawn = new ArrowEntity(world, (LivingEntity) entity);
+			if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
+				ArrowEntity entityToSpawn = new ArrowEntity(world.getWorld(), (LivingEntity) entity);
 				entityToSpawn.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, (float) 1, 0);
 				entityToSpawn.setDamage((float) 5);
 				entityToSpawn.setKnockbackStrength((int) 5);

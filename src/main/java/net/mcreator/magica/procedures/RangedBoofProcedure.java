@@ -1,6 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.item.ItemEntity;
@@ -44,12 +45,12 @@ public class RangedBoofProcedure extends MagicaModElements.ModElement {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (72); index0++) {
 			entity.rotationYaw = (float) ((MagicaModVariables.MapVariables.get(world).Gradus));
 			entity.rotationPitch = (float) (0);
-			if (!world.isRemote && entity instanceof LivingEntity) {
-				ArrowEntity entityToSpawn = new ArrowEntity(world, (LivingEntity) entity);
+			if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
+				ArrowEntity entityToSpawn = new ArrowEntity(world.getWorld(), (LivingEntity) entity);
 				entityToSpawn.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, (float) 1, 0);
 				entityToSpawn.setDamage((float) 5);
 				entityToSpawn.setKnockbackStrength((int) 5);
@@ -58,8 +59,8 @@ public class RangedBoofProcedure extends MagicaModElements.ModElement {
 			MagicaModVariables.MapVariables.get(world).Gradus = (double) ((MagicaModVariables.MapVariables.get(world).Gradus) + 5);
 			MagicaModVariables.MapVariables.get(world).syncData(world);
 		}
-		if (!world.isRemote) {
-			ItemEntity entityToSpawn = new ItemEntity(world, x, y, z, new ItemStack(MagicHammerItem.block, (int) (1)));
+		if (world instanceof World && !world.getWorld().isRemote) {
+			ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(MagicHammerItem.block, (int) (1)));
 			entityToSpawn.setPickupDelay(10);
 			world.addEntity(entityToSpawn);
 		}

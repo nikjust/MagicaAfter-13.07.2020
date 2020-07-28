@@ -1,6 +1,6 @@
 package net.mcreator.magica.procedures;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 
 import net.mcreator.magica.MagicaModVariables;
 import net.mcreator.magica.MagicaModElements;
@@ -18,7 +18,7 @@ public class MagicaTabletOnPlayerStoppedUsingProcedure extends MagicaModElements
 			System.err.println("Failed to load dependency world for procedure MagicaTabletOnPlayerStoppedUsing!");
 			return;
 		}
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		MagicaModVariables.MapVariables.get(world).Overlay = (boolean) (false);
 		MagicaModVariables.MapVariables.get(world).syncData(world);
 	}

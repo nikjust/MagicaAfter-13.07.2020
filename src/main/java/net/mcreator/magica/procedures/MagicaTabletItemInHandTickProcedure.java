@@ -1,6 +1,6 @@
 package net.mcreator.magica.procedures;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 
 import net.mcreator.magica.MagicaModVariables;
 import net.mcreator.magica.MagicaModElements;
@@ -18,7 +18,7 @@ public class MagicaTabletItemInHandTickProcedure extends MagicaModElements.ModEl
 			System.err.println("Failed to load dependency world for procedure MagicaTabletItemInHandTick!");
 			return;
 		}
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		MagicaModVariables.MapVariables.get(world).Overlay = (boolean) (true);
 		MagicaModVariables.MapVariables.get(world).syncData(world);
 	}

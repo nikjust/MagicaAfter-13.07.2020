@@ -1,0 +1,53 @@
+{
+  "_fv": 10,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "dusha",
+    "enableBody": true,
+    "textureBody": "killingvoidstone",
+    "enableLeggings": true,
+    "textureLeggings": "splitter",
+    "enableBoots": false,
+    "textureBoots": "",
+    "creativeTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "armorTextureFile": "cortosis",
+    "helmetName": "Draconic Armor Helmet",
+    "bodyName": "Draconic Armor Body",
+    "leggingsName": "Draconic Armor Leggings",
+    "bootsName": "Draconic Armor Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelhelmet",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "helmet.png",
+    "bodyModelName": "Modelarmor",
+    "bodyModelPart": "armor",
+    "armsModelPartL": "armor",
+    "armsModelPartR": "armor",
+    "bodyModelTexture": "armor.png",
+    "leggingsModelName": "Modelcape",
+    "leggingsModelPartL": "leggins",
+    "leggingsModelPartR": "leggins",
+    "leggingsModelTexture": "cape.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 50,
+    "damageValueHelmet": 5,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 5,
+    "enchantability": 50,
+    "toughness": 2.0,
+    "equipSound": {
+      "value": "block.anvil.fall"
+    },
+    "repairItems": []
+  }
+}

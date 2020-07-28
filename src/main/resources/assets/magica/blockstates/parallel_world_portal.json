@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "magica:block/parallel_world_portal_ew"
+    },
+    "axis=x": {
+      "model": "magica:block/parallel_world_portal_ns"
+    }
+  }
+}

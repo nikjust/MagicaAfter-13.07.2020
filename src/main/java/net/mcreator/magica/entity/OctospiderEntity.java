@@ -150,11 +150,6 @@ public class OctospiderEntity extends MagicaModElements.ModElement {
 		}
 
 		@Override
-		protected float getSoundVolume() {
-			return 1.0F;
-		}
-
-		@Override
 		public boolean processInteract(PlayerEntity sourceentity, Hand hand) {
 			ItemStack itemstack = sourceentity.getHeldItem(hand);
 			boolean retval = true;
@@ -180,7 +175,7 @@ public class OctospiderEntity extends MagicaModElements.ModElement {
 					}
 				} else if (this.isBreedingItem(itemstack)) {
 					this.consumeItemFromStack(sourceentity, itemstack);
-					if (this.rand.nextInt(3) == 0) {
+					if (this.rand.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
 						this.setTamedBy(sourceentity);
 						this.world.setEntityState(this, (byte) 7);
 					} else {

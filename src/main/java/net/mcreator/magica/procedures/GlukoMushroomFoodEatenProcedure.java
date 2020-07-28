@@ -3,6 +3,7 @@ package net.mcreator.magica.procedures;
 import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.server.MinecraftServer;
@@ -44,11 +45,11 @@ public class GlukoMushroomFoodEatenProcedure extends MagicaModElements.ModElemen
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		if ((0 == (MagicaModVariables.MapVariables.get(world).jumbo))) {
-			if (!world.isRemote) {
-				Entity entityToSpawn = new JeffEntity.CustomEntity(JeffEntity.entity, world);
-				entityToSpawn.setLocationAndAngles(x, y, z, world.rand.nextFloat() * 360F, 0);
+			if (world instanceof World && !world.getWorld().isRemote) {
+				Entity entityToSpawn = new JeffEntity.CustomEntity(JeffEntity.entity, world.getWorld());
+				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

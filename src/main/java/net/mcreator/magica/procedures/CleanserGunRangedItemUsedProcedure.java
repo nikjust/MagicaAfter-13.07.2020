@@ -1,6 +1,7 @@
 package net.mcreator.magica.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -26,10 +27,10 @@ public class CleanserGunRangedItemUsedProcedure extends MagicaModElements.ModEle
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		World world = (World) dependencies.get("world");
+		IWorld world = (IWorld) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (10); index0++) {
-			if (!world.isRemote && entity instanceof LivingEntity) {
-				MagicaWandItem.shoot(world, (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 5);
+			if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
+				MagicaWandItem.shoot(world.getWorld(), (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 5);
 			}
 		}
 	}
