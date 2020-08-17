@@ -1,0 +1,26 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:bloody_crystal"
+    },
+    "2": {
+      "item": "magica:bloody_crystal"
+    },
+    "3": {
+      "item": "magica:bloody_crystal"
+    },
+    "5": {
+      "item": "magica:bloody_crystal"
+    }
+  },
+  "result": {
+    "item": "magica:bloody_armorboots",
+    "count": 1
+  }
+}

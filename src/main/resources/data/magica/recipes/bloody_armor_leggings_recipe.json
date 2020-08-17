@@ -1,0 +1,36 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:bloody_crystal"
+    },
+    "1": {
+      "item": "magica:bloody_crystal"
+    },
+    "2": {
+      "item": "magica:bloody_crystal"
+    },
+    "3": {
+      "item": "magica:bloody_crystal"
+    },
+    "5": {
+      "item": "magica:bloody_crystal"
+    },
+    "6": {
+      "item": "magica:bloody_crystal"
+    },
+    "8": {
+      "item": "magica:bloody_crystal"
+    }
+  },
+  "result": {
+    "item": "magica:bloody_armorlegs",
+    "count": 1
+  }
+}

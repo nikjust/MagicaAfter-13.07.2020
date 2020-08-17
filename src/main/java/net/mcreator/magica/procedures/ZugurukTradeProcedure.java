@@ -13,7 +13,6 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.magica.item.GloriousRollItem;
@@ -161,13 +160,25 @@ public class ZugurukTradeProcedure extends MagicaModElements.ModElement {
 					}
 				}
 			}
-			world.playSound(world.getWorld().isRemote ? Minecraft.getInstance().player : (PlayerEntity) null, new BlockPos(x, y, z),
-					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.evoker.cast_spell")),
-					SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			if (!world.getWorld().isRemote) {
+				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.evoker.cast_spell")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			} else {
+				world.getWorld().playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.evoker.cast_spell")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
 		} else {
-			world.playSound(world.getWorld().isRemote ? Minecraft.getInstance().player : (PlayerEntity) null, new BlockPos(x, y, z),
-					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ghast.shoot")),
-					SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			if (!world.getWorld().isRemote) {
+				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ghast.shoot")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			} else {
+				world.getWorld().playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ghast.shoot")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
 		}
 	}
 }

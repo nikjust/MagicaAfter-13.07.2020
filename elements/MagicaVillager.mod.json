@@ -1,0 +1,86 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 455,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "TestingMagicaSell"
+          },
+          "name": "Slot #0",
+          "x": 408,
+          "y": 168
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Transform to Magica",
+          "onClick": {
+            "name": "Selltomagica"
+          },
+          "width": 380,
+          "height": 40,
+          "name": "Transform to Magica",
+          "x": 230,
+          "y": 87
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Sell to:<ENBT:number:MagicaSell> Magica",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "Sell to:<ENBT:number:MagicaSell> Magica",
+          "x": 225,
+          "y": 204
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": 16777215,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 408,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Get Number",
+          "onClick": {
+            "name": "MagicaSellX"
+          },
+          "width": 200,
+          "height": 40,
+          "name": "Get Number",
+          "x": 205,
+          "y": 128
+        }
+      }
+    ]
+  }
+}

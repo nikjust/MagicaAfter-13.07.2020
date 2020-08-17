@@ -57,20 +57,20 @@ public class HyperTowerRuneBlockAddedProcedure extends MagicaModElements.ModElem
 		(world.getEntitiesWithinAABB(HyperTowerEntity.CustomEntity.class, new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10
 				/ 2, z
 						+ 10 / 2),
-				null).stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null))
+				null).stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
 						.setCustomName(new StringTextComponent(((world
 								.getEntitiesWithinAABB(PlayerEntity.class,
 										new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10 / 2, z + 10 / 2), null)
-								.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).getDisplayName()
-										.getString())));
+								.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
+										.getDisplayName().getString())));
 		(world.getEntitiesWithinAABB(HyperTowerEntity.CustomEntity.class, new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10
 				/ 2, z
 						+ 10 / 2),
-				null).stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null))
+				null).stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
 						.setCustomName(new StringTextComponent(((world
 								.getEntitiesWithinAABB(ServerPlayerEntity.class,
 										new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10 / 2, z + 10 / 2), null)
-								.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).getDisplayName()
-										.getString())));
+								.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
+										.getDisplayName().getString())));
 	}
 }

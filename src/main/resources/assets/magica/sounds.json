@@ -25,5 +25,14 @@
         "stream": false
       }
     ]
+  },
+  "ninjacats": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "magica:ninjacats_online-audio-converter.com",
+        "stream": true
+      }
+    ]
   }
 }

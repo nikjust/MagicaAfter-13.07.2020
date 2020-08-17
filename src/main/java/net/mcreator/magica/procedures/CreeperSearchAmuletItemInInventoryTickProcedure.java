@@ -43,20 +43,20 @@ public class CreeperSearchAmuletItemInInventoryTickProcedure extends MagicaModEl
 		if ((world
 				.getEntitiesWithinAABB(CreeperEntity.class, new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2),
 						null)
-				.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
+				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
 			((LivingEntity) (world
 					.getEntitiesWithinAABB(CreeperEntity.class,
 							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-					.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)))
 							.addPotionEffect(new EffectInstance(Effects.GLOWING, (int) 60, (int) 1));
 		if ((world
 				.getEntitiesWithinAABB(MysteryCreeperEntity.CustomEntity.class,
 						new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-				.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
+				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
 			((LivingEntity) (world
 					.getEntitiesWithinAABB(MysteryCreeperEntity.CustomEntity.class,
 							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-					.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)))
 							.addPotionEffect(new EffectInstance(Effects.GLOWING, (int) 60, (int) 1));
 	}
 }

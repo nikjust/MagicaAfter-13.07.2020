@@ -39,9 +39,9 @@ public class HyperTowerRuneBlockDestroyedByExplosionProcedure extends MagicaModE
 		if (!(world
 				.getEntitiesWithinAABB(HyperTowerEntity.CustomEntity.class,
 						new AxisAlignedBB(x - 128 / 2, y - 128 / 2, z - 128 / 2, x + 128 / 2, y + 128 / 2, z + 128 / 2), null)
-				.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).world.isRemote)
+				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)).world.isRemote)
 			(world.getEntitiesWithinAABB(HyperTowerEntity.CustomEntity.class,
 					new AxisAlignedBB(x - 128 / 2, y - 128 / 2, z - 128 / 2, x + 128 / 2, y + 128 / 2, z + 128 / 2), null).stream()
-					.sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)).remove();
+					.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)).remove();
 	}
 }

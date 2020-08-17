@@ -49,6 +49,7 @@ public class MagicaModElements {
 		sounds.put(new ResourceLocation("magica", "nightmarecraft"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("magica", "nightmarecraft")));
 		sounds.put(new ResourceLocation("magica", "bitnightmare"), new net.minecraft.util.SoundEvent(new ResourceLocation("magica", "bitnightmare")));
+		sounds.put(new ResourceLocation("magica", "ninjacats"), new net.minecraft.util.SoundEvent(new ResourceLocation("magica", "ninjacats")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("magica").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

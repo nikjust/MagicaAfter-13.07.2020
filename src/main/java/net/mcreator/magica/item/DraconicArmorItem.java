@@ -25,13 +25,13 @@ import net.mcreator.magica.MagicaModElements;
 
 @MagicaModElements.ModElement.Tag
 public class DraconicArmorItem extends MagicaModElements.ModElement {
-	@ObjectHolder("magica:draconic_armorhelmet")
+	@ObjectHolder("magica:draconic_armor_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("magica:draconic_armorbody")
+	@ObjectHolder("magica:draconic_armor_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("magica:draconic_armorlegs")
+	@ObjectHolder("magica:draconic_armor_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("magica:draconic_armorboots")
+	@ObjectHolder("magica:draconic_armor_boots")
 	public static final Item boots = null;
 	public DraconicArmorItem(MagicaModElements instance) {
 		super(instance, 163);
@@ -85,7 +85,7 @@ public class DraconicArmorItem extends MagicaModElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "magica:textures/helmet.png";
 			}
-		}.setRegistryName("draconic_armorhelmet"));
+		}.setRegistryName("draconic_armor_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(MagicaItemGroup.tab)) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -104,7 +104,7 @@ public class DraconicArmorItem extends MagicaModElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "magica:textures/armor.png";
 			}
-		}.setRegistryName("draconic_armorbody"));
+		}.setRegistryName("draconic_armor_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(MagicaItemGroup.tab)) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
@@ -122,7 +122,7 @@ public class DraconicArmorItem extends MagicaModElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "magica:textures/cape.png";
 			}
-		}.setRegistryName("draconic_armorlegs"));
+		}.setRegistryName("draconic_armor_leggings"));
 	}
 	// Made with Blockbench 3.6.2
 	// Exported for Minecraft version 1.14

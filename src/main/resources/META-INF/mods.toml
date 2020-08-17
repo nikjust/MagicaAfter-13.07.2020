@@ -5,9 +5,10 @@ loaderVersion="[28,)"
 modId="magica"
 version="1.0.0"
 displayName="Magica"
-credits="Created By NikJust(or Õ» , nikki, nikjust08)"
+credits="Kvas0k, Kascun, Nikjust"
 displayURL="MCREATOR: https://mcreator.net"
-authors="NikJust"
+logoFile="logo.png"
+authors="DIVINE CODERS"
 description='''
 Adds Techno-magic by Global Magica and red & blue magica
 '''

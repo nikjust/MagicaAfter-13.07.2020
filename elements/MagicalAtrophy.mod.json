@@ -1,0 +1,22 @@
+{
+  "_fv": 10,
+  "_type": "potion",
+  "definition": {
+    "name": "Magical Atrophy",
+    "effectName": "Magical Atrophy",
+    "icon": "magicalatrophy.png",
+    "color": {
+      "value": -13434829,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "MagicalAtrophyOnPotionActiveTick"
+    }
+  }
+}

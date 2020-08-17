@@ -1,0 +1,30 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "items_for_sell",
+    "customModelName": "Normal",
+    "name": "Items For Sell",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "You Can Sell Those Items"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64
+  }
+}

@@ -6,16 +6,21 @@ import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
+import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.magica.procedures.SausageUpdateTickProcedure;
+import net.mcreator.magica.procedures.SausageOnBlockRightClickedProcedure;
 import net.mcreator.magica.itemgroup.MagicaItemGroup;
 import net.mcreator.magica.MagicaModElements;
 
@@ -73,6 +78,25 @@ public class SausageBlock extends MagicaModElements.ModElement {
 				SausageUpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand, BlockRayTraceResult hit) {
+			boolean retval = super.onBlockActivated(state, world, pos, entity, hand, hit);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			Direction direction = hit.getFace();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SausageOnBlockRightClickedProcedure.executeProcedure($_dependencies);
+			}
+			return true;
 		}
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "magica:block/demonic_furnace"
+    },
+    "facing=east": {
+      "model": "magica:block/demonic_furnace",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "magica:block/demonic_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magica:block/demonic_furnace",
+      "y": 270
+    }
+  }
+}

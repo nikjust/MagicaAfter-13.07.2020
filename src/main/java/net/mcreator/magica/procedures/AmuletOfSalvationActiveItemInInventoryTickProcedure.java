@@ -51,20 +51,22 @@ public class AmuletOfSalvationActiveItemInInventoryTickProcedure extends MagicaM
 			if ((world
 					.getEntitiesWithinAABB(MonsterEntity.class,
 							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-					.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
+					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst()
+					.orElse(null)) instanceof LivingEntity)
 				((LivingEntity) (world
 						.getEntitiesWithinAABB(MonsterEntity.class,
 								new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-						.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 100));
 			if ((world
 					.getEntitiesWithinAABB(MonsterEntity.class,
 							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-					.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
+					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst()
+					.orElse(null)) instanceof LivingEntity)
 				((LivingEntity) (world
 						.getEntitiesWithinAABB(MonsterEntity.class,
 								new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-						.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 60, (int) 100));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20, (int) 3, (false), (false)));

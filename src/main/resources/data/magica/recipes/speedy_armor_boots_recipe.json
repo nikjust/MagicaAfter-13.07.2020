@@ -1,0 +1,26 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:lapis_block"
+    },
+    "2": {
+      "item": "minecraft:lapis_block"
+    },
+    "3": {
+      "item": "minecraft:lapis_block"
+    },
+    "5": {
+      "item": "minecraft:lapis_block"
+    }
+  },
+  "result": {
+    "item": "magica:speedy_armorboots",
+    "count": 1
+  }
+}

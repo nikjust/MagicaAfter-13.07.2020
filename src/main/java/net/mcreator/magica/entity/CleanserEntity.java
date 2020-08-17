@@ -5,15 +5,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
@@ -38,7 +35,6 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
@@ -67,15 +63,6 @@ public class CleanserEntity extends MagicaModElements.ModElement {
 		elements.entities.add(() -> entity);
 		elements.items
 				.add(() -> new SpawnEggItem(entity, -3355648, -16777216, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("cleanser"));
-	}
-
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 4, 4));
-		}
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::func_223315_a);
 	}
 
 	@SubscribeEvent

@@ -1,0 +1,39 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "pgun",
+    "customModelName": "Normal",
+    "name": "Dart Gun",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Magica"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:ParalyticDart"
+    },
+    "shootConstantly": false,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 4.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.PURPLE_GLAZED_TERRACOTTA"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "VornskrParalyticFoodEaten"
+    }
+  }
+}

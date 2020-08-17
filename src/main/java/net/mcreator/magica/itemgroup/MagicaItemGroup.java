@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.magica.item.MagicQuartzItem;
+import net.mcreator.magica.item.MagicaIconItem;
 import net.mcreator.magica.MagicaModElements;
 
 @MagicaModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class MagicaItemGroup extends MagicaModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(MagicQuartzItem.block, (int) (1));
+				return new ItemStack(MagicaIconItem.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

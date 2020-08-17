@@ -4,7 +4,7 @@
   "definition": {
     "name": "Magica",
     "icon": {
-      "value": "CUSTOM:MagicQuartz"
+      "value": "CUSTOM:MagicaIcon"
     },
     "showSearch": true
   }

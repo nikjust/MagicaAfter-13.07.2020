@@ -1,0 +1,57 @@
+{
+  "_fv": 10,
+  "_type": "loottable",
+  "definition": {
+    "type": "Fishing",
+    "pools": [
+      {
+        "minrolls": 1,
+        "maxrolls": 20,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Craftnightmare"
+            },
+            "weight": 1
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:BitNightmare"
+            },
+            "weight": 1
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Nightmare"
+            },
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "minrolls": 1,
+        "maxrolls": 40,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:GloriousRoll"
+            },
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "name": "riba",
+    "namespace": "mod"
+  }
+}

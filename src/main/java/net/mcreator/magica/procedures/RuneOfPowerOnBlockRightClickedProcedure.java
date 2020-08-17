@@ -83,11 +83,12 @@ public class RuneOfPowerOnBlockRightClickedProcedure extends MagicaModElements.M
 			if ((world
 					.getEntitiesWithinAABB(VillagerEntity.class, new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2),
 							null)
-					.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)) instanceof LivingEntity)
+					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst()
+					.orElse(null)) instanceof LivingEntity)
 				((LivingEntity) (world
 						.getEntitiesWithinAABB(VillagerEntity.class,
 								new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null)
-						.stream().sorted(Comparator.comparing(_ent -> _ent.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.GLOWING, (int) 60, (int) 1, (false), (false)));
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);

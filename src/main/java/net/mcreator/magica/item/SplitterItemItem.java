@@ -109,7 +109,7 @@ public class SplitterItemItem extends MagicaModElements.ModElement {
 			CompoundNBT nbt = super.getShareTag(stack);
 			if (nbt != null)
 				stack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
-						.ifPresent(capability -> nbt.put("Inventory", ((InventoryCapability) capability).serializeNBT()));
+						.ifPresent(capability -> nbt.put("Inventory", ((ItemStackHandler) capability).serializeNBT()));
 			return nbt;
 		}
 
@@ -118,7 +118,7 @@ public class SplitterItemItem extends MagicaModElements.ModElement {
 			super.readShareTag(stack, nbt);
 			if (nbt != null)
 				stack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
-						.ifPresent(capability -> ((InventoryCapability) capability).deserializeNBT((CompoundNBT) nbt.get("Inventory")));
+						.ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundNBT) nbt.get("Inventory")));
 		}
 	}
 

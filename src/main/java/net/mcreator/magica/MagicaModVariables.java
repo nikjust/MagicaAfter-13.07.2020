@@ -46,6 +46,9 @@ public class MagicaModVariables {
 	}
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "magica_worldvars";
+		public double PortallerLocX = 0;
+		public double PortallerLocY = 0;
+		public double PortallerLocZ = 0;
 		public WorldVariables() {
 			super(DATA_NAME);
 		}
@@ -56,10 +59,16 @@ public class MagicaModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			PortallerLocX = nbt.getDouble("PortallerLocX");
+			PortallerLocY = nbt.getDouble("PortallerLocY");
+			PortallerLocZ = nbt.getDouble("PortallerLocZ");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putDouble("PortallerLocX", PortallerLocX);
+			nbt.putDouble("PortallerLocY", PortallerLocY);
+			nbt.putDouble("PortallerLocZ", PortallerLocZ);
 			return nbt;
 		}
 

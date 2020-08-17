@@ -3,8 +3,6 @@ package net.mcreator.magica.world.structure;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.LogicalSidedProvider;
-import net.minecraftforge.fml.LogicalSide;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.placement.Placement;
@@ -21,9 +19,7 @@ import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.concurrent.ThreadTaskExecutor;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
@@ -47,8 +43,8 @@ public class CosmoportCarribanStructure extends MagicaModElements.ModElement {
 		Feature<NoFeatureConfig> feature = new Feature<NoFeatureConfig>(NoFeatureConfig::deserialize) {
 			@Override
 			public boolean place(IWorld world, ChunkGenerator generator, Random random, BlockPos pos, NoFeatureConfig config) {
-				int ci = (pos.getX() >> 4) * 16;
-				int ck = (pos.getZ() >> 4) * 16;
+				int ci = (pos.getX() >> 4) << 4;
+				int ck = (pos.getZ() >> 4) << 4;
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
 				if (dimensionType == CarribandimDimension.type)
@@ -72,31 +68,15 @@ public class CosmoportCarribanStructure extends MagicaModElements.ModElement {
 								.getTemplateDefaulted(new ResourceLocation("magica", "cosmoport"));
 						if (template == null)
 							return false;
-						template.addBlocksToWorldChunk(world, spawnTo,
-								new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
-										.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk((ChunkPos) null)
-										.setIgnoreEntities(false));
-						ThreadTaskExecutor<?> executor = LogicalSidedProvider.WORKQUEUE.get(LogicalSide.SERVER);
-						if (!executor.isOnExecutionThread()) {
-							executor.deferTask(() -> {
-								{
-									Map<String, Object> $_dependencies = new HashMap<>();
-									$_dependencies.put("x", x);
-									$_dependencies.put("y", y);
-									$_dependencies.put("z", z);
-									$_dependencies.put("world", world);
-									CosmoportCarribanOnStructureInstanceGeneratedProcedure.executeProcedure($_dependencies);
-								}
-							});
-						} else {
-							{
-								Map<String, Object> $_dependencies = new HashMap<>();
-								$_dependencies.put("x", x);
-								$_dependencies.put("y", y);
-								$_dependencies.put("z", z);
-								$_dependencies.put("world", world);
-								CosmoportCarribanOnStructureInstanceGeneratedProcedure.executeProcedure($_dependencies);
-							}
+						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
+								.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("x", x);
+							$_dependencies.put("y", y);
+							$_dependencies.put("z", z);
+							$_dependencies.put("world", world);
+							CosmoportCarribanOnStructureInstanceGeneratedProcedure.executeProcedure($_dependencies);
 						}
 					}
 				}

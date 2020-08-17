@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 20
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "magica:craftnightmare",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "magica:bit_nightmare",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "magica:nightmare",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 40
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "magica:glorious_roll",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
