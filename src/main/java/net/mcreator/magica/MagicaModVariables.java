@@ -94,6 +94,7 @@ public class MagicaModVariables {
 		public boolean Overlay = false;
 		public double Gradus = 0.0;
 		public double jumbo = 5.0;
+		public boolean WildForestDead = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -108,6 +109,7 @@ public class MagicaModVariables {
 			Overlay = nbt.getBoolean("Overlay");
 			Gradus = nbt.getDouble("Gradus");
 			jumbo = nbt.getDouble("jumbo");
+			WildForestDead = nbt.getBoolean("WildForestDead");
 		}
 
 		@Override
@@ -116,6 +118,7 @@ public class MagicaModVariables {
 			nbt.putBoolean("Overlay", Overlay);
 			nbt.putDouble("Gradus", Gradus);
 			nbt.putDouble("jumbo", jumbo);
+			nbt.putBoolean("WildForestDead", WildForestDead);
 			return nbt;
 		}
 

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "magica:block/essentia_table_block"
+    }
+  }
+}

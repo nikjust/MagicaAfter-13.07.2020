@@ -1,0 +1,66 @@
+{
+  "_fv": 10,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "exoskeleton_icon_head",
+    "enableBody": true,
+    "textureBody": "exoskeleton_icon_body",
+    "enableLeggings": true,
+    "textureLeggings": "exoskeleton_icon_leggings",
+    "enableBoots": true,
+    "textureBoots": "exoskeleton_icon_boots",
+    "onBodyTick": {
+      "name": "ExoSkeletonBodyTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "ExoSkeletonLeggingsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "ExoSkeletonBootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "exoskeleton_",
+    "helmetName": "Exo Skeleton Helmet",
+    "bodyName": "Exo Skeleton Body",
+    "leggingsName": "Exo Skeleton Leggings",
+    "bootsName": "Exo Skeleton Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 40,
+    "damageValueHelmet": 6,
+    "damageValueBody": 10,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 9,
+    "enchantability": 9,
+    "toughness": 4.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:StableSoul"
+      }
+    ]
+  }
+}

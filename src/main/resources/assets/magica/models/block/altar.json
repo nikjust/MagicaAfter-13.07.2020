@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/returner",
+    "up": "magica:blocks/xpreaper",
+    "north": "magica:blocks/returner",
+    "east": "magica:blocks/returner",
+    "south": "magica:blocks/returner",
+    "west": "magica:blocks/returner",
+    "particle": "magica:blocks/returner"
+  }
+}

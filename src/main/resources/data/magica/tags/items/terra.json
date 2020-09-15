@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:grass_block",
+    "minecraft:grass_path",
+    "minecraft:mycelium",
+    "minecraft:dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:podzol",
+    "minecraft:oak_log",
+    "minecraft:acacia_log",
+    "minecraft:oak_leaves",
+    "minecraft:acacia_leaves",
+    "minecraft:stick",
+    "minecraft:allium"
+  ]
+}

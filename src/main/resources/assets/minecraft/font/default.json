@@ -1,0 +1,11 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/ignis.png",
+			"ascent": 0,
+			"height": 240,
+			"chars": ["\u0A4F"]
+		},
+	]
+}

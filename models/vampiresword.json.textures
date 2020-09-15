@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "crimson_nylium_dark",
+        "1": "anvil"
+      },
+      "name": "default"
+    }
+  }
+}

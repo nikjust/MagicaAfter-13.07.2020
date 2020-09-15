@@ -1,0 +1,134 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:res>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:res>",
+          "x": 408,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:aqua>",
+          "color": {
+            "value": -16777063,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:aqua>",
+          "x": 408,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:ignis>",
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:ignis>",
+          "x": 408,
+          "y": 294
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:vita>",
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:vita>",
+          "x": 534,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:terra>",
+          "color": {
+            "value": -10066432,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:terra>",
+          "x": 264,
+          "y": 204
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "ignis",
+          "onClick": {
+            "name": "ResToIgnis"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "ignis",
+          "x": 246,
+          "y": 366
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "aqua",
+          "onClick": {
+            "name": "ResToAqua"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "aqua",
+          "x": 336,
+          "y": 366
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "vita",
+          "onClick": {
+            "name": "ResToVita"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "vita",
+          "x": 426,
+          "y": 366
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "terra",
+          "onClick": {
+            "name": "ResToTerra"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "terra",
+          "x": 498,
+          "y": 366
+        }
+      }
+    ]
+  }
+}

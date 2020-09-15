@@ -1,0 +1,8 @@
+{
+  "parent": "magica:custom/vampiresword",
+  "textures": {
+    "0": "magica:blocks/crimson_nylium_dark",
+    "1": "magica:blocks/anvil",
+    "particle": "magica:items/norm"
+  }
+}

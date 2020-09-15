@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "magica:altar"
+    },
+    "title": {
+      "translate": "advancements.lazy_method.title"
+    },
+    "description": {
+      "translate": "advancements.lazy_method.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "lazy_method": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_portal_frame",
+            "count": {
+              "min": 12,
+              "max": 12
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "magica:tr_chest_recipe"
+    ]
+  },
+  "parent": "magica:first_steps"
+}

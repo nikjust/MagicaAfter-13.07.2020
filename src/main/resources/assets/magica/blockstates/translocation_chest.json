@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "magica:block/translocation_chest"
+    },
+    "facing=east": {
+      "model": "magica:block/translocation_chest",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "magica:block/translocation_chest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magica:block/translocation_chest",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "magica:block/translocation_chest",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "magica:block/translocation_chest",
+      "x": 90
+    }
+  }
+}

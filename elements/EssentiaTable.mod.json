@@ -1,0 +1,110 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 442,
+    "height": 414,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:res>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:res>",
+          "x": 354,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:ignis>",
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:ignis>",
+          "x": 336,
+          "y": 402
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:aqua>",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:aqua>",
+          "x": 336,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:terra>",
+          "color": {
+            "value": -10066432,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:terra>",
+          "x": 210,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:vita>",
+          "color": {
+            "value": -16724941,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:vita>",
+          "x": 588,
+          "y": 204
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 408,
+          "y": 186
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Add Res",
+          "onClick": {
+            "name": "ResAdd"
+          },
+          "width": 140,
+          "height": 40,
+          "name": "Add Res",
+          "x": 358,
+          "y": 109
+        }
+      }
+    ]
+  }
+}
