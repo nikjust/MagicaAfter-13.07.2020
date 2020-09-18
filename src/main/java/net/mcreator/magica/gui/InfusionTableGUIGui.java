@@ -35,7 +35,6 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.magica.procedures.ResAddProcedure;
 import net.mcreator.magica.MagicaModElements;
 import net.mcreator.magica.MagicaMod;
 
@@ -44,11 +43,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @MagicaModElements.ModElement.Tag
-public class EssentiaTableGui extends MagicaModElements.ModElement {
+public class InfusionTableGUIGui extends MagicaModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public EssentiaTableGui(MagicaModElements instance) {
-		super(instance, 273);
+	public InfusionTableGUIGui(MagicaModElements instance) {
+		super(instance, 283);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -64,7 +63,7 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("essentia_table"));
+		event.getRegistry().register(containerType.setRegistryName("infusion_table_gui"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -121,15 +120,15 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 102, 77) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 55) {
 			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 23 + 8 + sj * 18, 21 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 25 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 23 + 8 + si * 18, 21 + 142));
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 25 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -296,10 +295,10 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 			this.y = container.y;
 			this.z = container.z;
 			this.entity = container.entity;
-			this.xSize = 221;
-			this.ySize = 207;
+			this.xSize = 176;
+			this.ySize = 216;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("magica:textures/essentia_table.png");
+		private static final ResourceLocation texture = new ResourceLocation("magica:textures/infusion_table_gui.png");
 		@Override
 		public void render(int mouseX, int mouseY, float partialTicks) {
 			this.renderBackground();
@@ -323,11 +322,18 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("" + (entity.getPersistentData().getDouble("res")) + "", 74, 62, -16777216);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("ignis")) + "", 65, 185, -6750208);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("aqua")) + "", 65, 23, -16776961);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("terra")) + "", 2, 86, -10066432);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("vita")) + "", 191, 86, -16724941);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("ignis")) + "", 97, 54, -6750208);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("terra")) + "", 79, 36, -13421824);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("aqua")) + "", 61, 54, -16777114);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("vita")) + "", 79, 72, -16751104);
+			this.font.drawString("" + (new Object() {
+				public String getValue(BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getString(tag);
+					return "";
+				}
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "progress")) + "", 34, 90, -16777216);
 		}
 
 		@Override
@@ -349,7 +355,7 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 76, this.guiTop + 38, 70, 20, "Add Res", e -> {
+			this.addButton(new Button(this.guiLeft + 66, this.guiTop + 191, 50, 20, "start", e -> {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
@@ -442,17 +448,6 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ResAddProcedure.executeProcedure($_dependencies);
-			}
-		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

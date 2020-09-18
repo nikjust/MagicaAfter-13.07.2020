@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/killingvoidstone",
+    "up": "magica:blocks/killingvoidportalblock",
+    "north": "magica:blocks/killingvoidstone",
+    "east": "magica:blocks/killingvoidstone",
+    "south": "magica:blocks/killingvoidstone",
+    "west": "magica:blocks/killingvoidstone",
+    "particle": "magica:blocks/killingvoidstone"
+  }
+}

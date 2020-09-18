@@ -3,76 +3,11 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 442,
-    "height": 414,
+    "width": 352,
+    "height": 432,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
-      {
-        "type": "label",
-        "data": {
-          "text": "<ENBT:number:res>",
-          "color": {
-            "value": -16777216,
-            "falpha": 0.0
-          },
-          "name": "<ENBT:number:res>",
-          "x": 354,
-          "y": 156
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<ENBT:number:ignis>",
-          "color": {
-            "value": -6750208,
-            "falpha": 0.0
-          },
-          "name": "<ENBT:number:ignis>",
-          "x": 336,
-          "y": 402
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<ENBT:number:aqua>",
-          "color": {
-            "value": -16776961,
-            "falpha": 0.0
-          },
-          "name": "<ENBT:number:aqua>",
-          "x": 336,
-          "y": 78
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<ENBT:number:terra>",
-          "color": {
-            "value": -10066432,
-            "falpha": 0.0
-          },
-          "name": "<ENBT:number:terra>",
-          "x": 210,
-          "y": 204
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<ENBT:number:vita>",
-          "color": {
-            "value": -16724941,
-            "falpha": 0.0
-          },
-          "name": "<ENBT:number:vita>",
-          "x": 588,
-          "y": 204
-        }
-      },
       {
         "type": "inputslot",
         "data": {
@@ -87,22 +22,84 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
+          "x": 407,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:ignis>",
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:ignis>",
+          "x": 444,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:terra>",
+          "color": {
+            "value": -13421824,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:terra>",
           "x": 408,
-          "y": 186
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:aqua>",
+          "color": {
+            "value": -16777114,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:aqua>",
+          "x": 372,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:vita>",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:vita>",
+          "x": 408,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:progress>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:progress>",
+          "x": 318,
+          "y": 204
         }
       },
       {
         "type": "button",
         "data": {
-          "text": "Add Res",
-          "onClick": {
-            "name": "ResAdd"
-          },
-          "width": 140,
+          "text": "start",
+          "width": 100,
           "height": 40,
-          "name": "Add Res",
-          "x": 358,
-          "y": 109
+          "name": "start",
+          "x": 382,
+          "y": 406
         }
       }
     ]

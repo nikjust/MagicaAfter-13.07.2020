@@ -14,6 +14,7 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.magica.entity.HyperTowerEntity;
+import net.mcreator.magica.entity.HTdummyEntity;
 import net.mcreator.magica.MagicaModElements;
 
 import java.util.Map;
@@ -54,6 +55,14 @@ public class HyperTowerRuneBlockAddedProcedure extends MagicaModElements.ModElem
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 			world.addEntity(entityToSpawn);
 		}
+		if (world instanceof World && !world.getWorld().isRemote) {
+			Entity entityToSpawn = new HTdummyEntity.CustomEntity(HTdummyEntity.entity, world.getWorld());
+			entityToSpawn.setLocationAndAngles(x, (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof MobEntity)
+				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+			world.addEntity(entityToSpawn);
+		}
 		(world.getEntitiesWithinAABB(HyperTowerEntity.CustomEntity.class, new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10
 				/ 2, z
 						+ 10 / 2),
@@ -69,6 +78,24 @@ public class HyperTowerRuneBlockAddedProcedure extends MagicaModElements.ModElem
 				null).stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
 						.setCustomName(new StringTextComponent(((world
 								.getEntitiesWithinAABB(ServerPlayerEntity.class,
+										new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10 / 2, z + 10 / 2), null)
+								.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
+										.getDisplayName().getString())));
+		(world.getEntitiesWithinAABB(HTdummyEntity.CustomEntity.class, new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10
+				/ 2, z
+						+ 10 / 2),
+				null).stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
+						.setCustomName(new StringTextComponent(((world
+								.getEntitiesWithinAABB(ServerPlayerEntity.class,
+										new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10 / 2, z + 10 / 2), null)
+								.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
+										.getDisplayName().getString())));
+		(world.getEntitiesWithinAABB(HTdummyEntity.CustomEntity.class, new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10
+				/ 2, z
+						+ 10 / 2),
+				null).stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
+						.setCustomName(new StringTextComponent(((world
+								.getEntitiesWithinAABB(PlayerEntity.class,
 										new AxisAlignedBB(x - 10 / 2, y - 10 / 2, z - 10 / 2, x + 10 / 2, y + 10 / 2, z + 10 / 2), null)
 								.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
 										.getDisplayName().getString())));

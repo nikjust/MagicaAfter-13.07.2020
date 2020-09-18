@@ -4666,6 +4666,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -4711,6 +4727,105 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "essentia_table_block"
+    },
+    {
+      "name": "InfusionTable",
+      "type": "block",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infusion_table"
+    },
+    {
+      "name": "InfusionTableGUI",
+      "type": "gui",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infusion_table_gui"
+    },
+    {
+      "name": "RitualTable",
+      "type": "procedure",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ritual_table",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireBall",
+      "type": "gun",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_ball"
+    },
+    {
+      "name": "SetmagicaessenceCommandExecuted",
+      "type": "procedure",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "setmagicaessence_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Setmagicaessence",
+      "type": "command",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "setmagicaessence"
+    },
+    {
+      "name": "HTdummy",
+      "type": "mob",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "h_tdummy"
     }
   ],
   "variable_elements": [
@@ -4810,6 +4925,7 @@
       "item.magica.draconic_armor_chestplate": "Draconic Armor Body",
       "item.magica.ysalamiri": "Ysalamiri Spawn Egg",
       "item.magica.draconic_armorbody": "Draconic Armor Body",
+      "item.magica.h_tdummy": "H Tdummy Spawn Egg",
       "item.magica.fatty_catty_armor_boots": "FattyCatty Armor Boots",
       "block.magica.bouncy_slime_block": "Bouncy Slime Block",
       "item.magica.ungrowed_crystal": "Ungrowed Crystal",
@@ -4821,6 +4937,7 @@
       "item.magica.draconic_armorlegs": "Draconic Armor Leggings",
       "item.magica.exo_skeleton_leggings": "Exo Skeleton Leggings",
       "entity.magica.hyper_tower": "Hyper Tower",
+      "item.magica.fire_ball": "Fire Ball",
       "item.magica.vornskr": "Vornskr Spawn Egg",
       "entity.magica.jeff": "Jeff",
       "item.magica.termometer_cold": "Termometer",
@@ -4875,6 +4992,7 @@
       "item.magica.magica_icon": "Magica Icon",
       "item.magica.stable_soul": "Stable Soul",
       "item.magica.cortosis_armor_helmet": "Iron-Cortosis Helmet",
+      "entity.magica.h_tdummy": "H Tdummy",
       "block.magica.heartium_portal_block": "Heartium Portal Block",
       "block.magica.killing_void_portal_block": "Killing Void Portal Block",
       "item.magica.bloody_armorboots": "Bloody Boots",
@@ -4978,6 +5096,7 @@
       "item.magica.paralytic_dart": "Paralytic Dart",
       "item.magica.vornskr_paralytic": "Vornskr Paralytic",
       "item.magica.splitter_item": "Splitter Item",
+      "block.magica.infusion_table": "Infusion Table",
       "item.magica.strange_cube": "Strange Cube",
       "block.magica.hyper_tower_rune": "Hyper Tower Rune",
       "item.magica.termometer_warm": "Termometer",
