@@ -149,7 +149,7 @@
       "type": "gui",
       "sortid": 11,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "mgy"
     },
@@ -4826,6 +4826,66 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "h_tdummy"
+    },
+    {
+      "name": "JeiPlugin",
+      "type": "code",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "jei_plugin"
+    },
+    {
+      "name": "Sauslime",
+      "type": "mob",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sauslime"
+    },
+    {
+      "name": "Sslime",
+      "type": "loottable",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sslime"
+    },
+    {
+      "name": "Soul",
+      "type": "procedure",
+      "sortid": 291,
+      "compiles": false,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "soul",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4908,6 +4968,7 @@
       "item.magica.termometer_hot": "Termometer",
       "item.magica.bit_nightmare": "Avenged Sevenfold - Nightmare(Nikjust remix)",
       "item.magica.enderman_cultist": "Enderman\u0027s Cultist Spawn Egg",
+      "item.magica.sauslime": "Sauslime Spawn Egg",
       "entity.magica.ysalamiri": "Ysalamiri",
       "item.magica.fatty_catty_armor_chestplate": "FattyCatty Armor Body",
       "entity.magica.mage": "Mage",
@@ -5009,6 +5070,7 @@
       "item.magica.cortosis_hoe": "Cortosis Hoe",
       "item.magica.cortosis_armorboots": "Iron-Cortosis Boots",
       "item.magica.chlorine_bucket": "Chlorine Bucket",
+      "entity.magica.sauslime": "Sauslime",
       "advancements.magic_furnace.title": "Magic Furnace",
       "entity.magica.void_avatar_stage_3": "Void Avatar Stage 3",
       "block.magica.wild_forest_green_vine": "Wild Forest Green Vine",
@@ -5145,7 +5207,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "just_enough_items"
+    ],
     "currentGenerator": "forge-1.14.4",
     "credits": "Kvas0k, Kascun, Nikjust",
     "modElementsPackage": "net.mcreator.magica",

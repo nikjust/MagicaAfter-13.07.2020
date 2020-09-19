@@ -22,4 +22,9 @@ Adds Techno-magic by Global Magica and red & blue magica
 
 
 
+[[dependencies.magica]]
+    modId="just_enough_items"
+    mandatory=false
+    ordering="NONE"
+    side="BOTH"
 

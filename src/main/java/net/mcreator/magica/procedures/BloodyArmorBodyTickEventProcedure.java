@@ -21,6 +21,7 @@ public class BloodyArmorBodyTickEventProcedure extends MagicaModElements.ModElem
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		entity.setNoGravity((true));
 		if (((new ItemStack(BloodyArmorItem.boots, (int) (1))
 				.getItem() == ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(0) : ItemStack.EMPTY)
 						.getItem())
@@ -30,6 +31,7 @@ public class BloodyArmorBodyTickEventProcedure extends MagicaModElements.ModElem
 						&& (new ItemStack(BloodyArmorItem.helmet, (int) (1)).getItem() == ((entity instanceof PlayerEntity)
 								? ((PlayerEntity) entity).inventory.armorInventory.get(3)
 								: ItemStack.EMPTY).getItem())))) {
+			entity.setSilent((true));
 		}
 	}
 }

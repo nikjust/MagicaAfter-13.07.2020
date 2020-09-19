@@ -5,7 +5,7 @@
     "commandName": "setpaindim",
     "permissionLevel": 2,
     "onCommandExecuted": {
-      "name": "StartMessageMagica"
+      "name": "Soul"
     }
   }
 }
