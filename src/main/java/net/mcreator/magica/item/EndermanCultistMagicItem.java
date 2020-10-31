@@ -82,7 +82,7 @@ public class EndermanCultistMagicItem extends MagicaModElements.ModElement {
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack stack) {
+		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.BOW;
 		}
 

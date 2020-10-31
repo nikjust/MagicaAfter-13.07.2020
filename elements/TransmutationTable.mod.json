@@ -1,10 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 352,
-    "height": 332,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -17,8 +19,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:integer:res>",
-          "x": 408,
-          "y": 204
+          "x": 204,
+          "y": 102
         }
       },
       {
@@ -30,8 +32,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:integer:aqua>",
-          "x": 408,
-          "y": 114
+          "x": 204,
+          "y": 57
         }
       },
       {
@@ -43,8 +45,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:integer:ignis>",
-          "x": 408,
-          "y": 294
+          "x": 204,
+          "y": 147
         }
       },
       {
@@ -56,8 +58,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:integer:vita>",
-          "x": 534,
-          "y": 204
+          "x": 267,
+          "y": 102
         }
       },
       {
@@ -69,8 +71,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:integer:terra>",
-          "x": 264,
-          "y": 204
+          "x": 132,
+          "y": 102
         }
       },
       {
@@ -80,11 +82,11 @@
           "onClick": {
             "name": "ResToIgnis"
           },
-          "width": 100,
-          "height": 40,
+          "width": 50,
+          "height": 20,
           "name": "ignis",
-          "x": 246,
-          "y": 366
+          "x": 123,
+          "y": 183
         }
       },
       {
@@ -94,11 +96,11 @@
           "onClick": {
             "name": "ResToAqua"
           },
-          "width": 80,
-          "height": 40,
+          "width": 40,
+          "height": 20,
           "name": "aqua",
-          "x": 336,
-          "y": 366
+          "x": 168,
+          "y": 183
         }
       },
       {
@@ -108,11 +110,11 @@
           "onClick": {
             "name": "ResToVita"
           },
-          "width": 80,
-          "height": 40,
+          "width": 40,
+          "height": 20,
           "name": "vita",
-          "x": 426,
-          "y": 366
+          "x": 213,
+          "y": 183
         }
       },
       {
@@ -122,11 +124,11 @@
           "onClick": {
             "name": "ResToTerra"
           },
-          "width": 100,
-          "height": 40,
+          "width": 50,
+          "height": 20,
           "name": "terra",
-          "x": 498,
-          "y": 366
+          "x": 249,
+          "y": 183
         }
       }
     ]

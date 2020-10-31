@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -16,7 +16,14 @@
             "item": {
               "value": "CUSTOM:Sausage"
             },
-            "weight": 100
+            "weight": 100,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
           }
         ]
       },
@@ -32,28 +39,56 @@
             "item": {
               "value": "CUSTOM:DimonArmor.helmet"
             },
-            "weight": 1
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
           },
           {
             "type": "item",
             "item": {
               "value": "CUSTOM:DimonArmor.body"
             },
-            "weight": 1
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
           },
           {
             "type": "item",
             "item": {
               "value": "CUSTOM:DimonArmor.legs"
             },
-            "weight": 1
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
           },
           {
             "type": "item",
             "item": {
               "value": "CUSTOM:DimonArmor.boots"
             },
-            "weight": 1
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
           }
         ]
       }

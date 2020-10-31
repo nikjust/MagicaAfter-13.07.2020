@@ -14,7 +14,8 @@ public class TestEvokerOnInitialEntitySpawnProcedure extends MagicaModElements.M
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure TestEvokerOnInitialEntitySpawn!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure TestEvokerOnInitialEntitySpawn!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

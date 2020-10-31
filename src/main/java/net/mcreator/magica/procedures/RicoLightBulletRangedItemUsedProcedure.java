@@ -19,11 +19,13 @@ public class RicoLightBulletRangedItemUsedProcedure extends MagicaModElements.Mo
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure RicoLightBulletRangedItemUsed!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure RicoLightBulletRangedItemUsed!");
 			return;
 		}
 		if (dependencies.get("itemstack") == null) {
-			System.err.println("Failed to load dependency itemstack for procedure RicoLightBulletRangedItemUsed!");
+			if (!dependencies.containsKey("itemstack"))
+				System.err.println("Failed to load dependency itemstack for procedure RicoLightBulletRangedItemUsed!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -40,9 +42,10 @@ public class RicoLightBulletRangedItemUsedProcedure extends MagicaModElements.Mo
 			if (((entity instanceof PlayerEntity)
 					? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(BloodyCrystalItem.block, (int) (1)))
 					: false)) {
-				if (entity instanceof PlayerEntity)
-					((PlayerEntity) entity).inventory
-							.clearMatchingItems(p -> new ItemStack(BloodyCrystalItem.block, (int) (1)).getItem() == p.getItem(), (int) 1);
+				if (entity instanceof PlayerEntity) {
+					ItemStack _stktoremove = new ItemStack(BloodyCrystalItem.block, (int) (1));
+					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				}
 			} else {
 				entity.attackEntityFrom(DamageSource.DRYOUT, (float) 1);
 			}

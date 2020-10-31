@@ -14,7 +14,8 @@ public class BouncySlimeBlockEntityWalksOnTheBlockProcedure extends MagicaModEle
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure BouncySlimeBlockEntityWalksOnTheBlock!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure BouncySlimeBlockEntityWalksOnTheBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

@@ -26,7 +26,6 @@ import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -41,8 +40,12 @@ import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.magica.procedures.SpiderCultistEntityDiesProcedure;
 import net.mcreator.magica.item.SpiderCultistWeaponItem;
 import net.mcreator.magica.MagicaModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @MagicaModElements.ModElement.Tag
 public class SpiderCultistEntity extends MagicaModElements.ModElement {
@@ -58,8 +61,8 @@ public class SpiderCultistEntity extends MagicaModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.0999999999999999f, 2f))
 						.build("spider_cultist").setRegistryName("spider_cultist");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -16777114, -10066330, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("spider_cultist"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16777114, -10066330, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("spider_cultist_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -95,11 +98,10 @@ public class SpiderCultistEntity extends MagicaModElements.ModElement {
 			super.registerGoals();
 			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false));
 			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(7, new SwimGoal(this));
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(6, new SwimGoal(this));
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
 				@Override
 				public boolean shouldContinueExecuting() {
@@ -113,10 +115,6 @@ public class SpiderCultistEntity extends MagicaModElements.ModElement {
 			return CreatureAttribute.UNDEFINED;
 		}
 
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
-		}
-
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
@@ -125,6 +123,24 @@ public class SpiderCultistEntity extends MagicaModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			Entity sourceentity = source.getTrueSource();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SpiderCultistEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

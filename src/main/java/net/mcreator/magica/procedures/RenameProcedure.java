@@ -22,11 +22,13 @@ public class RenameProcedure extends MagicaModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure Rename!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure Rename!");
 			return;
 		}
 		if (dependencies.get("guistate") == null) {
-			System.err.println("Failed to load dependency guistate for procedure Rename!");
+			if (!dependencies.containsKey("guistate"))
+				System.err.println("Failed to load dependency guistate for procedure Rename!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

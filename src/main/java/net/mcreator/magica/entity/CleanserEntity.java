@@ -61,8 +61,8 @@ public class CleanserEntity extends MagicaModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("cleanser")
 						.setRegistryName("cleanser");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -3355648, -16777216, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("cleanser"));
+		elements.items.add(() -> new SpawnEggItem(entity, -3355648, -16777216, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("cleanser_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -118,10 +118,6 @@ public class CleanserEntity extends MagicaModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.ILLAGER;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

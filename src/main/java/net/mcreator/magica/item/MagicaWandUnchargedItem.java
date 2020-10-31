@@ -4,6 +4,7 @@ package net.mcreator.magica.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.Entity;
@@ -30,7 +31,7 @@ public class MagicaWandUnchargedItem extends MagicaModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(1));
+			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
 			setRegistryName("magica_wand_uncharged");
 		}
 

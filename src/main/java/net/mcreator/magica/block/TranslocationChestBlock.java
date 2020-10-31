@@ -107,6 +107,7 @@ public class TranslocationChestBlock extends MagicaModElements.ModElement {
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			;
 			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
 		}
 

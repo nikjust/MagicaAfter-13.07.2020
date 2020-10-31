@@ -17,11 +17,13 @@ public class ColosusHeartBulletHitsPlayerProcedure extends MagicaModElements.Mod
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure ColosusHeartBulletHitsPlayer!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure ColosusHeartBulletHitsPlayer!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
-			System.err.println("Failed to load dependency sourceentity for procedure ColosusHeartBulletHitsPlayer!");
+			if (!dependencies.containsKey("sourceentity"))
+				System.err.println("Failed to load dependency sourceentity for procedure ColosusHeartBulletHitsPlayer!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

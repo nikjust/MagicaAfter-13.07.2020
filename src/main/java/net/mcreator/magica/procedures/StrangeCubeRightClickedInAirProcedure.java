@@ -25,23 +25,28 @@ public class StrangeCubeRightClickedInAirProcedure extends MagicaModElements.Mod
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure StrangeCubeRightClickedInAir!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure StrangeCubeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure StrangeCubeRightClickedInAir!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure StrangeCubeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure StrangeCubeRightClickedInAir!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure StrangeCubeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure StrangeCubeRightClickedInAir!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure StrangeCubeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure StrangeCubeRightClickedInAir!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure StrangeCubeRightClickedInAir!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -57,8 +62,9 @@ public class StrangeCubeRightClickedInAirProcedure extends MagicaModElements.Mod
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 			world.addEntity(entityToSpawn);
 		}
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(StrangeCubeItem.block, (int) (1)).getItem() == p.getItem(),
-					(int) 1);
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(StrangeCubeItem.block, (int) (1));
+			((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+		}
 	}
 }

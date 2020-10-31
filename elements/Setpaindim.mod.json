@@ -1,11 +1,11 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "command",
   "definition": {
     "commandName": "setpaindim",
     "permissionLevel": 2,
     "onCommandExecuted": {
-      "name": "Soul"
+      "name": "ResToIgnis"
     }
   }
 }

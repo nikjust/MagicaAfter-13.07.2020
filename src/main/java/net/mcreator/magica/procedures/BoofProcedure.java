@@ -19,11 +19,13 @@ public class BoofProcedure extends MagicaModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure Boof!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure Boof!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure Boof!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure Boof!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

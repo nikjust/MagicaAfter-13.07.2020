@@ -6,6 +6,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.item.UseAction;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
@@ -27,7 +28,7 @@ public class CookedMagicMeatItem extends MagicaModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(64)
+			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(20).saturation(2f).meat().build()));
 			setRegistryName("cooked_magic_meat");
 		}
@@ -39,7 +40,7 @@ public class CookedMagicMeatItem extends MagicaModElements.ModElement {
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack par1ItemStack) {
+		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.EAT;
 		}
 	}

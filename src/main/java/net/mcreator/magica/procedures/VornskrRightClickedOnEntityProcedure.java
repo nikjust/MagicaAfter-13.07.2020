@@ -23,7 +23,8 @@ public class VornskrRightClickedOnEntityProcedure extends MagicaModElements.ModE
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure VornskrRightClickedOnEntity!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure VornskrRightClickedOnEntity!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -35,9 +36,10 @@ public class VornskrRightClickedOnEntityProcedure extends MagicaModElements.ModE
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
-				if (entity instanceof PlayerEntity)
-					((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(Items.GLASS_BOTTLE, (int) (1)).getItem() == p.getItem(),
-							(int) 1);
+				if (entity instanceof PlayerEntity) {
+					ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE, (int) (1));
+					((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				}
 			} else {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 600, (int) 100));

@@ -15,7 +15,8 @@ public class VampireSwordLivingEntityIsHitWithToolProcedure extends MagicaModEle
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("sourceentity") == null) {
-			System.err.println("Failed to load dependency sourceentity for procedure VampireSwordLivingEntityIsHitWithTool!");
+			if (!dependencies.containsKey("sourceentity"))
+				System.err.println("Failed to load dependency sourceentity for procedure VampireSwordLivingEntityIsHitWithTool!");
 			return;
 		}
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");

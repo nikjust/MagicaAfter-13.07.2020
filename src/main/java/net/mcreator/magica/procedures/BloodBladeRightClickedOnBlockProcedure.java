@@ -20,13 +20,15 @@ public class BloodBladeRightClickedOnBlockProcedure extends MagicaModElements.Mo
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure BloodBladeRightClickedOnBlock!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure BloodBladeRightClickedOnBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(BloodBladeItem.block, (int) (1)).getItem() == p.getItem(),
-					(int) 1);
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(BloodBladeItem.block, (int) (1));
+			((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+		}
 		if (entity instanceof PlayerEntity) {
 			ItemStack _setstack = new ItemStack(BloodBladeClosedItem.block, (int) (1));
 			_setstack.setCount((int) 1);

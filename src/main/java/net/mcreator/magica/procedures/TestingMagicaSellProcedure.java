@@ -26,7 +26,8 @@ public class TestingMagicaSellProcedure extends MagicaModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure TestingMagicaSell!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure TestingMagicaSell!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

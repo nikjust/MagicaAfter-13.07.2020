@@ -125,11 +125,11 @@ public class SplitterGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -140,8 +140,8 @@ public class SplitterGui extends MagicaModElements.ModElement {
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 			this.font.drawString("" + (entity.getPersistentData().getDouble("RedMagica")) + "", 30, 78, -65536);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("BlueMagica")) + "", 28, 92, -14348033);
-			this.font.drawString("" + (MagicaModVariables.MapVariables.get(world).GlobalMagic) + "", 44, 4, -10092442);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("BlueMagica")) + "", 27, 92, -14348033);
+			this.font.drawString("" + (MagicaModVariables.MapVariables.get(world).GlobalMagic) + "", 43, 4, -10092442);
 		}
 
 		@Override
@@ -167,7 +167,7 @@ public class SplitterGui extends MagicaModElements.ModElement {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 47, this.guiTop + 105, 80, 20, "Split 10", e -> {
+			this.addButton(new Button(this.guiLeft + 46, this.guiTop + 105, 80, 20, "Split 10", e -> {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));

@@ -26,11 +26,13 @@ public class SelltomagicaProcedure extends MagicaModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure Selltomagica!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure Selltomagica!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure Selltomagica!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure Selltomagica!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

@@ -28,7 +28,8 @@ public class StartedProcedure extends MagicaModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure Started!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure Started!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

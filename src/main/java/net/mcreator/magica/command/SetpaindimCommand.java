@@ -9,7 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.Commands;
 import net.minecraft.command.CommandSource;
 
-import net.mcreator.magica.procedures.SoulProcedure;
+import net.mcreator.magica.procedures.ResToIgnisProcedure;
 import net.mcreator.magica.MagicaModElements;
 
 import java.util.Map;
@@ -54,11 +54,7 @@ public class SetpaindimCommand extends MagicaModElements.ModElement {
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
 			$_dependencies.put("entity", entity);
-			$_dependencies.put("x", x);
-			$_dependencies.put("y", y);
-			$_dependencies.put("z", z);
-			$_dependencies.put("world", world);
-			SoulProcedure.executeProcedure($_dependencies);
+			ResToIgnisProcedure.executeProcedure($_dependencies);
 		}
 		return 0;
 	}

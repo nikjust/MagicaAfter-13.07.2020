@@ -308,11 +308,11 @@ public class InfusionTableGUIGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -322,10 +322,10 @@ public class InfusionTableGUIGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("" + (entity.getPersistentData().getDouble("ignis")) + "", 97, 54, -6750208);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("terra")) + "", 79, 36, -13421824);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("aqua")) + "", 61, 54, -16777114);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("vita")) + "", 79, 72, -16751104);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("ignis")) + "", 96, 54, -6750208);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("terra")) + "", 78, 36, -13421824);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("aqua")) + "", 60, 54, -16777114);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("vita")) + "", 78, 72, -16751104);
 			this.font.drawString("" + (new Object() {
 				public String getValue(BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
@@ -333,7 +333,7 @@ public class InfusionTableGUIGui extends MagicaModElements.ModElement {
 						return tileEntity.getTileData().getString(tag);
 					return "";
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "progress")) + "", 34, 90, -16777216);
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "progress")) + "", 33, 90, -16777216);
 		}
 
 		@Override
@@ -355,7 +355,7 @@ public class InfusionTableGUIGui extends MagicaModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 66, this.guiTop + 191, 50, 20, "start", e -> {
+			this.addButton(new Button(this.guiLeft + 65, this.guiTop + 191, 50, 20, "start", e -> {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));

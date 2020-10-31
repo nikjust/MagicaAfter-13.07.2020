@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/rune",
+    "up": "magica:blocks/evilrune",
+    "north": "magica:blocks/rune",
+    "east": "magica:blocks/rune",
+    "south": "magica:blocks/rune",
+    "west": "magica:blocks/rune",
+    "particle": "magica:blocks/rune"
+  }
+}

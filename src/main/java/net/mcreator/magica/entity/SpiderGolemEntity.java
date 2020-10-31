@@ -59,8 +59,8 @@ public class SpiderGolemEntity extends MagicaModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("spider_golem")
 						.setRegistryName("spider_golem");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -13434880, -3407872, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("spider_golem"));
+		elements.items.add(() -> new SpawnEggItem(entity, -13434880, -3407872, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("spider_golem_spawn_egg"));
 	}
 
 	@Override
@@ -115,10 +115,6 @@ public class SpiderGolemEntity extends MagicaModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

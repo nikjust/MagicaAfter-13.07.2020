@@ -1,10 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 442,
-    "height": 414,
+    "width": 221,
+    "height": 207,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -17,8 +19,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:res>",
-          "x": 354,
-          "y": 156
+          "x": 177,
+          "y": 78
         }
       },
       {
@@ -30,8 +32,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:ignis>",
-          "x": 336,
-          "y": 402
+          "x": 168,
+          "y": 201
         }
       },
       {
@@ -43,8 +45,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:aqua>",
-          "x": 336,
-          "y": 78
+          "x": 168,
+          "y": 39
         }
       },
       {
@@ -56,8 +58,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:terra>",
-          "x": 210,
-          "y": 204
+          "x": 105,
+          "y": 102
         }
       },
       {
@@ -69,8 +71,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:vita>",
-          "x": 588,
-          "y": 204
+          "x": 294,
+          "y": 102
         }
       },
       {
@@ -87,8 +89,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 408,
-          "y": 186
+          "x": 204,
+          "y": 93
         }
       },
       {
@@ -98,11 +100,11 @@
           "onClick": {
             "name": "ResAdd"
           },
-          "width": 140,
-          "height": 40,
+          "width": 70,
+          "height": 20,
           "name": "Add Res",
-          "x": 358,
-          "y": 109
+          "x": 179,
+          "y": 55
         }
       }
     ]

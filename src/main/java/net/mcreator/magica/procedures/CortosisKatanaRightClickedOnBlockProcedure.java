@@ -22,27 +22,33 @@ public class CortosisKatanaRightClickedOnBlockProcedure extends MagicaModElement
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure CortosisKatanaRightClickedOnBlock!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure CortosisKatanaRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("itemstack") == null) {
-			System.err.println("Failed to load dependency itemstack for procedure CortosisKatanaRightClickedOnBlock!");
+			if (!dependencies.containsKey("itemstack"))
+				System.err.println("Failed to load dependency itemstack for procedure CortosisKatanaRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure CortosisKatanaRightClickedOnBlock!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure CortosisKatanaRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure CortosisKatanaRightClickedOnBlock!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure CortosisKatanaRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure CortosisKatanaRightClickedOnBlock!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure CortosisKatanaRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure CortosisKatanaRightClickedOnBlock!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure CortosisKatanaRightClickedOnBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

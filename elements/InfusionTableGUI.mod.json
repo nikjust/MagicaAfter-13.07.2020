@@ -1,10 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 352,
-    "height": 432,
+    "width": 176,
+    "height": 216,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -22,8 +24,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 407,
-          "y": 132
+          "x": 204,
+          "y": 66
         }
       },
       {
@@ -35,8 +37,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:ignis>",
-          "x": 444,
-          "y": 132
+          "x": 222,
+          "y": 66
         }
       },
       {
@@ -48,8 +50,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:terra>",
-          "x": 408,
-          "y": 96
+          "x": 204,
+          "y": 48
         }
       },
       {
@@ -61,8 +63,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:aqua>",
-          "x": 372,
-          "y": 132
+          "x": 186,
+          "y": 66
         }
       },
       {
@@ -74,8 +76,8 @@
             "falpha": 0.0
           },
           "name": "<ENBT:number:vita>",
-          "x": 408,
-          "y": 168
+          "x": 204,
+          "y": 84
         }
       },
       {
@@ -87,19 +89,19 @@
             "falpha": 0.0
           },
           "name": "<BNBT:text:progress>",
-          "x": 318,
-          "y": 204
+          "x": 159,
+          "y": 102
         }
       },
       {
         "type": "button",
         "data": {
           "text": "start",
-          "width": 100,
-          "height": 40,
+          "width": 50,
+          "height": 20,
           "name": "start",
-          "x": 382,
-          "y": 406
+          "x": 191,
+          "y": 203
         }
       }
     ]

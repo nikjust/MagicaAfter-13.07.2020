@@ -5,10 +5,15 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.item.ItemTossEvent;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
@@ -19,6 +24,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -26,6 +32,7 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.magica.itemgroup.MagicaItemGroup;
@@ -43,6 +50,17 @@ public class SplitterItemItem extends MagicaModElements.ModElement {
 	public static final Item block = null;
 	public SplitterItemItem(MagicaModElements instance) {
 		super(instance, 127);
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+	@SubscribeEvent
+	@OnlyIn(Dist.CLIENT)
+	public void onItemDropped(ItemTossEvent event) {
+		if (event.getEntityItem().getItem().getItem() == block) {
+			if (Minecraft.getInstance().currentScreen instanceof SplitterGui.GuiWindow) {
+				Minecraft.getInstance().player.closeScreen();
+			}
+		}
 	}
 
 	@Override
@@ -51,7 +69,7 @@ public class SplitterItemItem extends MagicaModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(1));
+			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
 			setRegistryName("splitter_item");
 		}
 

@@ -125,11 +125,11 @@ public class TransmutationTableGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -139,11 +139,11 @@ public class TransmutationTableGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("res")) + "", 79, 65, -16777216);
-			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("aqua")) + "", 79, 20, -16777063);
-			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("ignis")) + "", 79, 110, -6750208);
-			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("vita")) + "", 142, 65, -16738048);
-			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("terra")) + "", 7, 65, -10066432);
+			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("res")) + "", 78, 65, -16777216);
+			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("aqua")) + "", 78, 20, -16777063);
+			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("ignis")) + "", 78, 110, -6750208);
+			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("vita")) + "", 141, 65, -16738048);
+			this.font.drawString("" + ((int) entity.getPersistentData().getDouble("terra")) + "", 6, 65, -10066432);
 		}
 
 		@Override
@@ -169,15 +169,15 @@ public class TransmutationTableGui extends MagicaModElements.ModElement {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 43, this.guiTop + 146, 40, 20, "aqua", e -> {
+			this.addButton(new Button(this.guiLeft + 42, this.guiTop + 146, 40, 20, "aqua", e -> {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 88, this.guiTop + 146, 40, 20, "vita", e -> {
+			this.addButton(new Button(this.guiLeft + 87, this.guiTop + 146, 40, 20, "vita", e -> {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
 				handleButtonAction(entity, 2, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 124, this.guiTop + 146, 50, 20, "terra", e -> {
+			this.addButton(new Button(this.guiLeft + 123, this.guiTop + 146, 50, 20, "terra", e -> {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
 				handleButtonAction(entity, 3, x, y, z);
 			}));

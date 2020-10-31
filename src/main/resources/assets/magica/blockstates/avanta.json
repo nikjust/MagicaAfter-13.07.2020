@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "magica:block/avanta"
+    },
+    "age=1": {
+      "model": "magica:block/avanta"
+    },
+    "age=2": {
+      "model": "magica:block/avanta"
+    },
+    "age=3": {
+      "model": "magica:block/avanta"
+    },
+    "age=4": {
+      "model": "magica:block/avanta"
+    },
+    "age=5": {
+      "model": "magica:block/avanta"
+    },
+    "age=6": {
+      "model": "magica:block/avanta"
+    },
+    "age=7": {
+      "model": "magica:block/avanta"
+    },
+    "age=8": {
+      "model": "magica:block/avanta"
+    },
+    "age=9": {
+      "model": "magica:block/avanta"
+    },
+    "age=10": {
+      "model": "magica:block/avanta"
+    },
+    "age=11": {
+      "model": "magica:block/avanta"
+    },
+    "age=12": {
+      "model": "magica:block/avanta"
+    },
+    "age=13": {
+      "model": "magica:block/avanta"
+    },
+    "age=14": {
+      "model": "magica:block/avanta"
+    },
+    "age=15": {
+      "model": "magica:block/avanta"
+    }
+  }
+}

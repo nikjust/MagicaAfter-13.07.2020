@@ -123,7 +123,7 @@ public class UltimateRenamerGUIGui extends MagicaModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 83, 36) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 83, 37) {
 				@Override
 				public void onSlotChanged() {
 					super.onSlotChanged();
@@ -318,11 +318,11 @@ public class UltimateRenamerGUIGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -356,11 +356,11 @@ public class UltimateRenamerGUIGui extends MagicaModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			name = new TextFieldWidget(this.font, this.guiLeft + 32, this.guiTop + 11, 120, 20, "<BNBT:text:current>");
+			name = new TextFieldWidget(this.font, this.guiLeft + 31, this.guiTop + 11, 120, 20, "<BNBT:text:current>");
 			guistate.put("text:name", name);
 			name.setMaxStringLength(32767);
 			this.children.add(this.name);
-			this.addButton(new Button(this.guiLeft + 60, this.guiTop + 58, 60, 20, "Rename", e -> {
+			this.addButton(new Button(this.guiLeft + 59, this.guiTop + 58, 60, 20, "Rename", e -> {
 				MagicaMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));

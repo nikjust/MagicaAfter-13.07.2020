@@ -86,8 +86,8 @@ public class VillagerLOLEntity extends MagicaModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.95f)).build("magica_villager")
 						.setRegistryName("magica_villager");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -65536, -10092442, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("magica_villager"));
+		elements.items.add(() -> new SpawnEggItem(entity, -65536, -10092442, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("magica_villager_spawn_egg"));
 	}
 
 	@Override
@@ -105,7 +105,7 @@ public class VillagerLOLEntity extends MagicaModElements.ModElement {
 		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class,
 				renderManager -> new MobRenderer(renderManager, new VillagerModel(0), 0.5f) {
 					@Override
-					protected ResourceLocation getEntityTexture(Entity entity1) {
+					protected ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("magica:textures/tcigan.png");
 					}
 				});
@@ -139,10 +139,6 @@ public class VillagerLOLEntity extends MagicaModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

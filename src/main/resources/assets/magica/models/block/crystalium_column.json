@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/ev",
+    "up": "magica:blocks/column1",
+    "north": "magica:blocks/column0",
+    "east": "magica:blocks/column0",
+    "south": "magica:blocks/column0",
+    "west": "magica:blocks/column0",
+    "particle": "magica:blocks/ev"
+  }
+}

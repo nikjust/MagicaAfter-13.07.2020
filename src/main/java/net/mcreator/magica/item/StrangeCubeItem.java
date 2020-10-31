@@ -10,6 +10,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
@@ -38,7 +39,7 @@ public class StrangeCubeItem extends MagicaModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(1));
+			super(new Item.Properties().group(MagicaItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
 			setRegistryName("strange_cube");
 		}
 

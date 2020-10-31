@@ -23,23 +23,28 @@ public class TermometerWarmItemInInventoryTickProcedure extends MagicaModElement
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure TermometerWarmItemInInventoryTick!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure TermometerWarmItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure TermometerWarmItemInInventoryTick!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure TermometerWarmItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure TermometerWarmItemInInventoryTick!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure TermometerWarmItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure TermometerWarmItemInInventoryTick!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure TermometerWarmItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure TermometerWarmItemInInventoryTick!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure TermometerWarmItemInInventoryTick!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -53,18 +58,20 @@ public class TermometerWarmItemInInventoryTickProcedure extends MagicaModElement
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(TermometerWarmItem.block, (int) (1)).getItem() == p.getItem(),
-						(int) 1);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(TermometerWarmItem.block, (int) (1));
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			}
 		} else if ((2 <= (world.getBiome(new BlockPos((int) x, (int) y, (int) z)).getTemperature(new BlockPos((int) x, (int) y, (int) z)) * 100.f))) {
 			if (entity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(TermometerHotItem.block, (int) (1));
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(TermometerWarmItem.block, (int) (1)).getItem() == p.getItem(),
-						(int) 1);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(TermometerWarmItem.block, (int) (1));
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			}
 		}
 	}
 }

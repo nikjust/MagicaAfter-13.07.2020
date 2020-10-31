@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "item",
   "definition": {
     "renderType": 1,
     "texture": "goodingot",
     "customModelName": "bloodbladeclosed:default",
     "name": "Blood Blade Bracelet",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Magica"
     },

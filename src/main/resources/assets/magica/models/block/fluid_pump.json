@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magica:blocks/column1",
+    "particle": "magica:blocks/column1"
+  }
+}

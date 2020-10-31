@@ -15,7 +15,8 @@ public class MagicaTabletOnPlayerStoppedUsingProcedure extends MagicaModElements
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure MagicaTabletOnPlayerStoppedUsing!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure MagicaTabletOnPlayerStoppedUsing!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

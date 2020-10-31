@@ -32,23 +32,28 @@ public class VoidedEyeRightClickedInAirProcedure extends MagicaModElements.ModEl
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure VoidedEyeRightClickedInAir!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure VoidedEyeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure VoidedEyeRightClickedInAir!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure VoidedEyeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure VoidedEyeRightClickedInAir!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure VoidedEyeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure VoidedEyeRightClickedInAir!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure VoidedEyeRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure VoidedEyeRightClickedInAir!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure VoidedEyeRightClickedInAir!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -74,9 +79,10 @@ public class VoidedEyeRightClickedInAirProcedure extends MagicaModElements.ModEl
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magica:ninjacats")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(VoidedEyeItem.block, (int) (1)).getItem() == p.getItem(),
-						(int) 1);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(VoidedEyeItem.block, (int) (1));
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			}
 		} else {
 			{
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();

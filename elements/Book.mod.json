@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "function",
   "definition": {
     "code": "/give @p written_book{pages:[\"[\\\"\\\",{\\\"text\\\":\\\" \\\\u0020 \\\\u0020 \\\\u0020MAGICA\\\",\\\"bold\\\":true,\\\"color\\\":\\\"dark_purple\\\"},{\\\"text\\\":\\\"\\\\n\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"<First Steps\\\",\\\"color\\\":\\\"green\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"change_page\\\",\\\"value\\\":2}},{\\\"text\\\":\\\"\\\\n\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"<\\\",\\\"color\\\":\\\"dark_blue\\\"}]\",\"[\\\"\\\",{\\\"text\\\":\\\" \\\\u0020 \\\\u0020 \\\\u0020 First Steps\\\\n\\\\nWhen You Getted \\\"},{\\\"text\\\":\\\"Magic Quartz\\\",\\\"color\\\":\\\"dark_purple\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_item\\\",\\\"value\\\":\\\"{id:magica:magic_quartz}\\\"}},{\\\"text\\\":\\\", Craft Generator and use it\\\",\\\"color\\\":\\\"reset\\\"}]\",\"{\\\"text\\\":\\\"\\\"}\",\"{\\\"text\\\":\\\"\\\"}\",\"{\\\"text\\\":\\\"\\\"}\",\"{\\\"text\\\":\\\"\\\"}\",\"{\\\"text\\\":\\\"\\\"}\"],title:\"Magica Guide\",author:Nikjust}",

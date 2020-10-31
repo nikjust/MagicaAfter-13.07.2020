@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "magica:block/tool_drainer"
+    },
+    "facing=east": {
+      "model": "magica:block/tool_drainer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "magica:block/tool_drainer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magica:block/tool_drainer",
+      "y": 270
+    }
+  }
+}

@@ -127,9 +127,9 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 23 + 8 + sj * 18, 21 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 22 + 8 + sj * 18, 20 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 23 + 8 + si * 18, 21 + 142));
+				this.addSlot(new Slot(inv, si, 22 + 8 + si * 18, 20 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -309,11 +309,11 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -323,11 +323,11 @@ public class EssentiaTableGui extends MagicaModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("" + (entity.getPersistentData().getDouble("res")) + "", 74, 62, -16777216);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("ignis")) + "", 65, 185, -6750208);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("aqua")) + "", 65, 23, -16776961);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("terra")) + "", 2, 86, -10066432);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("vita")) + "", 191, 86, -16724941);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("res")) + "", 74, 61, -16777216);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("ignis")) + "", 65, 184, -6750208);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("aqua")) + "", 65, 22, -16776961);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("terra")) + "", 2, 85, -10066432);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("vita")) + "", 191, 85, -16724941);
 		}
 
 		@Override

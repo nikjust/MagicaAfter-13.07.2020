@@ -22,23 +22,28 @@ public class SausageOnBlockRightClickedProcedure extends MagicaModElements.ModEl
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure SausageOnBlockRightClicked!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure SausageOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure SausageOnBlockRightClicked!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure SausageOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure SausageOnBlockRightClicked!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure SausageOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure SausageOnBlockRightClicked!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure SausageOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure SausageOnBlockRightClicked!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure SausageOnBlockRightClicked!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -50,8 +55,10 @@ public class SausageOnBlockRightClickedProcedure extends MagicaModElements.ModEl
 				.getItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem())) {
 			if (world instanceof World)
 				SausagesDimensionDimension.portal.portalSpawn(world.getWorld(), new BlockPos((int) x, (int) y, (int) z));
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(Items.DIAMOND, (int) (1)).getItem() == p.getItem(), (int) 1);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(Items.DIAMOND, (int) (1));
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			}
 		}
 	}
 }

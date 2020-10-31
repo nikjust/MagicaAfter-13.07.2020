@@ -11,6 +11,7 @@ import net.minecraft.entity.Entity;
 import net.mcreator.magica.MagicaModVariables;
 import net.mcreator.magica.MagicaModElements;
 
+import java.util.function.Function;
 import java.util.Map;
 import java.util.Comparator;
 
@@ -22,23 +23,28 @@ public class AmuletOfSalvationActiveItemInInventoryTickProcedure extends MagicaM
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure AmuletOfSalvationActiveItemInInventoryTick!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure AmuletOfSalvationActiveItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure AmuletOfSalvationActiveItemInInventoryTick!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure AmuletOfSalvationActiveItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure AmuletOfSalvationActiveItemInInventoryTick!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure AmuletOfSalvationActiveItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure AmuletOfSalvationActiveItemInInventoryTick!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure AmuletOfSalvationActiveItemInInventoryTick!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure AmuletOfSalvationActiveItemInInventoryTick!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure AmuletOfSalvationActiveItemInInventoryTick!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -48,25 +54,39 @@ public class AmuletOfSalvationActiveItemInInventoryTickProcedure extends MagicaM
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((4 >= ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1))
 				&& (0 < (MagicaModVariables.MapVariables.get(world).GlobalMagic)))) {
-			if ((world
+			if (((Entity) world
 					.getEntitiesWithinAABB(MonsterEntity.class,
-							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst()
-					.orElse(null)) instanceof LivingEntity)
-				((LivingEntity) (world
+							new AxisAlignedBB(x - (20 / 2d), y - (20 / 2d), z - (20 / 2d), x + (20 / 2d), y + (20 / 2d), z + (20 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity)
+				((LivingEntity) ((Entity) world
 						.getEntitiesWithinAABB(MonsterEntity.class,
-								new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+								new AxisAlignedBB(x - (20 / 2d), y - (20 / 2d), z - (20 / 2d), x + (20 / 2d), y + (20 / 2d), z + (20 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 100));
-			if ((world
+			if (((Entity) world
 					.getEntitiesWithinAABB(MonsterEntity.class,
-							new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst()
-					.orElse(null)) instanceof LivingEntity)
-				((LivingEntity) (world
+							new AxisAlignedBB(x - (20 / 2d), y - (20 / 2d), z - (20 / 2d), x + (20 / 2d), y + (20 / 2d), z + (20 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity)
+				((LivingEntity) ((Entity) world
 						.getEntitiesWithinAABB(MonsterEntity.class,
-								new AxisAlignedBB(x - 20 / 2, y - 20 / 2, z - 20 / 2, x + 20 / 2, y + 20 / 2, z + 20 / 2), null)
-						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)))
+								new AxisAlignedBB(x - (20 / 2d), y - (20 / 2d), z - (20 / 2d), x + (20 / 2d), y + (20 / 2d), z + (20 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 60, (int) 100));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20, (int) 3, (false), (false)));

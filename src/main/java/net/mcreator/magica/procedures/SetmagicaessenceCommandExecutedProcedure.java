@@ -15,11 +15,13 @@ public class SetmagicaessenceCommandExecutedProcedure extends MagicaModElements.
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure SetmagicaessenceCommandExecuted!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure SetmagicaessenceCommandExecuted!");
 			return;
 		}
 		if (dependencies.get("cmdparams") == null) {
-			System.err.println("Failed to load dependency cmdparams for procedure SetmagicaessenceCommandExecuted!");
+			if (!dependencies.containsKey("cmdparams"))
+				System.err.println("Failed to load dependency cmdparams for procedure SetmagicaessenceCommandExecuted!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

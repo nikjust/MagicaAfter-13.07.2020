@@ -14,7 +14,8 @@ public class ExoSkeletonLeggingsTickEventProcedure extends MagicaModElements.Mod
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure ExoSkeletonLeggingsTickEvent!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure ExoSkeletonLeggingsTickEvent!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

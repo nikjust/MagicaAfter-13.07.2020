@@ -17,7 +17,8 @@ public class PureJungleLeavesFoodEatenProcedure extends MagicaModElements.ModEle
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure PureJungleLeavesFoodEaten!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure PureJungleLeavesFoodEaten!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

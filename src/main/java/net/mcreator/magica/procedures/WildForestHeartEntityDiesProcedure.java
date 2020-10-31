@@ -15,7 +15,8 @@ public class WildForestHeartEntityDiesProcedure extends MagicaModElements.ModEle
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure WildForestHeartEntityDies!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure WildForestHeartEntityDies!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

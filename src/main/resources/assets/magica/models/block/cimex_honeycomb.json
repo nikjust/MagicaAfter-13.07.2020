@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magica:blocks/honeycomb_block",
+    "particle": "magica:blocks/honeycomb_block"
+  }
+}

@@ -24,19 +24,23 @@ public class XpReaperOnBlockRightClickedProcedure extends MagicaModElements.ModE
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure XpReaperOnBlockRightClicked!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure XpReaperOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure XpReaperOnBlockRightClicked!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure XpReaperOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure XpReaperOnBlockRightClicked!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure XpReaperOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure XpReaperOnBlockRightClicked!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure XpReaperOnBlockRightClicked!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");

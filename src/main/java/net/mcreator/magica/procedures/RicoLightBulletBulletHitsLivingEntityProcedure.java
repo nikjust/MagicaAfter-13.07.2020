@@ -19,11 +19,13 @@ public class RicoLightBulletBulletHitsLivingEntityProcedure extends MagicaModEle
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure RicoLightBulletBulletHitsLivingEntity!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure RicoLightBulletBulletHitsLivingEntity!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure RicoLightBulletBulletHitsLivingEntity!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure RicoLightBulletBulletHitsLivingEntity!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

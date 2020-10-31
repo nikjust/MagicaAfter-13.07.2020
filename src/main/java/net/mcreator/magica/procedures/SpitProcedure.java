@@ -15,6 +15,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.magica.MagicaModElements;
 
+import java.util.function.Function;
 import java.util.Map;
 import java.util.Comparator;
 
@@ -26,19 +27,23 @@ public class SpitProcedure extends MagicaModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure Spit!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure Spit!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure Spit!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure Spit!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure Spit!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure Spit!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure Spit!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure Spit!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -47,25 +52,38 @@ public class SpitProcedure extends MagicaModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof World && !world.getWorld().isRemote) {
 			Entity entityToSpawn = new DragonFireballEntity(EntityType.DRAGON_FIREBALL, world.getWorld());
-			entityToSpawn.setLocationAndAngles(
-					x, y, z,
-					(float) ((world
+			entityToSpawn
+					.setLocationAndAngles(x, y, z,
+							(float) (((Entity) world.getEntitiesWithinAABB(PlayerEntity.class,
+									new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+									.stream().sorted(new Object() {
+										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+											return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+										}
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)).rotationYaw),
+							(float) (((Entity) world.getEntitiesWithinAABB(PlayerEntity.class,
+									new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+									.stream().sorted(new Object() {
+										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+											return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+										}
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)).rotationPitch));
+			entityToSpawn.setMotion((((Entity) world
+					.getEntitiesWithinAABB(PlayerEntity.class,
+							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getMotion().getX()), 0,
+					(((Entity) world
 							.getEntitiesWithinAABB(PlayerEntity.class,
-									new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null)
-							.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)).rotationYaw),
-					(float) ((world
-							.getEntitiesWithinAABB(PlayerEntity.class,
-									new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null)
-							.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst()
-							.orElse(null)).rotationPitch));
-			entityToSpawn.setMotion(
-					((world.getEntitiesWithinAABB(PlayerEntity.class,
-							new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null).stream()
-							.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)).getMotion().getX()),
-					0,
-					((world.getEntitiesWithinAABB(PlayerEntity.class,
-							new AxisAlignedBB(x - 4 / 2, y - 4 / 2, z - 4 / 2, x + 4 / 2, y + 4 / 2, z + 4 / 2), null).stream()
-							.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)).getMotion().getZ()));
+									new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+							.stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getMotion().getZ()));
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

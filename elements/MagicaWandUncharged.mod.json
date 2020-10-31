@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "mw",
     "customModelName": "Normal",
     "name": "Magica Wand Uncharged",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Magica"
     },

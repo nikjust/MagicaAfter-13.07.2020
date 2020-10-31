@@ -15,7 +15,8 @@ public class MagicaTabletRightClickedInAirProcedure extends MagicaModElements.Mo
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure MagicaTabletRightClickedInAir!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure MagicaTabletRightClickedInAir!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

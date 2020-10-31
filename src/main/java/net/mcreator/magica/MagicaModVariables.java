@@ -2,16 +2,32 @@ package net.mcreator.magica;
 
 import net.minecraftforge.fml.network.PacketDistributor;
 import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.util.FakePlayer;
+import net.minecraftforge.common.capabilities.ICapabilitySerializable;
+import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.common.capabilities.CapabilityInject;
+import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.storage.WorldSavedData;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Direction;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
 
@@ -19,6 +35,13 @@ public class MagicaModVariables {
 	public MagicaModVariables(MagicaModElements elements) {
 		elements.addNetworkMessage(WorldSavedDataSyncMessage.class, WorldSavedDataSyncMessage::buffer, WorldSavedDataSyncMessage::new,
 				WorldSavedDataSyncMessage::handler);
+		elements.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new,
+				PlayerVariablesSyncMessage::handler);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
+	}
+
+	private void init(FMLCommonSetupEvent event) {
+		CapabilityManager.INSTANCE.register(PlayerVariables.class, new PlayerVariablesStorage(), PlayerVariables::new);
 	}
 
 	@SubscribeEvent
@@ -95,6 +118,7 @@ public class MagicaModVariables {
 		public double Gradus = 0.0;
 		public double jumbo = 5.0;
 		public boolean WildForestDead = false;
+		public double YSpiderGod = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -110,6 +134,7 @@ public class MagicaModVariables {
 			Gradus = nbt.getDouble("Gradus");
 			jumbo = nbt.getDouble("jumbo");
 			WildForestDead = nbt.getBoolean("WildForestDead");
+			YSpiderGod = nbt.getDouble("YSpiderGod");
 		}
 
 		@Override
@@ -119,6 +144,7 @@ public class MagicaModVariables {
 			nbt.putDouble("Gradus", Gradus);
 			nbt.putDouble("jumbo", jumbo);
 			nbt.putBoolean("WildForestDead", WildForestDead);
+			nbt.putDouble("YSpiderGod", YSpiderGod);
 			return nbt;
 		}
 
@@ -164,6 +190,122 @@ public class MagicaModVariables {
 						MapVariables.clientSide = (MapVariables) message.data;
 					else
 						WorldVariables.clientSide = (WorldVariables) message.data;
+				}
+			});
+			context.setPacketHandled(true);
+		}
+	}
+	@CapabilityInject(PlayerVariables.class)
+	public static Capability<PlayerVariables> PLAYER_VARIABLES_CAPABILITY = null;
+	@SubscribeEvent
+	public void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
+		if (event.getObject() instanceof PlayerEntity && !(event.getObject() instanceof FakePlayer))
+			event.addCapability(new ResourceLocation("magica", "player_variables"), new PlayerVariablesProvider());
+	}
+	private static class PlayerVariablesProvider implements ICapabilitySerializable<INBT> {
+		private final LazyOptional<PlayerVariables> instance = LazyOptional.of(PLAYER_VARIABLES_CAPABILITY::getDefaultInstance);
+		@Override
+		public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
+			return cap == PLAYER_VARIABLES_CAPABILITY ? instance.cast() : LazyOptional.empty();
+		}
+
+		@Override
+		public INBT serializeNBT() {
+			return PLAYER_VARIABLES_CAPABILITY.getStorage().writeNBT(PLAYER_VARIABLES_CAPABILITY, this.instance.orElseThrow(RuntimeException::new),
+					null);
+		}
+
+		@Override
+		public void deserializeNBT(INBT nbt) {
+			PLAYER_VARIABLES_CAPABILITY.getStorage().readNBT(PLAYER_VARIABLES_CAPABILITY, this.instance.orElseThrow(RuntimeException::new), null,
+					nbt);
+		}
+	}
+
+	private static class PlayerVariablesStorage implements Capability.IStorage<PlayerVariables> {
+		@Override
+		public INBT writeNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side) {
+			CompoundNBT nbt = new CompoundNBT();
+			nbt.put("soulUsed", instance.soulUsed.write(new CompoundNBT()));
+			nbt.putDouble("Intoxication", instance.Intoxication);
+			nbt.put("ItemStackBuffer", instance.ItemStackBuffer.write(new CompoundNBT()));
+			return nbt;
+		}
+
+		@Override
+		public void readNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side, INBT inbt) {
+			CompoundNBT nbt = (CompoundNBT) inbt;
+			instance.soulUsed = ItemStack.read(nbt.getCompound("soulUsed"));
+			instance.Intoxication = nbt.getDouble("Intoxication");
+			instance.ItemStackBuffer = ItemStack.read(nbt.getCompound("ItemStackBuffer"));
+		}
+	}
+
+	public static class PlayerVariables {
+		public ItemStack soulUsed = ItemStack.EMPTY;
+		public double Intoxication = 0;
+		public ItemStack ItemStackBuffer = ItemStack.EMPTY;
+		public void syncPlayerVariables(Entity entity) {
+			if (entity instanceof ServerPlayerEntity)
+				MagicaMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
+		}
+	}
+	@SubscribeEvent
+	public void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+		if (!event.getPlayer().world.isRemote)
+			((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
+					.syncPlayerVariables(event.getPlayer());
+	}
+
+	@SubscribeEvent
+	public void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+		if (!event.getPlayer().world.isRemote)
+			((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
+					.syncPlayerVariables(event.getPlayer());
+	}
+
+	@SubscribeEvent
+	public void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (!event.getPlayer().world.isRemote)
+			((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
+					.syncPlayerVariables(event.getPlayer());
+	}
+
+	@SubscribeEvent
+	public void clonePlayer(PlayerEvent.Clone event) {
+		PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new PlayerVariables()));
+		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+		clone.soulUsed = original.soulUsed;
+		clone.ItemStackBuffer = original.ItemStackBuffer;
+		if (!event.isWasDeath()) {
+			clone.Intoxication = original.Intoxication;
+		}
+	}
+	public static class PlayerVariablesSyncMessage {
+		public PlayerVariables data;
+		public PlayerVariablesSyncMessage(PacketBuffer buffer) {
+			this.data = new PlayerVariables();
+			new PlayerVariablesStorage().readNBT(null, this.data, null, buffer.readCompoundTag());
+		}
+
+		public PlayerVariablesSyncMessage(PlayerVariables data) {
+			this.data = data;
+		}
+
+		public static void buffer(PlayerVariablesSyncMessage message, PacketBuffer buffer) {
+			buffer.writeCompoundTag((CompoundNBT) new PlayerVariablesStorage().writeNBT(null, message.data, null));
+		}
+
+		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+			NetworkEvent.Context context = contextSupplier.get();
+			context.enqueueWork(() -> {
+				if (!context.getDirection().getReceptionSide().isServer()) {
+					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new PlayerVariables()));
+					variables.soulUsed = message.data.soulUsed;
+					variables.Intoxication = message.data.Intoxication;
+					variables.ItemStackBuffer = message.data.ItemStackBuffer;
 				}
 			});
 			context.setPacketHandled(true);

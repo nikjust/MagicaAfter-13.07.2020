@@ -23,23 +23,28 @@ public class HottermoProcedure extends MagicaModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure Hottermo!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure Hottermo!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure Hottermo!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure Hottermo!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure Hottermo!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure Hottermo!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure Hottermo!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure Hottermo!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure Hottermo!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure Hottermo!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -53,18 +58,20 @@ public class HottermoProcedure extends MagicaModElements.ModElement {
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(TermometerHotItem.block, (int) (1)).getItem() == p.getItem(),
-						(int) 1);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(TermometerHotItem.block, (int) (1));
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			}
 		} else if ((1 == (world.getBiome(new BlockPos((int) x, (int) y, (int) z)).getTemperature(new BlockPos((int) x, (int) y, (int) z)) * 100.f))) {
 			if (entity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(TermometerWarmItem.block, (int) (1));
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(TermometerHotItem.block, (int) (1)).getItem() == p.getItem(),
-						(int) 1);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(TermometerHotItem.block, (int) (1));
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			}
 		}
 	}
 }

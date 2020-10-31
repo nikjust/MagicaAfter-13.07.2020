@@ -15,7 +15,8 @@ public class ReviveWildForestCommandExecutedProcedure extends MagicaModElements.
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure ReviveWildForestCommandExecuted!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure ReviveWildForestCommandExecuted!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

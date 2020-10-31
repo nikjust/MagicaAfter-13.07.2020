@@ -61,7 +61,8 @@ public class MageEntity extends MagicaModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("mage")
 						.setRegistryName("mage");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16777216, -10066432, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("mage"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -16777216, -10066432, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("mage_spawn_egg"));
 	}
 
 	@Override
@@ -115,10 +116,6 @@ public class MageEntity extends MagicaModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

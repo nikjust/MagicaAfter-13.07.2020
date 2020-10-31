@@ -1,0 +1,9 @@
+{
+  "parent": "magica:custom/avanta",
+  "textures": {
+    "all": "magica:blocks/plant",
+    "particle": "magica:blocks/plant",
+    "0": "magica:blocks/leaves",
+    "1": "magica:blocks/plant"
+  }
+}

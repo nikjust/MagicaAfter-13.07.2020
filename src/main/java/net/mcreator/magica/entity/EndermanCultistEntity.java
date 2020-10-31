@@ -71,7 +71,7 @@ public class EndermanCultistEntity extends MagicaModElements.ModElement {
 						.setRegistryName("enderman_cultist");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -13434829, -10092442, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("enderman_cultist"));
+				.setRegistryName("enderman_cultist_spawn_egg"));
 	}
 
 	@Override
@@ -139,10 +139,6 @@ public class EndermanCultistEntity extends MagicaModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override
