@@ -46,7 +46,7 @@ public class FireBallItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletfire_ball")
 	public static final EntityType arrow = null;
 	public FireBallItem(MagicaModElements instance) {
-		super(instance, 285);
+		super(instance, 105);
 	}
 
 	@Override

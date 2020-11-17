@@ -50,7 +50,7 @@ public class UltimateRenamerGUIGui extends MagicaModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public UltimateRenamerGUIGui(MagicaModElements instance) {
-		super(instance, 165);
+		super(instance, 270);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -356,7 +356,28 @@ public class UltimateRenamerGUIGui extends MagicaModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			name = new TextFieldWidget(this.font, this.guiLeft + 31, this.guiTop + 11, 120, 20, "<BNBT:text:current>");
+			name = new TextFieldWidget(this.font, this.guiLeft + 31, this.guiTop + 11, 120, 20, "<BNBT:text:current>") {
+				{
+					setSuggestion("<BNBT:text:current>");
+				}
+				@Override
+				public void writeText(String text) {
+					super.writeText(text);
+					if (getText().isEmpty())
+						setSuggestion("<BNBT:text:current>");
+					else
+						setSuggestion(null);
+				}
+
+				@Override
+				public void setCursorPosition(int pos) {
+					super.setCursorPosition(pos);
+					if (getText().isEmpty())
+						setSuggestion("<BNBT:text:current>");
+					else
+						setSuggestion(null);
+				}
+			};
 			guistate.put("text:name", name);
 			name.setMaxStringLength(32767);
 			this.children.add(this.name);

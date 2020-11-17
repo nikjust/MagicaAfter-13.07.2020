@@ -20,7 +20,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ResAddProcedure extends MagicaModElements.ModElement {
 	public ResAddProcedure(MagicaModElements instance) {
-		super(instance, 280);
+		super(instance, 363);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

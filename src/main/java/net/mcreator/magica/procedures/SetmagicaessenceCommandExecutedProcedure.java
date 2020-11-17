@@ -10,7 +10,7 @@ import java.util.HashMap;
 @MagicaModElements.ModElement.Tag
 public class SetmagicaessenceCommandExecutedProcedure extends MagicaModElements.ModElement {
 	public SetmagicaessenceCommandExecutedProcedure(MagicaModElements instance) {
-		super(instance, 286);
+		super(instance, 367);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

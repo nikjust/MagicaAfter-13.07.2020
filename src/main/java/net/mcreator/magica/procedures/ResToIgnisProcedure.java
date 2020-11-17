@@ -9,7 +9,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ResToIgnisProcedure extends MagicaModElements.ModElement {
 	public ResToIgnisProcedure(MagicaModElements instance) {
-		super(instance, 277);
+		super(instance, 360);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

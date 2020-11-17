@@ -53,7 +53,7 @@ public class RicoLightBulletItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletrico_light_bullet")
 	public static final EntityType arrow = null;
 	public RicoLightBulletItem(MagicaModElements instance) {
-		super(instance, 155);
+		super(instance, 100);
 	}
 
 	@Override

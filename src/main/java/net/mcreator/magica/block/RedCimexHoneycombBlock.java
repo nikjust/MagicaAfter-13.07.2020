@@ -28,7 +28,7 @@ public class RedCimexHoneycombBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:red_cimex_honeycomb")
 	public static final Block block = null;
 	public RedCimexHoneycombBlock(MagicaModElements instance) {
-		super(instance, 319);
+		super(instance, 80);
 	}
 
 	@Override

@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class AvantaCigarRangedItemUsedProcedure extends MagicaModElements.ModElement {
 	public AvantaCigarRangedItemUsedProcedure(MagicaModElements instance) {
-		super(instance, 310);
+		super(instance, 385);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

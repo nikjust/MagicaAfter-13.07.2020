@@ -40,7 +40,7 @@ public class DirtyMagicQuartzOreBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:dirty_magic_quartz_ore")
 	public static final Block block = null;
 	public DirtyMagicQuartzOreBlock(MagicaModElements instance) {
-		super(instance, 21);
+		super(instance, 110);
 	}
 
 	@Override

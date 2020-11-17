@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:emerald_block"
+    },
+    "1": {
+      "item": "magica:tesseract"
+    },
+    "2": {
+      "item": "minecraft:emerald_block"
+    },
+    "3": {
+      "item": "magica:tesseract"
+    },
+    "4": {
+      "item": "magica:pentaract"
+    },
+    "5": {
+      "item": "magica:tesseract"
+    },
+    "6": {
+      "item": "minecraft:emerald_block"
+    },
+    "7": {
+      "item": "magica:tesseract"
+    },
+    "8": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result": {
+    "item": "magica:golems_heart",
+    "count": 1
+  }
+}

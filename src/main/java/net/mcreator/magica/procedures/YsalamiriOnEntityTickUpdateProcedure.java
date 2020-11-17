@@ -19,7 +19,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class YsalamiriOnEntityTickUpdateProcedure extends MagicaModElements.ModElement {
 	public YsalamiriOnEntityTickUpdateProcedure(MagicaModElements instance) {
-		super(instance, 218);
+		super(instance, 315);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

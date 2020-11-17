@@ -28,7 +28,7 @@ public class BloodBladeClosedItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:blood_blade_closed")
 	public static final Item block = null;
 	public BloodBladeClosedItem(MagicaModElements instance) {
-		super(instance, 87);
+		super(instance, 36);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import java.util.Collections;
 @MagicaModElements.ModElement.Tag
 public class HyperPortallerRightClickedInAirProcedure extends MagicaModElements.ModElement {
 	public HyperPortallerRightClickedInAirProcedure(MagicaModElements instance) {
-		super(instance, 234);
+		super(instance, 326);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

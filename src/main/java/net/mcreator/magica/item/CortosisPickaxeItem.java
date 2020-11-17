@@ -16,7 +16,7 @@ public class CortosisPickaxeItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_pickaxe")
 	public static final Item block = null;
 	public CortosisPickaxeItem(MagicaModElements instance) {
-		super(instance, 134);
+		super(instance, 158);
 	}
 
 	@Override

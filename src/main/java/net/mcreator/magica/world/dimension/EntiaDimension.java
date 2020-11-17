@@ -104,7 +104,7 @@ public class EntiaDimension extends MagicaModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public EntiaDimension(MagicaModElements instance) {
-		super(instance, 91);
+		super(instance, 37);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

@@ -21,7 +21,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class RitualTableProcedure extends MagicaModElements.ModElement {
 	public RitualTableProcedure(MagicaModElements instance) {
-		super(instance, 284);
+		super(instance, 366);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

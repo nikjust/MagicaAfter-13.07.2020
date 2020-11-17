@@ -18,7 +18,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class HottermoProcedure extends MagicaModElements.ModElement {
 	public HottermoProcedure(MagicaModElements instance) {
-		super(instance, 179);
+		super(instance, 281);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -49,7 +49,7 @@ public class MagicHammerItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletmagic_hammer")
 	public static final EntityType arrow = null;
 	public MagicHammerItem(MagicaModElements instance) {
-		super(instance, 42);
+		super(instance, 23);
 	}
 
 	@Override

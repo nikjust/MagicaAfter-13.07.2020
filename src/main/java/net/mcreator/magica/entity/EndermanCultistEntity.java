@@ -60,7 +60,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 public class EndermanCultistEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public EndermanCultistEntity(MagicaModElements instance) {
-		super(instance, 184);
+		super(instance, 143);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -49,7 +49,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 public class CrystaliumEntityEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public CrystaliumEntityEntity(MagicaModElements instance) {
-		super(instance, 294);
+		super(instance, 147);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

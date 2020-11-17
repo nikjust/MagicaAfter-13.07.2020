@@ -50,7 +50,7 @@ import net.mcreator.magica.MagicaModElements;
 public class EntEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public EntEntity(MagicaModElements instance) {
-		super(instance, 105);
+		super(instance, 134);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicaWandBulletHitsLivingEntityProcedure extends MagicaModElements.ModElement {
 	public MagicaWandBulletHitsLivingEntityProcedure(MagicaModElements instance) {
-		super(instance, 12);
+		super(instance, 171);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

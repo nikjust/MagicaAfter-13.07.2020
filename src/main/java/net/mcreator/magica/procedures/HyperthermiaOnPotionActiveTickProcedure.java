@@ -10,7 +10,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class HyperthermiaOnPotionActiveTickProcedure extends MagicaModElements.ModElement {
 	public HyperthermiaOnPotionActiveTickProcedure(MagicaModElements instance) {
-		super(instance, 173);
+		super(instance, 275);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

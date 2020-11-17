@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:magic_quartz"
+    },
+    "1": {
+      "item": "minecraft:clay"
+    },
+    "2": {
+      "item": "magica:magic_quartz"
+    },
+    "3": {
+      "item": "minecraft:clay"
+    },
+    "4": {
+      "item": "magica:pestle_and_mortar"
+    },
+    "5": {
+      "item": "minecraft:clay"
+    },
+    "6": {
+      "item": "magica:magic_quartz"
+    },
+    "7": {
+      "item": "minecraft:clay"
+    },
+    "8": {
+      "item": "magica:magic_quartz"
+    }
+  },
+  "result": {
+    "item": "magica:enchanted_clay",
+    "count": 5
+  }
+}

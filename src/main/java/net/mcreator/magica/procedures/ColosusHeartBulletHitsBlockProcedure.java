@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ColosusHeartBulletHitsBlockProcedure extends MagicaModElements.ModElement {
 	public ColosusHeartBulletHitsBlockProcedure(MagicaModElements instance) {
-		super(instance, 84);
+		super(instance, 211);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

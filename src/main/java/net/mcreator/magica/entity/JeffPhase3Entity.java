@@ -46,7 +46,7 @@ import net.mcreator.magica.MagicaModElements;
 public class JeffPhase3Entity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public JeffPhase3Entity(MagicaModElements instance) {
-		super(instance, 46);
+		super(instance, 126);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

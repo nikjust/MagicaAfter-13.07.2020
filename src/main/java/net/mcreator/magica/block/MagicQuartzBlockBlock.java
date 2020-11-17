@@ -23,7 +23,7 @@ public class MagicQuartzBlockBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magic_quartz_block")
 	public static final Block block = null;
 	public MagicQuartzBlockBlock(MagicaModElements instance) {
-		super(instance, 13);
+		super(instance, 7);
 	}
 
 	@Override

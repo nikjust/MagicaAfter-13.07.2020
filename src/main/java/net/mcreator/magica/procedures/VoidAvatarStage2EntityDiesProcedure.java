@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VoidAvatarStage2EntityDiesProcedure extends MagicaModElements.ModElement {
 	public VoidAvatarStage2EntityDiesProcedure(MagicaModElements instance) {
-		super(instance, 212);
+		super(instance, 308);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

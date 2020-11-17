@@ -11,7 +11,7 @@ import java.util.Collections;
 @MagicaModElements.ModElement.Tag
 public class ReturnerBlockOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public ReturnerBlockOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 233);
+		super(instance, 324);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

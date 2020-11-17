@@ -23,7 +23,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicaFurnaceUpdateTickProcedure extends MagicaModElements.ModElement {
 	public MagicaFurnaceUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 11);
+		super(instance, 170);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

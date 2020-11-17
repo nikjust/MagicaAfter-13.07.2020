@@ -13,7 +13,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicHammerBulletHitsBlockProcedure extends MagicaModElements.ModElement {
 	public MagicHammerBulletHitsBlockProcedure(MagicaModElements instance) {
-		super(instance, 43);
+		super(instance, 187);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

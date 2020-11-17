@@ -27,7 +27,7 @@ public class MagicalAtrophyPotion extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magical_atrophy")
 	public static final Potion potionType = null;
 	public MagicalAtrophyPotion(MagicaModElements instance) {
-		super(instance, 217);
+		super(instance, 314);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

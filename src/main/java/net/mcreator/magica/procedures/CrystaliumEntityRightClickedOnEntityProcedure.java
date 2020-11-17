@@ -14,7 +14,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CrystaliumEntityRightClickedOnEntityProcedure extends MagicaModElements.ModElement {
 	public CrystaliumEntityRightClickedOnEntityProcedure(MagicaModElements instance) {
-		super(instance, 296);
+		super(instance, 375);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

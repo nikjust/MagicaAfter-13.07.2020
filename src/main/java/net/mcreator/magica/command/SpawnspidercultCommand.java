@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @MagicaModElements.ModElement.Tag
 public class SpawnspidercultCommand extends MagicaModElements.ModElement {
 	public SpawnspidercultCommand(MagicaModElements instance) {
-		super(instance, 192);
+		super(instance, 293);
 	}
 
 	@Override

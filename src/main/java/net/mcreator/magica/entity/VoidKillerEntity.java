@@ -64,7 +64,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 public class VoidKillerEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public VoidKillerEntity(MagicaModElements instance) {
-		super(instance, 316);
+		super(instance, 133);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

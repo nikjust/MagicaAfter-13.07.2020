@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "1": {
+      "item": "minecraft:string"
+    },
+    "2": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "3": {
+      "item": "minecraft:string"
+    },
+    "4": {
+      "item": "minecraft:slime_ball"
+    },
+    "5": {
+      "item": "minecraft:string"
+    },
+    "6": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "7": {
+      "item": "minecraft:string"
+    },
+    "8": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "magica:glorious_roll",
+    "count": 1
+  }
+}

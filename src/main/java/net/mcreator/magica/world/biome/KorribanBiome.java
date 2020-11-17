@@ -47,7 +47,7 @@ public class KorribanBiome extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:korriban")
 	public static final CustomBiome biome = null;
 	public KorribanBiome(MagicaModElements instance) {
-		super(instance, 118);
+		super(instance, 240);
 	}
 
 	@Override

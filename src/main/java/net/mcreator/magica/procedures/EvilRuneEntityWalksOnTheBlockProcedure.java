@@ -19,7 +19,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class EvilRuneEntityWalksOnTheBlockProcedure extends MagicaModElements.ModElement {
 	public EvilRuneEntityWalksOnTheBlockProcedure(MagicaModElements instance) {
-		super(instance, 299);
+		super(instance, 378);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

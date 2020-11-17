@@ -64,7 +64,7 @@ public class InfusionTableBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:infusion_table")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public InfusionTableBlock(MagicaModElements instance) {
-		super(instance, 282);
+		super(instance, 72);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

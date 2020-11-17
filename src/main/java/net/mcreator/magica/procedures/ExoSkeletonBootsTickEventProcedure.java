@@ -9,7 +9,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ExoSkeletonBootsTickEventProcedure extends MagicaModElements.ModElement {
 	public ExoSkeletonBootsTickEventProcedure(MagicaModElements instance) {
-		super(instance, 265);
+		super(instance, 350);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

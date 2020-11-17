@@ -13,7 +13,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ToolDrainerUpdateTickProcedure extends MagicaModElements.ModElement {
 	public ToolDrainerUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 324);
+		super(instance, 393);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

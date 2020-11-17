@@ -16,7 +16,7 @@ public class GoodIngotItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:good_ingot")
 	public static final Item block = null;
 	public GoodIngotItem(MagicaModElements instance) {
-		super(instance, 29);
+		super(instance, 13);
 	}
 
 	@Override

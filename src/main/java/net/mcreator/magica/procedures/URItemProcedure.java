@@ -18,7 +18,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class URItemProcedure extends MagicaModElements.ModElement {
 	public URItemProcedure(MagicaModElements instance) {
-		super(instance, 167);
+		super(instance, 272);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

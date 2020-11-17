@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ChlorineMobplayerCollidesBlockProcedure extends MagicaModElements.ModElement {
 	public ChlorineMobplayerCollidesBlockProcedure(MagicaModElements instance) {
-		super(instance, 159);
+		super(instance, 266);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VillagerLOLOnEntityTickUpdateProcedure extends MagicaModElements.ModElement {
 	public VillagerLOLOnEntityTickUpdateProcedure(MagicaModElements instance) {
-		super(instance, 251);
+		super(instance, 339);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -104,7 +104,7 @@ public class HeartiumDimDimension extends MagicaModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public HeartiumDimDimension(MagicaModElements instance) {
-		super(instance, 68);
+		super(instance, 30);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

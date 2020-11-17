@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CrystaliumColumnBlockAddedProcedure extends MagicaModElements.ModElement {
 	public CrystaliumColumnBlockAddedProcedure(MagicaModElements instance) {
-		super(instance, 297);
+		super(instance, 376);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

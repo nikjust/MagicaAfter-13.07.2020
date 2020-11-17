@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class AcidMobplayerCollidesBlockProcedure extends MagicaModElements.ModElement {
 	public AcidMobplayerCollidesBlockProcedure(MagicaModElements instance) {
-		super(instance, 57);
+		super(instance, 195);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

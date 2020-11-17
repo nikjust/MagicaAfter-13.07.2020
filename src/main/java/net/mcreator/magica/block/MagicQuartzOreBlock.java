@@ -24,7 +24,7 @@ public class MagicQuartzOreBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magic_quartz_ore")
 	public static final Block block = null;
 	public MagicQuartzOreBlock(MagicaModElements instance) {
-		super(instance, 22);
+		super(instance, 111);
 	}
 
 	@Override

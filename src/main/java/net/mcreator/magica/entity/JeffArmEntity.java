@@ -42,7 +42,7 @@ import net.mcreator.magica.MagicaModElements;
 public class JeffArmEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public JeffArmEntity(MagicaModElements instance) {
-		super(instance, 47);
+		super(instance, 129);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

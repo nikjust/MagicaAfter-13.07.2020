@@ -18,7 +18,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class CreeperSearchAmuletItemInInventoryTickProcedure extends MagicaModElements.ModElement {
 	public CreeperSearchAmuletItemInInventoryTickProcedure(MagicaModElements instance) {
-		super(instance, 60);
+		super(instance, 197);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

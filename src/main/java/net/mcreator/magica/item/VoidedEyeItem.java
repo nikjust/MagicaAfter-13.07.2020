@@ -24,7 +24,7 @@ public class VoidedEyeItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:voided_eye")
 	public static final Item block = null;
 	public VoidedEyeItem(MagicaModElements instance) {
-		super(instance, 215);
+		super(instance, 151);
 	}
 
 	@Override

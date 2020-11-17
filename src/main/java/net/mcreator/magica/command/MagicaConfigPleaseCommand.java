@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @MagicaModElements.ModElement.Tag
 public class MagicaConfigPleaseCommand extends MagicaModElements.ModElement {
 	public MagicaConfigPleaseCommand(MagicaModElements instance) {
-		super(instance, 206);
+		super(instance, 305);
 	}
 
 	@Override

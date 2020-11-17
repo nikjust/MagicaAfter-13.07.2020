@@ -49,7 +49,7 @@ public class VKillerCheatItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletv_killer_cheat")
 	public static final EntityType arrow = null;
 	public VKillerCheatItem(MagicaModElements instance) {
-		super(instance, 317);
+		super(instance, 79);
 	}
 
 	@Override

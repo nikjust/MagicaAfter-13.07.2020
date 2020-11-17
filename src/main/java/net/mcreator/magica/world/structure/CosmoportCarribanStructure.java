@@ -35,7 +35,7 @@ import java.util.HashMap;
 @MagicaModElements.ModElement.Tag
 public class CosmoportCarribanStructure extends MagicaModElements.ModElement {
 	public CosmoportCarribanStructure(MagicaModElements instance) {
-		super(instance, 119);
+		super(instance, 242);
 	}
 
 	@Override

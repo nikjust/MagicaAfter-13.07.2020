@@ -30,7 +30,7 @@ public class CorruptionBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:corruption")
 	public static final Block block = null;
 	public CorruptionBlock(MagicaModElements instance) {
-		super(instance, 256);
+		super(instance, 65);
 	}
 
 	@Override

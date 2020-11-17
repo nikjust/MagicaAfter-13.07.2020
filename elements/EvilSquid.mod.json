@@ -107,7 +107,7 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",

@@ -38,7 +38,7 @@ public class RuneOfPowerBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:rune_of_power")
 	public static final Block block = null;
 	public RuneOfPowerBlock(MagicaModElements instance) {
-		super(instance, 109);
+		super(instance, 38);
 	}
 
 	@Override

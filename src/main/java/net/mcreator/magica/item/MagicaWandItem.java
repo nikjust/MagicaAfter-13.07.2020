@@ -48,7 +48,7 @@ public class MagicaWandItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletmagica_wand")
 	public static final EntityType arrow = null;
 	public MagicaWandItem(MagicaModElements instance) {
-		super(instance, 12);
+		super(instance, 93);
 	}
 
 	@Override

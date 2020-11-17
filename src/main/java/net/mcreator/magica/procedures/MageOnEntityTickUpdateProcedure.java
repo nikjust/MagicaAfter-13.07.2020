@@ -4,10 +4,10 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.magica.particle.RainbowTexturesParticle;
 import net.mcreator.magica.MagicaModElements;
 
 import java.util.function.Function;
@@ -17,7 +17,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class MageOnEntityTickUpdateProcedure extends MagicaModElements.ModElement {
 	public MageOnEntityTickUpdateProcedure(MagicaModElements instance) {
-		super(instance, 272);
+		super(instance, 355);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -69,7 +69,7 @@ public class MageOnEntityTickUpdateProcedure extends MagicaModElements.ModElemen
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).attackEntityFrom(DamageSource.GENERIC, (float) 1);
 			if (world instanceof ServerWorld) {
-				((ServerWorld) world).spawnParticle(RainbowTexturesParticle.particle, x, (y + 2.3), z, (int) 10, 0, 0, 0, 0);
+				((ServerWorld) world).spawnParticle(ParticleTypes.COMPOSTER, x, (y + 2.3), z, (int) 10, 0, 0, 0, 0);
 			}
 		} else {
 			entity.getPersistentData().putDouble("Evoking", 0);

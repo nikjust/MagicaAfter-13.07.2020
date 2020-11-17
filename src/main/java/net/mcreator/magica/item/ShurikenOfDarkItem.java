@@ -48,7 +48,7 @@ public class ShurikenOfDarkItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletshuriken_of_dark")
 	public static final EntityType arrow = null;
 	public ShurikenOfDarkItem(MagicaModElements instance) {
-		super(instance, 36);
+		super(instance, 20);
 	}
 
 	@Override

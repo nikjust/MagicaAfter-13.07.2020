@@ -4,7 +4,7 @@
     {
       "name": "MGC",
       "type": "gui",
-      "sortid": 1,
+      "sortid": 163,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -13,7 +13,7 @@
     {
       "name": "MagicQuartzGenerator",
       "type": "block",
-      "sortid": 2,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -22,7 +22,7 @@
     {
       "name": "MagicQuartz",
       "type": "item",
-      "sortid": 3,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -31,7 +31,7 @@
     {
       "name": "MagicQuartzGeneratorUpdateTick",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -60,7 +60,7 @@
     {
       "name": "MOverlay",
       "type": "overlay",
-      "sortid": 5,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -69,7 +69,7 @@
     {
       "name": "MagicaTabletItemInHandTick",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -86,7 +86,7 @@
     {
       "name": "MagicaTabletOnPlayerStoppedUsing",
       "type": "procedure",
-      "sortid": 7,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -103,7 +103,7 @@
     {
       "name": "MagicaTablet",
       "type": "item",
-      "sortid": 6,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -112,7 +112,7 @@
     {
       "name": "MagicaTabletRightClickedInAir",
       "type": "procedure",
-      "sortid": 8,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -129,7 +129,7 @@
     {
       "name": "MagicMeat",
       "type": "food",
-      "sortid": 9,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -138,7 +138,7 @@
     {
       "name": "CookedMagicMeat",
       "type": "food",
-      "sortid": 10,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -147,7 +147,7 @@
     {
       "name": "Mgy",
       "type": "gui",
-      "sortid": 11,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -156,7 +156,7 @@
     {
       "name": "MagicaFurnaceUpdateTick",
       "type": "procedure",
-      "sortid": 11,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -185,7 +185,7 @@
     {
       "name": "MagicaFurnace",
       "type": "block",
-      "sortid": 11,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -194,7 +194,7 @@
     {
       "name": "MagicaWandBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 12,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -215,7 +215,7 @@
     {
       "name": "MagicaWand",
       "type": "gun",
-      "sortid": 12,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -224,7 +224,7 @@
     {
       "name": "MagicQuartzBlock",
       "type": "block",
-      "sortid": 13,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -233,7 +233,7 @@
     {
       "name": "BD",
       "type": "gui",
-      "sortid": 14,
+      "sortid": 172,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -242,7 +242,7 @@
     {
       "name": "BookDestroyerUpdateTick",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -271,7 +271,7 @@
     {
       "name": "BookDestroyer",
       "type": "block",
-      "sortid": 14,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -280,7 +280,7 @@
     {
       "name": "FirstSteps",
       "type": "achievement",
-      "sortid": 16,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -289,7 +289,7 @@
     {
       "name": "FirstGenerator",
       "type": "achievement",
-      "sortid": 17,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -298,7 +298,7 @@
     {
       "name": "MagicFurnace",
       "type": "achievement",
-      "sortid": 18,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -307,7 +307,7 @@
     {
       "name": "ICanViewTheMagic",
       "type": "achievement",
-      "sortid": 19,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -316,7 +316,7 @@
     {
       "name": "MagicaWandUnchargedItemInInventoryTick",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -337,7 +337,7 @@
     {
       "name": "MagicaWandUncharged",
       "type": "item",
-      "sortid": 20,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -346,7 +346,7 @@
     {
       "name": "DirtyMagicQuartzOre",
       "type": "block",
-      "sortid": 21,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -355,7 +355,7 @@
     {
       "name": "MagicQuartzOre",
       "type": "block",
-      "sortid": 22,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -364,7 +364,7 @@
     {
       "name": "DirtyMagicQuartzOreOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 23,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -393,7 +393,7 @@
     {
       "name": "Dash",
       "type": "fluid",
-      "sortid": 24,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -402,7 +402,7 @@
     {
       "name": "HeartiumGrass",
       "type": "block",
-      "sortid": 25,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -411,7 +411,7 @@
     {
       "name": "Heartium",
       "type": "block",
-      "sortid": 26,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -420,7 +420,7 @@
     {
       "name": "HeartiumPortalBlock",
       "type": "block",
-      "sortid": 27,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -429,7 +429,7 @@
     {
       "name": "Hearti",
       "type": "biome",
-      "sortid": 28,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -438,7 +438,7 @@
     {
       "name": "GoodIngot",
       "type": "item",
-      "sortid": 29,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -447,7 +447,7 @@
     {
       "name": "GoodSword",
       "type": "tool",
-      "sortid": 29,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -456,7 +456,7 @@
     {
       "name": "SoulShard",
       "type": "item",
-      "sortid": 30,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -465,7 +465,7 @@
     {
       "name": "GoodSwordLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 30,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -482,7 +482,7 @@
     {
       "name": "DarkSoulShard",
       "type": "item",
-      "sortid": 31,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -491,7 +491,7 @@
     {
       "name": "DarkIngot",
       "type": "item",
-      "sortid": 32,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -500,7 +500,7 @@
     {
       "name": "DarkSword",
       "type": "tool",
-      "sortid": 33,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -509,7 +509,7 @@
     {
       "name": "DarkSwordLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 34,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -526,7 +526,7 @@
     {
       "name": "ShurikenOfLight",
       "type": "gun",
-      "sortid": 35,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -535,7 +535,7 @@
     {
       "name": "ShurikenOfDark",
       "type": "gun",
-      "sortid": 36,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -544,7 +544,7 @@
     {
       "name": "MysteryCreeper",
       "type": "mob",
-      "sortid": 37,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -553,7 +553,7 @@
     {
       "name": "CleanserGunRangedItemUsed",
       "type": "procedure",
-      "sortid": 38,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -574,7 +574,7 @@
     {
       "name": "CleanserGun",
       "type": "gun",
-      "sortid": 38,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -583,7 +583,7 @@
     {
       "name": "Cleanser",
       "type": "mob",
-      "sortid": 39,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -592,7 +592,7 @@
     {
       "name": "Boof",
       "type": "procedure",
-      "sortid": 40,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -613,7 +613,7 @@
     {
       "name": "HammerOfFate",
       "type": "item",
-      "sortid": 41,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -622,7 +622,7 @@
     {
       "name": "RangedBoof",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -655,7 +655,7 @@
     {
       "name": "MagicHammer",
       "type": "gun",
-      "sortid": 42,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -664,7 +664,7 @@
     {
       "name": "MagicHammerBulletHitsBlock",
       "type": "procedure",
-      "sortid": 43,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -693,7 +693,7 @@
     {
       "name": "Jeff",
       "type": "mob",
-      "sortid": 44,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -702,7 +702,7 @@
     {
       "name": "JeffPhase2",
       "type": "mob",
-      "sortid": 45,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -711,7 +711,7 @@
     {
       "name": "JeffPhase3",
       "type": "mob",
-      "sortid": 46,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -720,7 +720,7 @@
     {
       "name": "JeffArm",
       "type": "mob",
-      "sortid": 47,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -729,7 +729,7 @@
     {
       "name": "JeffEntityDies",
       "type": "procedure",
-      "sortid": 48,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -758,7 +758,7 @@
     {
       "name": "JeffPhase2EntityDies",
       "type": "procedure",
-      "sortid": 49,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -787,7 +787,7 @@
     {
       "name": "JeffStatue",
       "type": "block",
-      "sortid": 50,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -796,7 +796,7 @@
     {
       "name": "GlukoMushroomFoodEaten",
       "type": "procedure",
-      "sortid": 51,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -825,7 +825,7 @@
     {
       "name": "GlukoMushroom",
       "type": "food",
-      "sortid": 51,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -834,7 +834,7 @@
     {
       "name": "BadTrip",
       "type": "achievement",
-      "sortid": 52,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -843,7 +843,7 @@
     {
       "name": "GhostMagicalTombstoneUpdateTick",
       "type": "procedure",
-      "sortid": 54,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -872,7 +872,7 @@
     {
       "name": "MagicalTombstoneOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 55,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -901,7 +901,7 @@
     {
       "name": "AcidUpdateTick",
       "type": "procedure",
-      "sortid": 56,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -930,7 +930,7 @@
     {
       "name": "AcidMobplayerCollidesBlock",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -947,7 +947,7 @@
     {
       "name": "AcidBlockAdded",
       "type": "procedure",
-      "sortid": 58,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -976,7 +976,7 @@
     {
       "name": "CreeperSearchAmulet",
       "type": "item",
-      "sortid": 59,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -985,7 +985,7 @@
     {
       "name": "CreeperSearchAmuletItemInInventoryTick",
       "type": "procedure",
-      "sortid": 60,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1014,7 +1014,7 @@
     {
       "name": "AmuletOfSalvation",
       "type": "item",
-      "sortid": 61,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1023,7 +1023,7 @@
     {
       "name": "AmuletOfSalvationActive",
       "type": "item",
-      "sortid": 62,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1032,7 +1032,7 @@
     {
       "name": "AmuletOfSalvationActiveItemInInventoryTick",
       "type": "procedure",
-      "sortid": 63,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1065,7 +1065,7 @@
     {
       "name": "AmuletOfSalvationRightClickedInAir",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1082,7 +1082,7 @@
     {
       "name": "AOSA",
       "type": "procedure",
-      "sortid": 65,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1099,7 +1099,7 @@
     {
       "name": "UngrowedCrystalLivingEntityIsHitWithItem",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1116,7 +1116,7 @@
     {
       "name": "UngrowedCrystal",
       "type": "item",
-      "sortid": 66,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1125,7 +1125,7 @@
     {
       "name": "BloodyCrystal",
       "type": "item",
-      "sortid": 67,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1134,7 +1134,7 @@
     {
       "name": "HeartiumDim",
       "type": "dimension",
-      "sortid": 68,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1143,7 +1143,7 @@
     {
       "name": "KillingVoidPortalBlock",
       "type": "block",
-      "sortid": 69,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1152,7 +1152,7 @@
     {
       "name": "KillingVoidStone",
       "type": "block",
-      "sortid": 70,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1161,7 +1161,7 @@
     {
       "name": "KillingVoid",
       "type": "biome",
-      "sortid": 71,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1170,7 +1170,7 @@
     {
       "name": "KillingVoidDim",
       "type": "dimension",
-      "sortid": 72,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1179,7 +1179,7 @@
     {
       "name": "UngrowedCrystalRightClickedInAir",
       "type": "procedure",
-      "sortid": 73,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1196,7 +1196,7 @@
     {
       "name": "Test",
       "type": "item",
-      "sortid": 74,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1205,7 +1205,7 @@
     {
       "name": "MineRush",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1234,7 +1234,7 @@
     {
       "name": "MineRushKey",
       "type": "keybind",
-      "sortid": 76,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1243,7 +1243,7 @@
     {
       "name": "StableSoul",
       "type": "item",
-      "sortid": 77,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1252,7 +1252,7 @@
     {
       "name": "SoulCatcherBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 78,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1273,7 +1273,7 @@
     {
       "name": "SoulCatcherWhileBulletFlyingTick",
       "type": "procedure",
-      "sortid": 79,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1302,7 +1302,7 @@
     {
       "name": "SoulCatcher",
       "type": "gun",
-      "sortid": 78,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1311,7 +1311,7 @@
     {
       "name": "MagicTombstone",
       "type": "block",
-      "sortid": 80,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1320,7 +1320,7 @@
     {
       "name": "GHOSTmAGICALtOMBSTONE",
       "type": "block",
-      "sortid": 81,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1329,7 +1329,7 @@
     {
       "name": "KamikazePlayerCollidesWithThisEntity",
       "type": "procedure",
-      "sortid": 82,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1358,7 +1358,7 @@
     {
       "name": "Kamikaze",
       "type": "mob",
-      "sortid": 82,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1367,7 +1367,7 @@
     {
       "name": "FloveryOfNether",
       "type": "biome",
-      "sortid": 83,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1376,7 +1376,7 @@
     {
       "name": "ColosusHeartBulletHitsBlock",
       "type": "procedure",
-      "sortid": 84,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1405,7 +1405,7 @@
     {
       "name": "ColosusHeartBulletHitsPlayer",
       "type": "procedure",
-      "sortid": 85,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1426,7 +1426,7 @@
     {
       "name": "ColosusHeart",
       "type": "gun",
-      "sortid": 84,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1435,7 +1435,7 @@
     {
       "name": "BloodBladeRightClickedOnBlock",
       "type": "procedure",
-      "sortid": 86,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1452,7 +1452,7 @@
     {
       "name": "BloodBlade",
       "type": "tool",
-      "sortid": 86,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1461,7 +1461,7 @@
     {
       "name": "BloodBladeClosedRightClickedOnBlock",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1478,7 +1478,7 @@
     {
       "name": "BloodBladeClosed",
       "type": "item",
-      "sortid": 87,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1487,7 +1487,7 @@
     {
       "name": "Spit",
       "type": "procedure",
-      "sortid": 88,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1516,7 +1516,7 @@
     {
       "name": "SpitKeybind",
       "type": "keybind",
-      "sortid": 89,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1525,7 +1525,7 @@
     {
       "name": "DashUpdateTick",
       "type": "procedure",
-      "sortid": 90,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1542,7 +1542,7 @@
     {
       "name": "Entia",
       "type": "dimension",
-      "sortid": 91,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1551,7 +1551,7 @@
     {
       "name": "GammaStableSoul",
       "type": "recipe",
-      "sortid": 92,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1560,7 +1560,7 @@
     {
       "name": "MagicQuartzGeneratorCraft",
       "type": "recipe",
-      "sortid": 93,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1569,7 +1569,7 @@
     {
       "name": "MagicaTabletCraft",
       "type": "recipe",
-      "sortid": 94,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1578,7 +1578,7 @@
     {
       "name": "MagicaFurnaceCraft",
       "type": "recipe",
-      "sortid": 95,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1587,7 +1587,7 @@
     {
       "name": "MagicQuartzBlockRecipe",
       "type": "recipe",
-      "sortid": 96,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1596,7 +1596,7 @@
     {
       "name": "HeartiumPortalBlockCraft",
       "type": "recipe",
-      "sortid": 97,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1605,7 +1605,7 @@
     {
       "name": "MagicaWandCraft",
       "type": "recipe",
-      "sortid": 98,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1614,7 +1614,7 @@
     {
       "name": "GoodIngotCraft",
       "type": "recipe",
-      "sortid": 99,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1623,7 +1623,7 @@
     {
       "name": "DarkIngotCraft0",
       "type": "recipe",
-      "sortid": 100,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1632,7 +1632,7 @@
     {
       "name": "DarkIngotCraft1",
       "type": "recipe",
-      "sortid": 101,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1641,7 +1641,7 @@
     {
       "name": "BloodEnchant",
       "type": "enchantment",
-      "sortid": 102,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1650,7 +1650,7 @@
     {
       "name": "Magica",
       "type": "tab",
-      "sortid": 103,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1659,7 +1659,7 @@
     {
       "name": "SoulSplitter",
       "type": "enchantment",
-      "sortid": 104,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1668,7 +1668,7 @@
     {
       "name": "Ent",
       "type": "mob",
-      "sortid": 105,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1677,7 +1677,7 @@
     {
       "name": "HyperEnt",
       "type": "mob",
-      "sortid": 106,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1686,7 +1686,7 @@
     {
       "name": "EntiaBiome",
       "type": "biome",
-      "sortid": 107,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1695,7 +1695,7 @@
     {
       "name": "OldVillagerStatue",
       "type": "structure",
-      "sortid": 108,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1704,7 +1704,7 @@
     {
       "name": "RuneOfPowerOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 109,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1737,7 +1737,7 @@
     {
       "name": "RuneOfPower",
       "type": "block",
-      "sortid": 109,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1746,7 +1746,7 @@
     {
       "name": "Data",
       "type": "function",
-      "sortid": 110,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1755,7 +1755,7 @@
     {
       "name": "RunicAltar",
       "type": "structure",
-      "sortid": 111,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1764,7 +1764,7 @@
     {
       "name": "ZUGURUKGUI",
       "type": "gui",
-      "sortid": 112,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1773,7 +1773,7 @@
     {
       "name": "ZugurukTrade",
       "type": "procedure",
-      "sortid": 113,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1806,7 +1806,7 @@
     {
       "name": "Zuguruk",
       "type": "mob",
-      "sortid": 114,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1815,7 +1815,7 @@
     {
       "name": "GloriousRoll",
       "type": "item",
-      "sortid": 115,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1824,7 +1824,7 @@
     {
       "name": "Octospider",
       "type": "mob",
-      "sortid": 116,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1833,7 +1833,7 @@
     {
       "name": "XpReaperOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 117,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1862,7 +1862,7 @@
     {
       "name": "XpReaper",
       "type": "block",
-      "sortid": 117,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1871,7 +1871,7 @@
     {
       "name": "Korriban",
       "type": "biome",
-      "sortid": 118,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1880,7 +1880,7 @@
     {
       "name": "CosmoportCarribanOnStructureInstanceGenerated",
       "type": "procedure",
-      "sortid": 119,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1909,7 +1909,7 @@
     {
       "name": "CosmoportCarriban",
       "type": "structure",
-      "sortid": 119,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1918,7 +1918,7 @@
     {
       "name": "Carribandim",
       "type": "dimension",
-      "sortid": 120,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1927,7 +1927,7 @@
     {
       "name": "CosmoportUnpacker",
       "type": "gun",
-      "sortid": 121,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1936,7 +1936,7 @@
     {
       "name": "CosmoportUnpackerBulletHitsBlock",
       "type": "procedure",
-      "sortid": 122,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1965,7 +1965,7 @@
     {
       "name": "Splitter",
       "type": "gui",
-      "sortid": 123,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1974,7 +1974,7 @@
     {
       "name": "Split",
       "type": "procedure",
-      "sortid": 124,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1995,7 +1995,7 @@
     {
       "name": "Split10",
       "type": "procedure",
-      "sortid": 125,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2016,7 +2016,7 @@
     {
       "name": "Split100",
       "type": "procedure",
-      "sortid": 126,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2037,7 +2037,7 @@
     {
       "name": "SplitterItem",
       "type": "item",
-      "sortid": 127,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2046,7 +2046,7 @@
     {
       "name": "CortosisIngot",
       "type": "item",
-      "sortid": 128,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2055,7 +2055,7 @@
     {
       "name": "CortosisOre",
       "type": "block",
-      "sortid": 129,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2064,7 +2064,7 @@
     {
       "name": "CortosisOreBlock",
       "type": "block",
-      "sortid": 130,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2073,7 +2073,7 @@
     {
       "name": "CortosisOreBlockRecipe",
       "type": "recipe",
-      "sortid": 131,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2082,7 +2082,7 @@
     {
       "name": "CortosisBlockOreRecipe",
       "type": "recipe",
-      "sortid": 132,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2091,7 +2091,7 @@
     {
       "name": "CortosisOreSmelting",
       "type": "recipe",
-      "sortid": 133,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2100,7 +2100,7 @@
     {
       "name": "CortosisPickaxe",
       "type": "tool",
-      "sortid": 134,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2109,7 +2109,7 @@
     {
       "name": "CortosisAxe",
       "type": "tool",
-      "sortid": 135,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2118,7 +2118,7 @@
     {
       "name": "CortosisSword",
       "type": "tool",
-      "sortid": 136,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2127,7 +2127,7 @@
     {
       "name": "CortosisShovel",
       "type": "tool",
-      "sortid": 137,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2136,7 +2136,7 @@
     {
       "name": "CortosisHoe",
       "type": "tool",
-      "sortid": 138,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2145,7 +2145,7 @@
     {
       "name": "CortosisPickaxeRecipe",
       "type": "recipe",
-      "sortid": 139,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2154,7 +2154,7 @@
     {
       "name": "CortosisAxeRecipe",
       "type": "recipe",
-      "sortid": 140,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2163,7 +2163,7 @@
     {
       "name": "CortosisSwordRecipe",
       "type": "recipe",
-      "sortid": 141,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2172,7 +2172,7 @@
     {
       "name": "CortosisShovelRecipe",
       "type": "recipe",
-      "sortid": 142,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2181,7 +2181,7 @@
     {
       "name": "CortosisHoeRecipe",
       "type": "recipe",
-      "sortid": 143,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2190,7 +2190,7 @@
     {
       "name": "CortosisArmor",
       "type": "armor",
-      "sortid": 144,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2205,7 +2205,7 @@
     {
       "name": "CortosisArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 145,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2214,7 +2214,7 @@
     {
       "name": "CortosisArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 146,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2223,7 +2223,7 @@
     {
       "name": "CortosisArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 147,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2232,7 +2232,7 @@
     {
       "name": "CortosisArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 148,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2241,7 +2241,7 @@
     {
       "name": "CortosisSwordRightClickedInAir",
       "type": "procedure",
-      "sortid": 149,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2266,7 +2266,7 @@
     {
       "name": "CortosisKatanaToolInHandTick",
       "type": "procedure",
-      "sortid": 150,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2283,7 +2283,7 @@
     {
       "name": "CortosisKatanaRightClickedOnBlock",
       "type": "procedure",
-      "sortid": 151,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2320,7 +2320,7 @@
     {
       "name": "CortosisKatana",
       "type": "tool",
-      "sortid": 150,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2329,7 +2329,7 @@
     {
       "name": "Nightmare",
       "type": "musicdisc",
-      "sortid": 152,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2338,7 +2338,7 @@
     {
       "name": "MagicQuartzItemInInventoryTick",
       "type": "procedure",
-      "sortid": 153,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2375,7 +2375,7 @@
     {
       "name": "LightGun",
       "type": "gun",
-      "sortid": 154,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2384,7 +2384,7 @@
     {
       "name": "RicoLightBulletBulletHitsLivingEntity",
       "type": "procedure",
-      "sortid": 155,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2405,7 +2405,7 @@
     {
       "name": "RicoLightBullet",
       "type": "gun",
-      "sortid": 155,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2414,7 +2414,7 @@
     {
       "name": "RicoLightBulletRangedItemUsed",
       "type": "procedure",
-      "sortid": 156,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2435,7 +2435,7 @@
     {
       "name": "BitNightmare",
       "type": "musicdisc",
-      "sortid": 157,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2444,7 +2444,7 @@
     {
       "name": "Craftnightmare",
       "type": "musicdisc",
-      "sortid": 158,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2453,7 +2453,7 @@
     {
       "name": "ChlorineMobplayerCollidesBlock",
       "type": "procedure",
-      "sortid": 159,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2470,7 +2470,7 @@
     {
       "name": "Chlorine",
       "type": "fluid",
-      "sortid": 159,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2479,7 +2479,7 @@
     {
       "name": "GeneratorUpdateTick",
       "type": "procedure",
-      "sortid": 160,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2508,7 +2508,7 @@
     {
       "name": "Generator",
       "type": "block",
-      "sortid": 160,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2517,7 +2517,7 @@
     {
       "name": "GeneratoeGui",
       "type": "gui",
-      "sortid": 161,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2526,7 +2526,7 @@
     {
       "name": "GeneratorStart",
       "type": "procedure",
-      "sortid": 162,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2555,7 +2555,7 @@
     {
       "name": "DraconicArmor",
       "type": "armor",
-      "sortid": 163,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2570,7 +2570,7 @@
     {
       "name": "ParallelWorld",
       "type": "dimension",
-      "sortid": 164,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2579,7 +2579,7 @@
     {
       "name": "UltimateRenamerGUI",
       "type": "gui",
-      "sortid": 165,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2588,7 +2588,7 @@
     {
       "name": "Rename",
       "type": "procedure",
-      "sortid": 166,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2609,7 +2609,7 @@
     {
       "name": "URItem",
       "type": "procedure",
-      "sortid": 167,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2642,7 +2642,7 @@
     {
       "name": "UltimateRenamer",
       "type": "block",
-      "sortid": 168,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2651,7 +2651,7 @@
     {
       "name": "HyperTowerRune",
       "type": "block",
-      "sortid": 169,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2660,7 +2660,7 @@
     {
       "name": "HyperTower",
       "type": "mob",
-      "sortid": 170,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2669,7 +2669,7 @@
     {
       "name": "HyperTowerRuneBlockAdded",
       "type": "procedure",
-      "sortid": 171,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2698,7 +2698,7 @@
     {
       "name": "HyperTowerRuneBlockDestroyedByExplosion",
       "type": "procedure",
-      "sortid": 172,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2727,7 +2727,7 @@
     {
       "name": "HyperthermiaOnPotionActiveTick",
       "type": "procedure",
-      "sortid": 173,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2744,7 +2744,7 @@
     {
       "name": "Hyperthermia",
       "type": "potion",
-      "sortid": 173,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2753,7 +2753,7 @@
     {
       "name": "TermometerWarm",
       "type": "item",
-      "sortid": 174,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2762,7 +2762,7 @@
     {
       "name": "TermometerCold",
       "type": "item",
-      "sortid": 175,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2771,7 +2771,7 @@
     {
       "name": "TermometerHot",
       "type": "item",
-      "sortid": 176,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2780,7 +2780,7 @@
     {
       "name": "TermometerWarmItemInInventoryTick",
       "type": "procedure",
-      "sortid": 177,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2813,7 +2813,7 @@
     {
       "name": "Coldrtermo",
       "type": "procedure",
-      "sortid": 178,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2846,7 +2846,7 @@
     {
       "name": "Hottermo",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2879,7 +2879,7 @@
     {
       "name": "Sausage",
       "type": "block",
-      "sortid": 180,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2888,7 +2888,7 @@
     {
       "name": "Sausagia",
       "type": "biome",
-      "sortid": 181,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2897,7 +2897,7 @@
     {
       "name": "SausagesDimension",
       "type": "dimension",
-      "sortid": 181,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2906,7 +2906,7 @@
     {
       "name": "SausageUpdateTick",
       "type": "procedure",
-      "sortid": 182,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2918,7 +2918,7 @@
     {
       "name": "EvilScull",
       "type": "mob",
-      "sortid": 183,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2927,7 +2927,7 @@
     {
       "name": "EndermanCultist",
       "type": "mob",
-      "sortid": 184,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2936,7 +2936,7 @@
     {
       "name": "EndermanCultistMagicBulletHitsPlayer",
       "type": "procedure",
-      "sortid": 185,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2965,7 +2965,7 @@
     {
       "name": "EndermanCultistMagic",
       "type": "gun",
-      "sortid": 185,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2974,7 +2974,7 @@
     {
       "name": "Spidercult",
       "type": "structure",
-      "sortid": 186,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2983,7 +2983,7 @@
     {
       "name": "Cult0",
       "type": "structure",
-      "sortid": 187,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2992,7 +2992,7 @@
     {
       "name": "SpiderCultist",
       "type": "mob",
-      "sortid": 188,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3001,7 +3001,7 @@
     {
       "name": "SpiderCultistWeaponBulletHitsPlayer",
       "type": "procedure",
-      "sortid": 189,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3034,7 +3034,7 @@
     {
       "name": "SpiderCultistWeaponBulletHitsBlock",
       "type": "procedure",
-      "sortid": 190,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3063,7 +3063,7 @@
     {
       "name": "SpiderCultistWeapon",
       "type": "gun",
-      "sortid": 189,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3072,7 +3072,7 @@
     {
       "name": "SpidercultOnStructureInstanceGenerated",
       "type": "procedure",
-      "sortid": 191,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3101,7 +3101,7 @@
     {
       "name": "SpawnspidercultCommandExecuted",
       "type": "procedure",
-      "sortid": 192,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3130,7 +3130,7 @@
     {
       "name": "Spawnspidercult",
       "type": "command",
-      "sortid": 192,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3139,7 +3139,7 @@
     {
       "name": "BloodyArmor",
       "type": "armor",
-      "sortid": 193,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3154,7 +3154,7 @@
     {
       "name": "BloodyArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 194,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3163,7 +3163,7 @@
     {
       "name": "BloodyArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 195,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3172,7 +3172,7 @@
     {
       "name": "BloodyArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 196,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3181,7 +3181,7 @@
     {
       "name": "BloodyArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 197,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3190,7 +3190,7 @@
     {
       "name": "BloodyArmorBodyTickEvent",
       "type": "procedure",
-      "sortid": 198,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3207,7 +3207,7 @@
     {
       "name": "DemonicFurnace",
       "type": "block",
-      "sortid": 199,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3216,7 +3216,7 @@
     {
       "name": "DemonicFurnaceGUI",
       "type": "gui",
-      "sortid": 200,
+      "sortid": 299,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -3225,7 +3225,7 @@
     {
       "name": "DemonicFurnaceUpdateTick",
       "type": "procedure",
-      "sortid": 201,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3254,7 +3254,7 @@
     {
       "name": "SpiderGolem",
       "type": "mob",
-      "sortid": 202,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3263,7 +3263,7 @@
     {
       "name": "Book",
       "type": "function",
-      "sortid": 203,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3272,7 +3272,7 @@
     {
       "name": "Start",
       "type": "tag",
-      "sortid": 204,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3281,7 +3281,7 @@
     {
       "name": "Riba",
       "type": "loottable",
-      "sortid": 205,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3290,7 +3290,7 @@
     {
       "name": "MagicaConfigPleaseCommandExecuted",
       "type": "procedure",
-      "sortid": 206,
+      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3302,7 +3302,7 @@
     {
       "name": "MagicaConfigPlease",
       "type": "command",
-      "sortid": 206,
+      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3311,7 +3311,7 @@
     {
       "name": "MagicaIcon",
       "type": "item",
-      "sortid": 207,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3320,7 +3320,7 @@
     {
       "name": "VoidAvatar",
       "type": "mob",
-      "sortid": 208,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3329,7 +3329,7 @@
     {
       "name": "VoidAvatarStage2",
       "type": "mob",
-      "sortid": 209,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3338,7 +3338,7 @@
     {
       "name": "VoidAvatarEntityDies",
       "type": "procedure",
-      "sortid": 210,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3367,7 +3367,7 @@
     {
       "name": "VoidAvatarStage3",
       "type": "mob",
-      "sortid": 211,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3376,7 +3376,7 @@
     {
       "name": "VoidAvatarStage2EntityDies",
       "type": "procedure",
-      "sortid": 212,
+      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3405,7 +3405,7 @@
     {
       "name": "FriendlyVoidAvatar",
       "type": "mob",
-      "sortid": 213,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3414,7 +3414,7 @@
     {
       "name": "StrangeCubeRightClickedInAir",
       "type": "procedure",
-      "sortid": 214,
+      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3447,7 +3447,7 @@
     {
       "name": "StrangeCube",
       "type": "item",
-      "sortid": 214,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3456,7 +3456,7 @@
     {
       "name": "VoidedEyeRightClickedInAir",
       "type": "procedure",
-      "sortid": 215,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3489,7 +3489,7 @@
     {
       "name": "VoidedEye",
       "type": "item",
-      "sortid": 215,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3498,7 +3498,7 @@
     {
       "name": "DimensionIDCommandExecuted",
       "type": "procedure",
-      "sortid": 216,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3515,7 +3515,7 @@
     {
       "name": "DimensionID",
       "type": "command",
-      "sortid": 216,
+      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3524,7 +3524,7 @@
     {
       "name": "MagicalAtrophyOnPotionActiveTick",
       "type": "procedure",
-      "sortid": 217,
+      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3545,7 +3545,7 @@
     {
       "name": "MagicalAtrophy",
       "type": "potion",
-      "sortid": 217,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3554,7 +3554,7 @@
     {
       "name": "YsalamiriOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 218,
+      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3587,7 +3587,7 @@
     {
       "name": "Ysalamiri",
       "type": "mob",
-      "sortid": 218,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3596,7 +3596,7 @@
     {
       "name": "PureJungleLeavesFoodEaten",
       "type": "procedure",
-      "sortid": 219,
+      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3613,7 +3613,7 @@
     {
       "name": "PureJungleLeaves",
       "type": "food",
-      "sortid": 219,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3622,7 +3622,7 @@
     {
       "name": "Vornskr",
       "type": "mob",
-      "sortid": 220,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3631,7 +3631,7 @@
     {
       "name": "VornskrParalyticFoodEaten",
       "type": "procedure",
-      "sortid": 221,
+      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3648,7 +3648,7 @@
     {
       "name": "VornskrParalytic",
       "type": "food",
-      "sortid": 221,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3657,7 +3657,7 @@
     {
       "name": "VornskrRightClickedOnEntity",
       "type": "procedure",
-      "sortid": 222,
+      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3674,7 +3674,7 @@
     {
       "name": "ParalyticDart",
       "type": "item",
-      "sortid": 223,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3683,7 +3683,7 @@
     {
       "name": "DartGun",
       "type": "gun",
-      "sortid": 224,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3692,7 +3692,7 @@
     {
       "name": "PyroCrusader",
       "type": "mob",
-      "sortid": 225,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3701,7 +3701,7 @@
     {
       "name": "Quartz",
       "type": "tag",
-      "sortid": 226,
+      "sortid": 319,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3710,7 +3710,7 @@
     {
       "name": "VillagerLOL",
       "type": "mob",
-      "sortid": 227,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3719,7 +3719,7 @@
     {
       "name": "MagicaVillager",
       "type": "gui",
-      "sortid": 228,
+      "sortid": 320,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3728,7 +3728,7 @@
     {
       "name": "Selltomagica",
       "type": "procedure",
-      "sortid": 229,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3749,7 +3749,7 @@
     {
       "name": "TestingMagicaSell",
       "type": "procedure",
-      "sortid": 230,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3766,7 +3766,7 @@
     {
       "name": "ItemsForSell",
       "type": "item",
-      "sortid": 231,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3775,7 +3775,7 @@
     {
       "name": "MagicaSellX",
       "type": "procedure",
-      "sortid": 232,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3792,7 +3792,7 @@
     {
       "name": "ReturnerBlockOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 233,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3809,7 +3809,7 @@
     {
       "name": "ReturnerBlock",
       "type": "block",
-      "sortid": 233,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3818,7 +3818,7 @@
     {
       "name": "HyperPortallerRightClickedInAir",
       "type": "procedure",
-      "sortid": 234,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3851,7 +3851,7 @@
     {
       "name": "HyperPortaller",
       "type": "item",
-      "sortid": 234,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3860,7 +3860,7 @@
     {
       "name": "ReturnerBlockBlockAdded",
       "type": "procedure",
-      "sortid": 235,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3889,7 +3889,7 @@
     {
       "name": "Started",
       "type": "procedure",
-      "sortid": 237,
+      "sortid": 328,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3906,7 +3906,7 @@
     {
       "name": "YsalamiriTree",
       "type": "structure",
-      "sortid": 238,
+      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3915,7 +3915,7 @@
     {
       "name": "SausageOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 239,
+      "sortid": 330,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3948,7 +3948,7 @@
     {
       "name": "TestEvokerOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 240,
+      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3965,7 +3965,7 @@
     {
       "name": "WildForest",
       "type": "biome",
-      "sortid": 241,
+      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3974,7 +3974,7 @@
     {
       "name": "WildForestGreenVine",
       "type": "block",
-      "sortid": 242,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3983,7 +3983,7 @@
     {
       "name": "WildForestLightGreenVine",
       "type": "block",
-      "sortid": 243,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3992,7 +3992,7 @@
     {
       "name": "DeadWildForestVine",
       "type": "block",
-      "sortid": 244,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4001,7 +4001,7 @@
     {
       "name": "DeadWildForestLightVine",
       "type": "block",
-      "sortid": 245,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4010,7 +4010,7 @@
     {
       "name": "WildForestGreenVineUpdateTick",
       "type": "procedure",
-      "sortid": 246,
+      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4039,7 +4039,7 @@
     {
       "name": "WFLGTick",
       "type": "procedure",
-      "sortid": 247,
+      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4068,7 +4068,7 @@
     {
       "name": "WildForestHeart",
       "type": "mob",
-      "sortid": 248,
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4077,7 +4077,7 @@
     {
       "name": "WildForestHeartEntityDies",
       "type": "procedure",
-      "sortid": 249,
+      "sortid": 336,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4094,7 +4094,7 @@
     {
       "name": "ReviveWildForestCommandExecuted",
       "type": "procedure",
-      "sortid": 250,
+      "sortid": 337,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4111,7 +4111,7 @@
     {
       "name": "ReviveWildForest",
       "type": "command",
-      "sortid": 250,
+      "sortid": 338,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4120,7 +4120,7 @@
     {
       "name": "VillagerLOLOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 251,
+      "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4153,7 +4153,7 @@
     {
       "name": "WildForestHeartStructure",
       "type": "structure",
-      "sortid": 252,
+      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4162,7 +4162,7 @@
     {
       "name": "WildForestDim",
       "type": "dimension",
-      "sortid": 253,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4171,7 +4171,7 @@
     {
       "name": "StartMessageMagica",
       "type": "procedure",
-      "sortid": 254,
+      "sortid": 341,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4183,7 +4183,7 @@
     {
       "name": "Setpaindim",
       "type": "command",
-      "sortid": 255,
+      "sortid": 342,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4192,7 +4192,7 @@
     {
       "name": "CorruptionUpdateTick",
       "type": "procedure",
-      "sortid": 256,
+      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4221,7 +4221,7 @@
     {
       "name": "Corruption",
       "type": "block",
-      "sortid": 256,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4230,7 +4230,7 @@
     {
       "name": "AcWaveTick",
       "type": "procedure",
-      "sortid": 257,
+      "sortid": 344,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4259,7 +4259,7 @@
     {
       "name": "AntiCorruptWave",
       "type": "block",
-      "sortid": 257,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4268,7 +4268,7 @@
     {
       "name": "TranslocationChestGUI",
       "type": "gui",
-      "sortid": 258,
+      "sortid": 345,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4277,7 +4277,7 @@
     {
       "name": "TranslocationChest",
       "type": "block",
-      "sortid": 259,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4286,7 +4286,7 @@
     {
       "name": "TrChestRecipe",
       "type": "recipe",
-      "sortid": 260,
+      "sortid": 346,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4295,7 +4295,7 @@
     {
       "name": "BouncySlimeBlockEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 261,
+      "sortid": 347,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4312,7 +4312,7 @@
     {
       "name": "BouncySlimeBlock",
       "type": "block",
-      "sortid": 261,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4321,7 +4321,7 @@
     {
       "name": "BouncySlimeBlockEntityCollidesInTheBlock",
       "type": "procedure",
-      "sortid": 262,
+      "sortid": 348,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4338,7 +4338,7 @@
     {
       "name": "FattyCattyArmor",
       "type": "armor",
-      "sortid": 263,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4353,7 +4353,7 @@
     {
       "name": "ExoSkeletonBodyTickEvent",
       "type": "procedure",
-      "sortid": 264,
+      "sortid": 349,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4386,7 +4386,7 @@
     {
       "name": "ExoSkeleton",
       "type": "armor",
-      "sortid": 264,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4401,7 +4401,7 @@
     {
       "name": "ExoSkeletonBootsTickEvent",
       "type": "procedure",
-      "sortid": 265,
+      "sortid": 350,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4418,7 +4418,7 @@
     {
       "name": "ExoSkeletonLeggingsTickEvent",
       "type": "procedure",
-      "sortid": 266,
+      "sortid": 351,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4435,7 +4435,7 @@
     {
       "name": "DimonArmor",
       "type": "armor",
-      "sortid": 267,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4450,7 +4450,7 @@
     {
       "name": "VampireSwordLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 268,
+      "sortid": 352,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4467,7 +4467,7 @@
     {
       "name": "VampireSword",
       "type": "tool",
-      "sortid": 268,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4476,7 +4476,7 @@
     {
       "name": "Altar",
       "type": "block",
-      "sortid": 269,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4485,7 +4485,7 @@
     {
       "name": "AltarUpdateTick",
       "type": "procedure",
-      "sortid": 270,
+      "sortid": 353,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4514,7 +4514,7 @@
     {
       "name": "LazyMethod",
       "type": "achievement",
-      "sortid": 271,
+      "sortid": 354,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4523,7 +4523,7 @@
     {
       "name": "MageOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 272,
+      "sortid": 355,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4556,7 +4556,7 @@
     {
       "name": "Mage",
       "type": "mob",
-      "sortid": 272,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4565,7 +4565,7 @@
     {
       "name": "EssentiaTable",
       "type": "gui",
-      "sortid": 273,
+      "sortid": 356,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4574,7 +4574,7 @@
     {
       "name": "Terra",
       "type": "tag",
-      "sortid": 274,
+      "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4583,7 +4583,7 @@
     {
       "name": "TransmutationTable",
       "type": "gui",
-      "sortid": 275,
+      "sortid": 358,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4592,7 +4592,7 @@
     {
       "name": "ResToVita",
       "type": "procedure",
-      "sortid": 276,
+      "sortid": 359,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4609,7 +4609,7 @@
     {
       "name": "ResToIgnis",
       "type": "procedure",
-      "sortid": 277,
+      "sortid": 360,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4626,7 +4626,7 @@
     {
       "name": "ResToTerra",
       "type": "procedure",
-      "sortid": 278,
+      "sortid": 361,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4643,7 +4643,7 @@
     {
       "name": "ResToAqua",
       "type": "procedure",
-      "sortid": 279,
+      "sortid": 362,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4660,7 +4660,7 @@
     {
       "name": "ResAdd",
       "type": "procedure",
-      "sortid": 280,
+      "sortid": 363,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4693,7 +4693,7 @@
     {
       "name": "EssentiaTableBlockOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 281,
+      "sortid": 364,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4726,7 +4726,7 @@
     {
       "name": "EssentiaTableBlock",
       "type": "block",
-      "sortid": 281,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4735,7 +4735,7 @@
     {
       "name": "InfusionTable",
       "type": "block",
-      "sortid": 282,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4744,7 +4744,7 @@
     {
       "name": "InfusionTableGUI",
       "type": "gui",
-      "sortid": 283,
+      "sortid": 365,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4753,7 +4753,7 @@
     {
       "name": "RitualTable",
       "type": "procedure",
-      "sortid": 284,
+      "sortid": 366,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4786,7 +4786,7 @@
     {
       "name": "FireBall",
       "type": "gun",
-      "sortid": 285,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4795,7 +4795,7 @@
     {
       "name": "SetmagicaessenceCommandExecuted",
       "type": "procedure",
-      "sortid": 286,
+      "sortid": 367,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4816,7 +4816,7 @@
     {
       "name": "Setmagicaessence",
       "type": "command",
-      "sortid": 286,
+      "sortid": 368,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4825,7 +4825,7 @@
     {
       "name": "HTdummy",
       "type": "mob",
-      "sortid": 287,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4834,7 +4834,7 @@
     {
       "name": "JeiPlugin",
       "type": "code",
-      "sortid": 288,
+      "sortid": 369,
       "compiles": true,
       "locked_code": true,
       "ids": {},
@@ -4843,7 +4843,7 @@
     {
       "name": "Sauslime",
       "type": "mob",
-      "sortid": 289,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4852,7 +4852,7 @@
     {
       "name": "Sslime",
       "type": "loottable",
-      "sortid": 290,
+      "sortid": 370,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4861,7 +4861,7 @@
     {
       "name": "Soul",
       "type": "procedure",
-      "sortid": 291,
+      "sortid": 371,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4894,7 +4894,7 @@
     {
       "name": "DropAll",
       "type": "procedure",
-      "sortid": 292,
+      "sortid": 372,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4927,7 +4927,7 @@
     {
       "name": "DropAllCommand",
       "type": "command",
-      "sortid": 293,
+      "sortid": 373,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4936,7 +4936,7 @@
     {
       "name": "CrystaliumEntity",
       "type": "mob",
-      "sortid": 294,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4945,7 +4945,7 @@
     {
       "name": "CrystaliumNull",
       "type": "procedure",
-      "sortid": 295,
+      "sortid": 374,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4963,7 +4963,7 @@
     {
       "name": "CrystaliumEntityRightClickedOnEntity",
       "type": "procedure",
-      "sortid": 296,
+      "sortid": 375,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4996,7 +4996,7 @@
     {
       "name": "CrystaliumColumnBlockAdded",
       "type": "procedure",
-      "sortid": 297,
+      "sortid": 376,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5025,7 +5025,7 @@
     {
       "name": "CrystaliumColumn",
       "type": "block",
-      "sortid": 297,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5034,7 +5034,7 @@
     {
       "name": "CrystaliumItemInHandTick",
       "type": "procedure",
-      "sortid": 298,
+      "sortid": 377,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5051,7 +5051,7 @@
     {
       "name": "Crystalium",
       "type": "item",
-      "sortid": 298,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5060,7 +5060,7 @@
     {
       "name": "EvilRuneEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 299,
+      "sortid": 378,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5093,7 +5093,7 @@
     {
       "name": "EvilRune",
       "type": "block",
-      "sortid": 299,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5102,7 +5102,7 @@
     {
       "name": "Rune",
       "type": "block",
-      "sortid": 300,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5111,7 +5111,7 @@
     {
       "name": "GoodRune",
       "type": "block",
-      "sortid": 301,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5120,7 +5120,7 @@
     {
       "name": "GoodRuneEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 302,
+      "sortid": 379,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5151,27 +5151,9 @@
       }
     },
     {
-      "name": "Terraria",
-      "type": "painting",
-      "sortid": 303,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "terraria"
-    },
-    {
-      "name": "Terraria1",
-      "type": "painting",
-      "sortid": 304,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "terraria_1"
-    },
-    {
       "name": "EvilSquid",
       "type": "mob",
-      "sortid": 305,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5180,7 +5162,7 @@
     {
       "name": "EvilSquidOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 306,
+      "sortid": 382,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5209,7 +5191,7 @@
     {
       "name": "ActivateMagicaSoulCommandExecuted",
       "type": "procedure",
-      "sortid": 307,
+      "sortid": 383,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5226,7 +5208,7 @@
     {
       "name": "Avanta",
       "type": "plant",
-      "sortid": 308,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5235,7 +5217,7 @@
     {
       "name": "AvantaCigarCanUseRangedItem",
       "type": "procedure",
-      "sortid": 309,
+      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5257,7 +5239,7 @@
     {
       "name": "AvantaCigar",
       "type": "gun",
-      "sortid": 309,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5266,7 +5248,7 @@
     {
       "name": "AvantaCigarRangedItemUsed",
       "type": "procedure",
-      "sortid": 310,
+      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5283,7 +5265,7 @@
     {
       "name": "AvantaCraft",
       "type": "recipe",
-      "sortid": 311,
+      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5292,7 +5274,7 @@
     {
       "name": "Cimex",
       "type": "mob",
-      "sortid": 312,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5301,7 +5283,7 @@
     {
       "name": "CimexHoneycomb",
       "type": "block",
-      "sortid": 313,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5310,7 +5292,7 @@
     {
       "name": "Cmcomb",
       "type": "structure",
-      "sortid": 314,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5319,7 +5301,7 @@
     {
       "name": "CmcombOnStructureInstanceGenerated",
       "type": "procedure",
-      "sortid": 315,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5348,7 +5330,7 @@
     {
       "name": "VoidKillerOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 316,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5365,7 +5347,7 @@
     {
       "name": "VoidKiller",
       "type": "mob",
-      "sortid": 316,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5374,7 +5356,7 @@
     {
       "name": "VKillerCheatWhileBulletFlyingTick",
       "type": "procedure",
-      "sortid": 317,
+      "sortid": 390,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5403,7 +5385,7 @@
     {
       "name": "VKillerCheatBulletHitsBlock",
       "type": "procedure",
-      "sortid": 318,
+      "sortid": 391,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5432,7 +5414,7 @@
     {
       "name": "VKillerCheat",
       "type": "gun",
-      "sortid": 317,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5441,7 +5423,7 @@
     {
       "name": "RedCimexHoneycomb",
       "type": "block",
-      "sortid": 319,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5450,7 +5432,7 @@
     {
       "name": "ExoSkeletonLegs",
       "type": "armor",
-      "sortid": 320,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5465,7 +5447,7 @@
     {
       "name": "MagicExoSkeletonLegs",
       "type": "armor",
-      "sortid": 321,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5480,7 +5462,7 @@
     {
       "name": "ToolDrainer",
       "type": "block",
-      "sortid": 322,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5489,7 +5471,7 @@
     {
       "name": "ToolDrainerGUI",
       "type": "gui",
-      "sortid": 323,
+      "sortid": 392,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5498,7 +5480,7 @@
     {
       "name": "ToolDrainerUpdateTick",
       "type": "procedure",
-      "sortid": 324,
+      "sortid": 393,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5531,7 +5513,7 @@
     {
       "name": "Eplus",
       "type": "procedure",
-      "sortid": 325,
+      "sortid": 394,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5560,7 +5542,7 @@
     {
       "name": "UnsignedAmuletItemInInventoryTick",
       "type": "procedure",
-      "sortid": 326,
+      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5581,7 +5563,7 @@
     {
       "name": "UnsignedAmulet",
       "type": "item",
-      "sortid": 326,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5590,7 +5572,7 @@
     {
       "name": "FluidPumpBlockAdded",
       "type": "procedure",
-      "sortid": 327,
+      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5619,7 +5601,7 @@
     {
       "name": "FluidPumpUpdateTick",
       "type": "procedure",
-      "sortid": 328,
+      "sortid": 397,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5648,7 +5630,7 @@
     {
       "name": "FluidPump",
       "type": "block",
-      "sortid": 327,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5657,7 +5639,7 @@
     {
       "name": "VampireSwordRightClickedInAir",
       "type": "procedure",
-      "sortid": 329,
+      "sortid": 398,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5678,7 +5660,7 @@
     {
       "name": "BlockAnalyserRightClickedOnBlock",
       "type": "procedure",
-      "sortid": 330,
+      "sortid": 399,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5705,27 +5687,9 @@
       }
     },
     {
-      "name": "BlockAnalyser",
-      "type": "gun",
-      "sortid": 331,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "block_analyser"
-    },
-    {
-      "name": "RainbowTextures",
-      "type": "particle",
-      "sortid": 332,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rainbow_textures"
-    },
-    {
       "name": "Potion",
       "type": "procedure",
-      "sortid": 333,
+      "sortid": 401,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5746,7 +5710,7 @@
     {
       "name": "AntiArrowAmuletItemInHandTick",
       "type": "procedure",
-      "sortid": 334,
+      "sortid": 402,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5775,7 +5739,7 @@
     {
       "name": "AntiArrowAmulet",
       "type": "item",
-      "sortid": 334,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5784,7 +5748,7 @@
     {
       "name": "ArrowGrabbingPotionOnPotionActiveTick",
       "type": "procedure",
-      "sortid": 335,
+      "sortid": 403,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5817,7 +5781,7 @@
     {
       "name": "ArrowGrabbingPotion",
       "type": "potion",
-      "sortid": 335,
+      "sortid": 404,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5826,7 +5790,7 @@
     {
       "name": "EnchantedClayOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 336,
+      "sortid": 405,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5855,7 +5819,7 @@
     {
       "name": "EnchantedClay",
       "type": "block",
-      "sortid": 336,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5864,7 +5828,7 @@
     {
       "name": "EnchantedGolem",
       "type": "mob",
-      "sortid": 337,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5873,7 +5837,7 @@
     {
       "name": "GolemsHeart",
       "type": "item",
-      "sortid": 338,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5882,7 +5846,7 @@
     {
       "name": "GodSpider",
       "type": "mob",
-      "sortid": 339,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5891,7 +5855,7 @@
     {
       "name": "GodSpiderWeapon",
       "type": "gun",
-      "sortid": 340,
+      "sortid": 406,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5900,7 +5864,7 @@
     {
       "name": "GodSpiderWeaponBulletHitsBlock",
       "type": "procedure",
-      "sortid": 341,
+      "sortid": 407,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5929,7 +5893,7 @@
     {
       "name": "SpiderCultistEntityDies",
       "type": "procedure",
-      "sortid": 342,
+      "sortid": 408,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5958,7 +5922,7 @@
     {
       "name": "GodSpiderEntityDies",
       "type": "procedure",
-      "sortid": 343,
+      "sortid": 409,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5983,6 +5947,1009 @@
           }
         ]
       }
+    },
+    {
+      "name": "EyeBlockOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eye_block_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EyeBlock",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eye_block"
+    },
+    {
+      "name": "BurnedDirt",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burned_dirt"
+    },
+    {
+      "name": "BurnedGrass",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burned_grass"
+    },
+    {
+      "name": "BurnedStone",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burned_stone"
+    },
+    {
+      "name": "Pain",
+      "type": "biome",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pain"
+    },
+    {
+      "name": "PainDimension",
+      "type": "dimension",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pain_dimension"
+    },
+    {
+      "name": "EvilEye",
+      "type": "mob",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evil_eye"
+    },
+    {
+      "name": "PainDimensionPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pain_dimension_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PainDimensionPlayerLeavesDimension",
+      "type": "procedure",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pain_dimension_player_leaves_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tesseract",
+      "type": "item",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tesseract"
+    },
+    {
+      "name": "Pentaract",
+      "type": "item",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pentaract"
+    },
+    {
+      "name": "GHRecipr",
+      "type": "recipe",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gh_recipr"
+    },
+    {
+      "name": "HarpoonBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "harpoon_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harpoon",
+      "type": "gun",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "harpoon"
+    },
+    {
+      "name": "PlsvectortoCommandExecuted",
+      "type": "procedure",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plsvectorto_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Plsvectorto",
+      "type": "command",
+      "sortid": 417,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plsvectorto"
+    },
+    {
+      "name": "ExploringLobby",
+      "type": "achievement",
+      "sortid": 418,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "exploring_lobby"
+    },
+    {
+      "name": "SandCoffinBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_coffin_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SandCoffin",
+      "type": "gun",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_coffin"
+    },
+    {
+      "name": "EnergyCharge",
+      "type": "item",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_charge"
+    },
+    {
+      "name": "SandCoffinLoot",
+      "type": "loottable",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_coffin_loot"
+    },
+    {
+      "name": "SandCoffinAdv",
+      "type": "achievement",
+      "sortid": 422,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_coffin_adv"
+    },
+    {
+      "name": "PentaractRightClickedInAir",
+      "type": "procedure",
+      "sortid": 423,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pentaract_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HarpoonBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 424,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "harpoon_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcidBlockAddedf",
+      "type": "procedure",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acid_block_addedf",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Acid",
+      "type": "fluid",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acid"
+    },
+    {
+      "name": "ExilSlime",
+      "type": "mob",
+      "sortid": 427,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "exil_slime"
+    },
+    {
+      "name": "ReplicatingGunWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "replicating_gun_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReplicatingGun",
+      "type": "gun",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "replicating_gun"
+    },
+    {
+      "name": "ZombieRaid",
+      "type": "procedure",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zombie_raid",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MageRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mage_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Raiders",
+      "type": "tag",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raiders"
+    },
+    {
+      "name": "GravityBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravity_block_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GravityBlock",
+      "type": "block",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravity_block"
+    },
+    {
+      "name": "AntigravityBlock",
+      "type": "block",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "antigravity_block"
+    },
+    {
+      "name": "AntigravityBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "antigravity_block_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HammerR",
+      "type": "recipe",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hammer_r"
+    },
+    {
+      "name": "MHammerR",
+      "type": "recipe",
+      "sortid": 436,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "m_hammer_r"
+    },
+    {
+      "name": "CrystalRP",
+      "type": "recipe",
+      "sortid": 437,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_rp"
+    },
+    {
+      "name": "SoulcatherR",
+      "type": "recipe",
+      "sortid": 438,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soulcather_r"
+    },
+    {
+      "name": "Glrolrp",
+      "type": "recipe",
+      "sortid": 439,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glrolrp"
+    },
+    {
+      "name": "CSAmuletRp",
+      "type": "recipe",
+      "sortid": 440,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cs_amulet_rp"
+    },
+    {
+      "name": "SalvAmuletRp",
+      "type": "recipe",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salv_amulet_rp"
+    },
+    {
+      "name": "Paindim",
+      "type": "recipe",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "paindim"
+    },
+    {
+      "name": "EnergyChargeRp",
+      "type": "recipe",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_charge_rp"
+    },
+    {
+      "name": "TesseractRp",
+      "type": "recipe",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tesseract_rp"
+    },
+    {
+      "name": "PentaractRp",
+      "type": "recipe",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pentaract_rp"
+    },
+    {
+      "name": "UnsAmuletRp",
+      "type": "recipe",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "uns_amulet_rp"
+    },
+    {
+      "name": "PestelAndMortar",
+      "type": "tool",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pestle_and_mortar"
+    },
+    {
+      "name": "PestleAndMortarRp",
+      "type": "recipe",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pestle_and_mortar_rp"
+    },
+    {
+      "name": "EnchantedClayRp",
+      "type": "recipe",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchanted_clay_rp"
+    },
+    {
+      "name": "EyeBlockRp",
+      "type": "recipe",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eye_block_rp"
+    },
+    {
+      "name": "MarionetteRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marionette_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MarionetteOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marionette_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Marionette",
+      "type": "mob",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marionette"
+    },
+    {
+      "name": "MarionetteItemRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marionette_item_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MarionetteItem",
+      "type": "item",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marionette_item"
+    },
+    {
+      "name": "BlockAnalyzerRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_analyzer_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlockAnalyzer",
+      "type": "item",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_analyzer"
+    },
+    {
+      "name": "MNotMove",
+      "type": "procedure",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "m_not_move",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidedEyeRecipe",
+      "type": "recipe",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "voided_eye_recipe"
+    },
+    {
+      "name": "Pickaxes",
+      "type": "tag",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickaxes"
+    },
+    {
+      "name": "QuadrocopterSp",
+      "type": "item",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quadrocopter_sp"
+    },
+    {
+      "name": "QuadrocopterRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quadrocopter_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quadrocopter",
+      "type": "mob",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quadrocopter"
+    },
+    {
+      "name": "QCopterRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "q_copter_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "QCopter",
+      "type": "item",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "q_copter"
+    },
+    {
+      "name": "SlugThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slug_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slug",
+      "type": "mob",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slug"
     }
   ],
   "variable_elements": [
@@ -6057,6 +7024,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "replTimer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -6094,20 +7067,24 @@
       "biome.magica.entia_biome": "Entia Biome",
       "biome.magica.korriban": "Korriban",
       "item.minecraft.splash_potion.effect.magical_atrophy": "Splash Magical Atrophy",
+      "item.magica.marionette_spawn_egg": "Marionette Spawn Egg",
       "item.minecraft.lingering_potion.effect.magical_atrophy": "Lingering Magical Atrophy",
       "block.magica.sausage": "Sausage",
       "item.magica.termometer_hot": "Termometer",
       "entity.magica.cimex": "Cimex",
+      "item.magica.replicating_gun": "Replicating Gun",
       "item.magica.bit_nightmare": "Avenged Sevenfold - Nightmare(Nikjust remix)",
       "item.magica.enderman_cultist": "Enderman\u0027s Cultist Spawn Egg",
       "item.magica.sauslime": "Sauslime Spawn Egg",
-      "item.magica.fatty_catty_armor_chestplate": "FattyCatty Armor Body",
       "entity.magica.ysalamiri": "Ysalamiri",
+      "item.magica.fatty_catty_armor_chestplate": "FattyCatty Armor Body",
       "item.magica.evil_squid_spawn_egg": "Evil Squid Spawn Egg",
+      "advancements.sand_coffin_adv.title": "Sand Coffin",
       "entity.magica.mage": "Mage",
-      "advancements.first_generator.descr": "Have Magic Quartz Generator",
       "entity.magica.spider_golem": "Spider Golem",
+      "advancements.first_generator.descr": "Have Magic Quartz Generator",
       "item.minecraft.lingering_potion.effect.hyperthermia": "Lingering Hyperthermia",
+      "block.magica.eye_block": "Eye Block",
       "item.magica.void_avatar_stage_3": "Void Avatar Stage 3 Spawn Egg",
       "item.magica.mage_spawn_egg": "Mage Spawn Egg",
       "advancements.magic_furnace.descr": "Get a magic furnace",
@@ -6129,10 +7106,12 @@
       "item.magica.cleanser_spawn_egg": "Cleanser Spawn Egg",
       "item.magica.fatty_catty_armor_boots": "FattyCatty Armor Boots",
       "biome.magica.hearti": "Hearti",
+      "item.magica.exil_slime_spawn_egg": "Evil Slime Spawn Egg",
       "block.magica.fluid_pump": "Fluid Pump",
       "block.magica.bouncy_slime_block": "Bouncy Slime Block",
       "item.magica.ungrowed_crystal": "Ungrowed Crystal",
       "advancements.bad_trip.descr": "Have A Bad Trip",
+      "item.magica.marionette_item": "Marionette",
       "item.magica.jeff_phase_2": "Jeff Phase 2 Spawn Egg",
       "item.magica.jeff_phase_3": "Jeff Phase 3 Spawn Egg",
       "item.magica.test": "Test",
@@ -6154,7 +7133,9 @@
       "item.magica.craftnightmare.desc": "Avenged Sevenfold - Nightmare(Minecraft remix)",
       "enchantment.magica.soul_splitter": "Soul Splitter",
       "item.minecraft.potion.effect.magical_atrophy": "Magical Atrophy",
+      "item.magica.pentaract": "Pentaract",
       "amulet.rarity.rare": "rare ",
+      "item.magica.acid_bucket": "Acid Bucket",
       "item.magica.nightmare": "Avenged Sevenfold - Nightmare",
       "block.magica.dirty_magic_quartz_ore": "Dirty Magic Quartz Ore",
       "item.magica.magic_hammer": "Magic Hammer",
@@ -6162,28 +7143,35 @@
       "effect.hyperthermia": "Hyperthermia",
       "item.magica.crystalium": "Crystalium",
       "item.magica.cortosis_armorlegs": "Iron-Cortosis Leggings",
+      "block.magica.antigravity_block": "Antigravity Block",
       "item.magica.light_gun": "Light Gun",
       "item.magica.dart_gun": "Dart Gun",
       "item.magica.draconic_armor_leggings": "Draconic Armor Leggings",
       "entity.magica.jeff_arm": "Jeff Arm",
       "item.magica.colosus_heart": "Colosus\u0027s Heart",
       "biome.magica.sausagia": "Sausagia",
+      "advancements.exploring_lobby.descr": "Start to explore",
       "item.magica.hyper_tower": "Hyper Tower Spawn Egg",
+      "block.magica.burned_dirt": "Burned Dirt",
       "item.magica.heartium_dim": "Heartium Dim Portal Igniter",
       "item.magica.blood_blade": "Blood Blade",
       "item.magica.spider_cultist_weapon": "Spider Cultist Weapon",
       "item.magica.exo_skeleton_legs_helmet": "Exo Skeleton Legs Helmet",
+      "entity.magica.evil_eye": "Evil Eye",
       "item.magica.fatty_catty_armor_helmet": "FattyCatty Armor Helmet",
+      "entity.magica.exil_slime": "Evil Slime",
       "item.magica.carribandim": "korriban Portal Igniter",
       "entity.magica.octospider": "Octospider",
       "amulet.rarity.superrare": "super rare ",
       "item.magica.hyper_ent": "Hyper Ent Spawn Egg",
       "item.magica.hammer_of_fate": "Hammer Of Fate",
       "item.magica.ent": "Ent Spawn Egg",
+      "item.magica.evil_eye_spawn_egg": "Evil Eye Spawn Egg",
       "item.magica.magic_meat": "Magic Meat",
       "item.magica.bit_nightmare.desc": "Avenged Sevenfold - Nightmare(Nikjust remix)",
       "item.magica.zuguruk_spawn_egg": "Zuguruk Spawn Egg",
       "item.magica.magic_exo_skeleton_legs_chestplate": "Exo Skeleton Legs Body",
+      "advancements.sand_coffin_adv.descr": "Drown Your Enemy in Sand",
       "item.magica.cleanser": "Cleanser Spawn Egg",
       "item.magica.shuriken_of_dark": "Shuriken Of Dark",
       "item.magica.good_sword": "Good Sword",
@@ -6193,7 +7181,9 @@
       "fluid.chlorine": "Chlorine",
       "item.magica.cortosis_sword": "Cortosis Sword",
       "block.magica.demonic_furnace": "Demonic Furnace",
+      "item.magica.quadrocopter_sp": "Quadrocopter",
       "item.magica.ysalamiri_spawn_egg": "Ysalamiri Spawn Egg",
+      "item.magica.pestle_and_mortar": "Pestle And Mortar",
       "item.magica.god_spider_weapon": "God Spider Weapon",
       "item.magica.anti_arrow_amulet": "Anti-Arrow Amulet",
       "item.magica.dimon_armor_leggings": "Dimon Armor Leggings",
@@ -6221,12 +7211,15 @@
       "block.magica.killing_void_portal_block": "Killing Void Portal Block",
       "item.magica.evil_scull_spawn_egg": "Evil Skull Spawn Egg",
       "item.magica.bloody_armorboots": "Bloody Boots",
+      "item.magica.tesseract": "Tesseract",
       "item.magica.zuguruk": "Zuguruk Spawn Egg",
+      "block.magica.burned_stone": "Burned Stone",
       "item.magica.cortosis_armorbody": "Iron-Cortosis Chestplate",
       "item.magica.enchanted_golem_spawn_egg": "Enchanted Golem Spawn Egg",
       "entity.magica.enderman_cultist": "Enderman\u0027s Cultist",
       "item.magica.exo_skeleton_helmet": "Exo Skeleton Helmet",
       "magica.key.translate.paindim": "tellraw @a [\"\",{\"text\":\"Your soul is \"},{\"text\":\"HARD\",\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/painmagica hard\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Makes pain dimension HARD\"}},{\"text\":\" or \"},{\"text\":\"weak\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/painmagica easy\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Makes pain dimension easy\"}}]",
+      "item.magica.harpoon": "Harpoon",
       "item.magica.magic_exo_skeleton_legs_boots": "Exo Skeleton Legs Boots",
       "item.magica.friendly_void_avatar": "Friendly Void Avatar Spawn Egg",
       "item.magica.unsigned_amulet": "Amulet",
@@ -6255,6 +7248,7 @@
       "item.magica.exo_skeleton_legs_leggings": "Exo Skeleton Legs",
       "entity.magica.zuguruk": "Zuguruk",
       "item.magica.exo_skeleton_chestplate": "Exo Skeleton Body",
+      "block.magica.gravity_block": "Gravity Block",
       "item.magica.blood_blade_closed": "Blood Blade Bracelet",
       "item.magica.cortosis_armor_leggings": "Iron-Cortosis Leggings",
       "block.magica.returner_block": "Returner Block",
@@ -6264,6 +7258,7 @@
       "item.magica.exo_skeleton_legs_chestplate": "Exo Skeleton Legs Body",
       "item.magica.wild_forest_dim": "Wild Forest Charm",
       "item.magica.h_tdummy_spawn_egg": "H Tdummy Spawn Egg",
+      "entity.magica.marionette": "Marionette",
       "item.magica.void_avatar_spawn_egg": "Void Avatar Spawn Egg",
       "item.magica.magic_quartz": "Magic Quartz",
       "item.magica.mystery_creeper": "Mystery Creeper Spawn Egg",
@@ -6274,6 +7269,7 @@
       "block.magica.cimex_honeycomb": "Cimex Honeycomb",
       "item.magica.dark_ingot": "Dark Ingot",
       "block.magica.corruption": "Corruption",
+      "entity.magica.slug": "Slug",
       "block.magica.heartium_grass": "Heartium Grass",
       "advancements.first_steps.title": "First Steps",
       "itemGroup.tabmagica": "Magica",
@@ -6293,6 +7289,7 @@
       "item.magica.magica_tablet": "Magica Tablet",
       "item.magica.creeper_search_amulet": "Creeper Search Amulet",
       "item.magica.killing_void_dim": "Biting Shears",
+      "advancements.exploring_lobby.title": "Start",
       "block.magica.rune": "Rune",
       "block.magica.dead_wild_forest_light_vine": "Wild Forest Green Vine",
       "amulet.rarity.ideal": "ideal ",
@@ -6314,6 +7311,8 @@
       "amulet.rarity.legendary": "legendary ",
       "enchantment.magica.blood_enchant": "Blood Enchant",
       "item.magica.cortosis_armor_chestplate": "Iron-Cortosis Chestplate",
+      "block.magica.burned_grass": "Burned Grass",
+      "item.magica.sand_coffin": "Sand Coffin",
       "entity.magica.evil_scull": "Evil Skull",
       "entity.magica.pyro_crusader": "Pyro Crusader",
       "item.magica.voided_eye": "Voided Eye",
@@ -6322,8 +7321,10 @@
       "item.magica.enderman_cultist_magic": "Enderman Cultist Magic",
       "block.magica.ultimate_renamer": "Ultimate Renamer",
       "item.magica.void_killer_spawn_egg": "Void Killer Spawn Egg",
+      "item.magica.q_copter": "QuadroCopter",
       "entity.magica.vornskr": "Vornskr",
       "entity.magica.spider_cultist": "Spider Cultist",
+      "entity.magica.quadrocopter": "Quadrocopter",
       "item.magica.cortosis_armorhelmet": "Iron-Cortosis Helmet",
       "item.magica.shuriken_of_light": "Shuriken Of Light",
       "block.magica.dead_wild_forest_vine": "Wild Forest Green Vine",
@@ -6335,6 +7336,7 @@
       "entity.magica.crystalium_entity": "CrystaliumEntityDoNotUseHealthBarsPlease",
       "item.magica.cooked_magic_meat": "Cooked Magic Meat",
       "item.magica.cortosis_ingot": "Cortosis",
+      "biome.magica.pain": "PainBiome",
       "item.magica.wild_forest_heart": "Wild Forest Heart Spawn Egg",
       "item.magica.good_ingot": "Good Ingot",
       "item.magica.cortosis_pickaxe": "Cortosis Pickaxe",
@@ -6357,8 +7359,10 @@
       "block.magica.hyper_tower_rune": "Hyper Tower Rune",
       "biome.magica.wild_forest": "Wild Forest",
       "item.magica.cimex_spawn_egg": "Cimex Spawn Egg",
+      "item.magica.pain_dimension": "Burned Eye",
       "item.magica.termometer_warm": "Termometer",
       "advancements.lazy_method.descr": "Have 12 portal frames from altar",
+      "fluid.acid": "Acid",
       "item.magica.craftnightmare": "Avenged Sevenfold - Nightmare(Minecraft remix)",
       "item.magica.spider_cultist": "Spider Cultist Spawn Egg",
       "item.magica.cortosis_katana": "Cortosis Katana",
@@ -6367,13 +7371,13 @@
       "item.magica.crystalium_entity": "CrystaliumEntityDoNotUseHealthBarsPlease Spawn Egg",
       "item.minecraft.tipped_arrow.effect.arrow_grabbing_potion": "Arrow of Arrow Grabbing",
       "block.magica.red_cimex_honeycomb": "Red Cimex Honeycomb",
-      "item.magica.block_analyser": "Block Analyser",
       "item.magica.golems_heart": "Golem\u0027s Heart",
       "item.magica.octospider": "Octospider Spawn Egg",
       "item.magica.pure_jungle_leaves": "Pure Jungle Leaves",
       "biome.magica.flovery_of_nether": "Flovery Of Nether",
       "entity.magica.hyper_ent": "Hyper Ent",
       "item.magica.dark_sword": "Dark Sword",
+      "item.magica.slug_spawn_egg": "Slug Spawn Egg",
       "entity.magica.friendly_void_avatar": "Friendly Void Avatar",
       "item.magica.fatty_catty_armor_leggings": "FattyCatty Armor Leggings",
       "block.magica.tool_drainer": "Tool Drainer",
@@ -6382,10 +7386,12 @@
       "item.magica.draconic_armorhelmet": "Draconic Armor Helmet",
       "item.magica.friendly_void_avatar_spawn_egg": "Friendly Void Avatar Spawn Egg",
       "block.magica.generator": "Generator",
+      "item.magica.quadrocopter_spawn_egg": "Quadrocopter Spawn Egg",
       "block.magica.essentia_table_block": "Essentia Table Block",
       "effect.arrow_grabbing_potion": "Arrow Grabbing",
       "item.magica.cortosis_axe": "Cortosis Axe",
       "item.magica.bloody_armor_boots": "Bloody Boots",
+      "item.magica.energy_charge": "Energy Charge",
       "block.magica.cortosis_ore_block": "Block of Cortosis",
       "item.magica.crystalium_entity_spawn_egg": "CrystaliumEntityDoNotUseHealthBarsPlease Spawn Egg",
       "item.magica.jeff_arm": "Jeff Arm Spawn Egg",
@@ -6402,6 +7408,7 @@
       "item.magica.magic_exo_skeleton_legs_helmet": "Exo Skeleton Legs Helmet",
       "item.magica.hyper_tower_spawn_egg": "Hyper Tower Spawn Egg",
       "block.magica.heartium": "Heartium Dirt",
+      "item.magica.block_analyzer": "Block Analyzer",
       "block.magica.magica_furnace": "Magica Furnace",
       "item.magica.avanta_cigar": "Avanta Cigar",
       "entity.magica.kamikaze": "Kamikaze"
@@ -6428,5 +7435,5 @@
     "modElementsPackage": "net.mcreator.magica",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000543719
+  "mcreatorVersion": 202000546519
 }

@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @MagicaModElements.ModElement.Tag
 public class ReviveWildForestCommand extends MagicaModElements.ModElement {
 	public ReviveWildForestCommand(MagicaModElements instance) {
-		super(instance, 250);
+		super(instance, 338);
 	}
 
 	@Override

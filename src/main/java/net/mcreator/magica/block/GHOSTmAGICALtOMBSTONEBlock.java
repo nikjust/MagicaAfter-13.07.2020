@@ -39,7 +39,7 @@ public class GHOSTmAGICALtOMBSTONEBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:ghos_tm_agica_lt_ombstone")
 	public static final Block block = null;
 	public GHOSTmAGICALtOMBSTONEBlock(MagicaModElements instance) {
-		super(instance, 81);
+		super(instance, 113);
 	}
 
 	@Override

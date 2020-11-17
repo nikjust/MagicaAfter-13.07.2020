@@ -47,7 +47,7 @@ public class CleanserGunItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletcleanser_gun")
 	public static final EntityType arrow = null;
 	public CleanserGunItem(MagicaModElements instance) {
-		super(instance, 38);
+		super(instance, 21);
 	}
 
 	@Override

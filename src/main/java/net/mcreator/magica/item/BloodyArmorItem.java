@@ -35,7 +35,7 @@ public class BloodyArmorItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:bloody_armor_boots")
 	public static final Item boots = null;
 	public BloodyArmorItem(MagicaModElements instance) {
-		super(instance, 193);
+		super(instance, 101);
 	}
 
 	@Override

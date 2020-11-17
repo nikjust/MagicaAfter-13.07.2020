@@ -105,7 +105,7 @@ public class WildForestDimDimension extends MagicaModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public WildForestDimDimension(MagicaModElements instance) {
-		super(instance, 253);
+		super(instance, 64);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

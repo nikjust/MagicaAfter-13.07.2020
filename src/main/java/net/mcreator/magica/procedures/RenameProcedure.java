@@ -17,7 +17,7 @@ import java.util.HashMap;
 @MagicaModElements.ModElement.Tag
 public class RenameProcedure extends MagicaModElements.ModElement {
 	public RenameProcedure(MagicaModElements instance) {
-		super(instance, 166);
+		super(instance, 271);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

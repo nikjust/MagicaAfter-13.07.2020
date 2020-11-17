@@ -31,7 +31,7 @@ public class BloodBladeItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:blood_blade")
 	public static final Item block = null;
 	public BloodBladeItem(MagicaModElements instance) {
-		super(instance, 86);
+		super(instance, 214);
 	}
 
 	@Override

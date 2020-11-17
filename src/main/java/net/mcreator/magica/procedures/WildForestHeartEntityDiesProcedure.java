@@ -10,7 +10,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class WildForestHeartEntityDiesProcedure extends MagicaModElements.ModElement {
 	public WildForestHeartEntityDiesProcedure(MagicaModElements instance) {
-		super(instance, 249);
+		super(instance, 336);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

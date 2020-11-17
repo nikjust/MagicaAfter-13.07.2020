@@ -4,6 +4,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.IProperty;
+import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -14,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class FluidPumpUpdateTickProcedure extends MagicaModElements.ModElement {
 	public FluidPumpUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 328);
+		super(instance, 397);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -42,38 +43,22 @@ public class FluidPumpUpdateTickProcedure extends MagicaModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((!(((world.getBlockState(new BlockPos((int) x, (int) (new Object() {
+		if ((!((world.getBlockState(new BlockPos((int) x, (int) (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				TileEntity tileEntity = world.getTileEntity(pos);
 				if (tileEntity != null)
 					return tileEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Y")), (int) z))).getBlock() == Blocks.WATER.getDefaultState().getBlock())
-				|| ((world.getBlockState(new BlockPos((int) x, (int) (new Object() {
-					public double getValue(BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "Y")), (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())))) {
-			if ((!(((world.getBlockState(new BlockPos((int) x, (int) (new Object() {
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Y")), (int) z))).getBlock() instanceof FlowingFluidBlock))) {
+			if ((!((world.getBlockState(new BlockPos((int) x, (int) (new Object() {
 				public double getValue(BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
 					if (tileEntity != null)
 						return tileEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "Y")), (int) z))).getBlock() == Blocks.WATER.getDefaultState().getBlock())
-					|| ((world.getBlockState(new BlockPos((int) x, (int) (new Object() {
-						public double getValue(BlockPos pos, String tag) {
-							TileEntity tileEntity = world.getTileEntity(pos);
-							if (tileEntity != null)
-								return tileEntity.getTileData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(new BlockPos((int) x, (int) y, (int) z), "Y")), (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())))) {
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "Y")), (int) z))).getBlock() instanceof FlowingFluidBlock))) {
 				world.setBlockState(new BlockPos((int) x, (int) (new Object() {
 					public double getValue(BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);

@@ -23,7 +23,7 @@ public class KillingVoidStoneBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:killing_void_stone")
 	public static final Block block = null;
 	public KillingVoidStoneBlock(MagicaModElements instance) {
-		super(instance, 70);
+		super(instance, 32);
 	}
 
 	@Override

@@ -49,7 +49,7 @@ import net.mcreator.magica.MagicaModElements;
 public class SpiderGolemEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public SpiderGolemEntity(MagicaModElements instance) {
-		super(instance, 202);
+		super(instance, 145);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

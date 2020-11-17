@@ -10,7 +10,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicaTabletOnPlayerStoppedUsingProcedure extends MagicaModElements.ModElement {
 	public MagicaTabletOnPlayerStoppedUsingProcedure(MagicaModElements instance) {
-		super(instance, 7);
+		super(instance, 167);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

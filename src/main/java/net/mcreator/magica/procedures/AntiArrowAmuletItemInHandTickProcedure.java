@@ -1,7 +1,9 @@
 package net.mcreator.magica.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.Entity;
 
@@ -14,7 +16,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class AntiArrowAmuletItemInHandTickProcedure extends MagicaModElements.ModElement {
 	public AntiArrowAmuletItemInHandTickProcedure(MagicaModElements instance) {
-		super(instance, 334);
+		super(instance, 402);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -50,46 +52,47 @@ public class AntiArrowAmuletItemInHandTickProcedure extends MagicaModElements.Mo
 						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
-			((Entity) world
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(ParticleTypes.FLAME,
+						(((Entity) world.getEntitiesWithinAABB(ArrowEntity.class,
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
+								.stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).posX),
+						(((Entity) world.getEntitiesWithinAABB(ArrowEntity.class,
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
+								.stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).posY),
+						(((Entity) world.getEntitiesWithinAABB(ArrowEntity.class,
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
+								.stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).posZ),
+						(int) 5, 0, 0, 0, 0);
+			}
+			if (!((Entity) world
 					.getEntitiesWithinAABB(ArrowEntity.class,
 							new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 					.stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).setMotion(0, 3, 0);
-			((Entity) world
-					.getEntitiesWithinAABB(ArrowEntity.class,
-							new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
-					.stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-						}
-					}.compareDistOf(x, y, z)).findFirst()
-					.orElse(null)).rotationYaw = (float) (((((Entity) world
-							.getEntitiesWithinAABB(ArrowEntity.class,
-									new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)).rotationYaw) + 4));
-			((Entity) world
-					.getEntitiesWithinAABB(ArrowEntity.class,
-							new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
-					.stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-						}
-					}.compareDistOf(x, y, z)).findFirst()
-					.orElse(null)).rotationPitch = (float) ((((Entity) world
-							.getEntitiesWithinAABB(ArrowEntity.class,
-									new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)).rotationPitch));
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).world.isRemote)
+				((Entity) world
+						.getEntitiesWithinAABB(ArrowEntity.class,
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).remove();
 		}
 	}
 }

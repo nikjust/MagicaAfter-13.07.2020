@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VKillerCheatBulletHitsBlockProcedure extends MagicaModElements.ModElement {
 	public VKillerCheatBulletHitsBlockProcedure(MagicaModElements instance) {
-		super(instance, 318);
+		super(instance, 391);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

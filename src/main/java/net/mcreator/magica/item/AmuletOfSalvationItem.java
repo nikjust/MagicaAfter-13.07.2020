@@ -32,7 +32,7 @@ public class AmuletOfSalvationItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:amulet_of_salvation")
 	public static final Item block = null;
 	public AmuletOfSalvationItem(MagicaModElements instance) {
-		super(instance, 61);
+		super(instance, 27);
 	}
 
 	@Override

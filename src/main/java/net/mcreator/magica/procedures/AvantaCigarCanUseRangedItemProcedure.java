@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class AvantaCigarCanUseRangedItemProcedure extends MagicaModElements.ModElement {
 	public AvantaCigarCanUseRangedItemProcedure(MagicaModElements instance) {
-		super(instance, 309);
+		super(instance, 384);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

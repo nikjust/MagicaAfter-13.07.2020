@@ -1,0 +1,22 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:ice"
+    },
+    {
+      "item": "magica:items_for_sell"
+    }
+  ],
+  "result": {
+    "item": "magica:tesseract",
+    "count": 1
+  }
+}

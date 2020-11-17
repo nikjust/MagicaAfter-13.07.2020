@@ -31,7 +31,7 @@ import java.util.Random;
 @MagicaModElements.ModElement.Tag
 public class Cult0Structure extends MagicaModElements.ModElement {
 	public Cult0Structure(MagicaModElements instance) {
-		super(instance, 187);
+		super(instance, 287);
 	}
 
 	@Override

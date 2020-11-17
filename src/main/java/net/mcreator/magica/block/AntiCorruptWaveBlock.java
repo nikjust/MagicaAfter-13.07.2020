@@ -30,7 +30,7 @@ public class AntiCorruptWaveBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:anti_corrupt_wave")
 	public static final Block block = null;
 	public AntiCorruptWaveBlock(MagicaModElements instance) {
-		super(instance, 257);
+		super(instance, 66);
 	}
 
 	@Override

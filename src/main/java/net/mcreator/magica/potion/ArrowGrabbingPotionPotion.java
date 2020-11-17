@@ -27,7 +27,7 @@ public class ArrowGrabbingPotionPotion extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:arrow_grabbing_potion")
 	public static final Potion potionType = null;
 	public ArrowGrabbingPotionPotion(MagicaModElements instance) {
-		super(instance, 335);
+		super(instance, 404);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

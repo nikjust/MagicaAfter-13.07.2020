@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class DirtyMagicQuartzOreOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public DirtyMagicQuartzOreOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 23);
+		super(instance, 180);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

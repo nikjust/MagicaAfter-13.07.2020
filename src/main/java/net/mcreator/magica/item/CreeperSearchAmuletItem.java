@@ -24,7 +24,7 @@ public class CreeperSearchAmuletItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:creeper_search_amulet")
 	public static final Item block = null;
 	public CreeperSearchAmuletItem(MagicaModElements instance) {
-		super(instance, 59);
+		super(instance, 26);
 	}
 
 	@Override

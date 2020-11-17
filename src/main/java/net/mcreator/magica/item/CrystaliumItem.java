@@ -28,7 +28,7 @@ public class CrystaliumItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:crystalium")
 	public static final Item block = null;
 	public CrystaliumItem(MagicaModElements instance) {
-		super(instance, 298);
+		super(instance, 149);
 	}
 
 	@Override

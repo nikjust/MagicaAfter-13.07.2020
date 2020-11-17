@@ -24,7 +24,7 @@ public class MagicaTabletItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magica_tablet")
 	public static final Item block = null;
 	public MagicaTabletItem(MagicaModElements instance) {
-		super(instance, 6);
+		super(instance, 3);
 	}
 
 	@Override

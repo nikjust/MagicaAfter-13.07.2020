@@ -51,7 +51,7 @@ public class ChlorineBlock extends MagicaModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public ChlorineBlock(MagicaModElements instance) {
-		super(instance, 159);
+		super(instance, 46);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

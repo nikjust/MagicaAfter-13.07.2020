@@ -62,7 +62,7 @@ public class FluidPumpBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:fluid_pump")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public FluidPumpBlock(MagicaModElements instance) {
-		super(instance, 327);
+		super(instance, 83);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

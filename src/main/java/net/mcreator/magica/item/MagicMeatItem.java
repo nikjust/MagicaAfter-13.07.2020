@@ -17,7 +17,7 @@ public class MagicMeatItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magic_meat")
 	public static final Item block = null;
 	public MagicMeatItem(MagicaModElements instance) {
-		super(instance, 9);
+		super(instance, 4);
 	}
 
 	@Override

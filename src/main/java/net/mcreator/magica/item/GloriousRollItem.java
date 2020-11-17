@@ -16,7 +16,7 @@ public class GloriousRollItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:glorious_roll")
 	public static final Item block = null;
 	public GloriousRollItem(MagicaModElements instance) {
-		super(instance, 115);
+		super(instance, 39);
 	}
 
 	@Override

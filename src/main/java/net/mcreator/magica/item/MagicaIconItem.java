@@ -15,7 +15,7 @@ public class MagicaIconItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magica_icon")
 	public static final Item block = null;
 	public MagicaIconItem(MagicaModElements instance) {
-		super(instance, 207);
+		super(instance, 306);
 	}
 
 	@Override

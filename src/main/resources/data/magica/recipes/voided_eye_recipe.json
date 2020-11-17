@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:wooden_pickaxe"
+    },
+    "1": {
+      "item": "magica:killing_void_stone"
+    },
+    "2": {
+      "item": "minecraft:wooden_shovel"
+    },
+    "3": {
+      "item": "magica:killing_void_stone"
+    },
+    "4": {
+      "item": "magica:killing_void_portal_block"
+    },
+    "5": {
+      "item": "magica:killing_void_stone"
+    },
+    "6": {
+      "item": "minecraft:wooden_axe"
+    },
+    "7": {
+      "item": "magica:killing_void_stone"
+    },
+    "8": {
+      "item": "minecraft:wooden_sword"
+    }
+  },
+  "result": {
+    "item": "magica:voided_eye",
+    "count": 1
+  }
+}

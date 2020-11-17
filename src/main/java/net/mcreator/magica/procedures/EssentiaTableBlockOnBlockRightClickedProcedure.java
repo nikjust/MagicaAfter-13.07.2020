@@ -25,7 +25,7 @@ import io.netty.buffer.Unpooled;
 @MagicaModElements.ModElement.Tag
 public class EssentiaTableBlockOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public EssentiaTableBlockOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 281);
+		super(instance, 364);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

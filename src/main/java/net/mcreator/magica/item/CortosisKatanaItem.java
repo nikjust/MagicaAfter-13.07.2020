@@ -29,7 +29,7 @@ public class CortosisKatanaItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_katana")
 	public static final Item block = null;
 	public CortosisKatanaItem(MagicaModElements instance) {
-		super(instance, 150);
+		super(instance, 98);
 	}
 
 	@Override

@@ -49,7 +49,7 @@ public class DartGunItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletdart_gun")
 	public static final EntityType arrow = null;
 	public DartGunItem(MagicaModElements instance) {
-		super(instance, 224);
+		super(instance, 59);
 	}
 
 	@Override

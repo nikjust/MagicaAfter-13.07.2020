@@ -15,7 +15,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class SpiderCultistEntityDiesProcedure extends MagicaModElements.ModElement {
 	public SpiderCultistEntityDiesProcedure(MagicaModElements instance) {
-		super(instance, 342);
+		super(instance, 408);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

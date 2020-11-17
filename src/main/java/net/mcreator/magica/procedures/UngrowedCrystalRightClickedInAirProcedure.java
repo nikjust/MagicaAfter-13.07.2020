@@ -16,7 +16,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class UngrowedCrystalRightClickedInAirProcedure extends MagicaModElements.ModElement {
 	public UngrowedCrystalRightClickedInAirProcedure(MagicaModElements instance) {
-		super(instance, 73);
+		super(instance, 203);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

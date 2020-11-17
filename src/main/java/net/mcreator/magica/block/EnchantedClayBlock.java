@@ -32,7 +32,7 @@ public class EnchantedClayBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:enchanted_clay")
 	public static final Block block = null;
 	public EnchantedClayBlock(MagicaModElements instance) {
-		super(instance, 336);
+		super(instance, 85);
 	}
 
 	@Override

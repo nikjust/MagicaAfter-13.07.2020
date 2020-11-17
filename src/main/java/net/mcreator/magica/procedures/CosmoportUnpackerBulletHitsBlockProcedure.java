@@ -16,7 +16,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CosmoportUnpackerBulletHitsBlockProcedure extends MagicaModElements.ModElement {
 	public CosmoportUnpackerBulletHitsBlockProcedure(MagicaModElements instance) {
-		super(instance, 122);
+		super(instance, 243);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

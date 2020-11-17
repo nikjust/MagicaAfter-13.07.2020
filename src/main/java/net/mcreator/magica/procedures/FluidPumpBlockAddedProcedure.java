@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class FluidPumpBlockAddedProcedure extends MagicaModElements.ModElement {
 	public FluidPumpBlockAddedProcedure(MagicaModElements instance) {
-		super(instance, 327);
+		super(instance, 396);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -61,7 +61,7 @@ import java.util.HashMap;
 public class YsalamiriEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public YsalamiriEntity(MagicaModElements instance) {
-		super(instance, 218);
+		super(instance, 120);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

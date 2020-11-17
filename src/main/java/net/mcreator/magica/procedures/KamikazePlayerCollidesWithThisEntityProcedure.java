@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class KamikazePlayerCollidesWithThisEntityProcedure extends MagicaModElements.ModElement {
 	public KamikazePlayerCollidesWithThisEntityProcedure(MagicaModElements instance) {
-		super(instance, 82);
+		super(instance, 209);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

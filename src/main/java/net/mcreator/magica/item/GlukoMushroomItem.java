@@ -25,7 +25,7 @@ public class GlukoMushroomItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:gluko_mushroom")
 	public static final Item block = null;
 	public GlukoMushroomItem(MagicaModElements instance) {
-		super(instance, 51);
+		super(instance, 25);
 	}
 
 	@Override

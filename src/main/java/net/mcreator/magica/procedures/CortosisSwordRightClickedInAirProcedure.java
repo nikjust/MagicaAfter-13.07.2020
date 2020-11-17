@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CortosisSwordRightClickedInAirProcedure extends MagicaModElements.ModElement {
 	public CortosisSwordRightClickedInAirProcedure(MagicaModElements instance) {
-		super(instance, 149);
+		super(instance, 260);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

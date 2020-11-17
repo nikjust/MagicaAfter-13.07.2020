@@ -28,7 +28,7 @@ public class HammerOfFateItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:hammer_of_fate")
 	public static final Item block = null;
 	public HammerOfFateItem(MagicaModElements instance) {
-		super(instance, 41);
+		super(instance, 22);
 	}
 
 	@Override

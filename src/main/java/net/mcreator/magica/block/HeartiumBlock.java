@@ -28,7 +28,7 @@ public class HeartiumBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:heartium")
 	public static final Block block = null;
 	public HeartiumBlock(MagicaModElements instance) {
-		super(instance, 26);
+		super(instance, 11);
 	}
 
 	@Override

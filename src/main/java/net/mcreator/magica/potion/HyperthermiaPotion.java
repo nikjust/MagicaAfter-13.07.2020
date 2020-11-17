@@ -24,7 +24,7 @@ public class HyperthermiaPotion extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:hyperthermia")
 	public static final Effect potion = null;
 	public HyperthermiaPotion(MagicaModElements instance) {
-		super(instance, 173);
+		super(instance, 276);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

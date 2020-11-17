@@ -17,7 +17,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class EvilSquidOnEntityTickUpdateProcedure extends MagicaModElements.ModElement {
 	public EvilSquidOnEntityTickUpdateProcedure(MagicaModElements instance) {
-		super(instance, 306);
+		super(instance, 382);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

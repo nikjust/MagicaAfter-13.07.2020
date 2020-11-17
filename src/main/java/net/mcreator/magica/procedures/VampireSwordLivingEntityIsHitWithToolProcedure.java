@@ -10,7 +10,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VampireSwordLivingEntityIsHitWithToolProcedure extends MagicaModElements.ModElement {
 	public VampireSwordLivingEntityIsHitWithToolProcedure(MagicaModElements instance) {
-		super(instance, 268);
+		super(instance, 352);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

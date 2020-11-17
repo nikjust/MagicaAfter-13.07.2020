@@ -24,7 +24,7 @@ public class HyperPortallerItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:hyper_portaller")
 	public static final Item block = null;
 	public HyperPortallerItem(MagicaModElements instance) {
-		super(instance, 234);
+		super(instance, 154);
 	}
 
 	@Override

@@ -51,7 +51,7 @@ import net.mcreator.magica.MagicaModElements;
 public class CleanserEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public CleanserEntity(MagicaModElements instance) {
-		super(instance, 39);
+		super(instance, 118);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

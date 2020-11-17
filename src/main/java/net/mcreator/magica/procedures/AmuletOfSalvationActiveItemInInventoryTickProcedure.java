@@ -18,7 +18,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class AmuletOfSalvationActiveItemInInventoryTickProcedure extends MagicaModElements.ModElement {
 	public AmuletOfSalvationActiveItemInInventoryTickProcedure(MagicaModElements instance) {
-		super(instance, 63);
+		super(instance, 198);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -78,7 +78,7 @@ public class DemonicFurnaceBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:demonic_furnace")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public DemonicFurnaceBlock(MagicaModElements instance) {
-		super(instance, 199);
+		super(instance, 55);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

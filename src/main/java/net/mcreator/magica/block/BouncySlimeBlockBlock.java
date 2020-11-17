@@ -30,7 +30,7 @@ public class BouncySlimeBlockBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:bouncy_slime_block")
 	public static final Block block = null;
 	public BouncySlimeBlockBlock(MagicaModElements instance) {
-		super(instance, 261);
+		super(instance, 68);
 	}
 
 	@Override

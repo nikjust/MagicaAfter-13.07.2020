@@ -48,7 +48,7 @@ import net.mcreator.magica.MagicaModElements;
 public class MysteryCreeperEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public MysteryCreeperEntity(MagicaModElements instance) {
-		super(instance, 37);
+		super(instance, 117);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

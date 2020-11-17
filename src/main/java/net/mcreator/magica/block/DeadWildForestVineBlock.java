@@ -26,7 +26,7 @@ public class DeadWildForestVineBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:dead_wild_forest_vine")
 	public static final Block block = null;
 	public DeadWildForestVineBlock(MagicaModElements instance) {
-		super(instance, 244);
+		super(instance, 62);
 	}
 
 	@Override

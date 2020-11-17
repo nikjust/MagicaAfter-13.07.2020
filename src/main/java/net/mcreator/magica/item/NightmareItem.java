@@ -25,7 +25,7 @@ public class NightmareItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:nightmare")
 	public static final Item block = null;
 	public NightmareItem(MagicaModElements instance) {
-		super(instance, 152);
+		super(instance, 155);
 	}
 
 	@Override

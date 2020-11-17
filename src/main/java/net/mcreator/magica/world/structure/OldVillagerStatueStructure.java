@@ -31,7 +31,7 @@ import java.util.Random;
 @MagicaModElements.ModElement.Tag
 public class OldVillagerStatueStructure extends MagicaModElements.ModElement {
 	public OldVillagerStatueStructure(MagicaModElements instance) {
-		super(instance, 108);
+		super(instance, 233);
 	}
 
 	@Override

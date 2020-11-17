@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class GeneratorUpdateTickProcedure extends MagicaModElements.ModElement {
 	public GeneratorUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 160);
+		super(instance, 267);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

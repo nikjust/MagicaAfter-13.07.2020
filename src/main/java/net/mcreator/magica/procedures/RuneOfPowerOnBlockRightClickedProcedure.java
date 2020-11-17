@@ -38,7 +38,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class RuneOfPowerOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public RuneOfPowerOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 109);
+		super(instance, 234);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -82,6 +82,7 @@ public class RuneOfPowerOnBlockRightClickedProcedure extends MagicaModElements.M
 			if (world instanceof World && !world.getWorld().isRemote) {
 				Entity entityToSpawn = new VillagerEntity(EntityType.VILLAGER, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, (y + 1), z, (float) 0, (float) 0);
+				entityToSpawn.setRenderYawOffset((float) 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

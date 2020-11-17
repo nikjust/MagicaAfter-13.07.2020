@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class WFLGTickProcedure extends MagicaModElements.ModElement {
 	public WFLGTickProcedure(MagicaModElements instance) {
-		super(instance, 247);
+		super(instance, 334);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

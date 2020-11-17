@@ -49,7 +49,7 @@ public class SoulCatcherItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletsoul_catcher")
 	public static final EntityType arrow = null;
 	public SoulCatcherItem(MagicaModElements instance) {
-		super(instance, 78);
+		super(instance, 35);
 	}
 
 	@Override

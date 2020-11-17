@@ -35,7 +35,7 @@ public class EntiaBiomeBiome extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entia_biome")
 	public static final CustomBiome biome = null;
 	public EntiaBiomeBiome(MagicaModElements instance) {
-		super(instance, 107);
+		super(instance, 232);
 	}
 
 	@Override

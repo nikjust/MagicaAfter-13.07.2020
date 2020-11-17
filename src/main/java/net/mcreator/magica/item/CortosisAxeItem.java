@@ -16,7 +16,7 @@ public class CortosisAxeItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_axe")
 	public static final Item block = null;
 	public CortosisAxeItem(MagicaModElements instance) {
-		super(instance, 135);
+		super(instance, 159);
 	}
 
 	@Override

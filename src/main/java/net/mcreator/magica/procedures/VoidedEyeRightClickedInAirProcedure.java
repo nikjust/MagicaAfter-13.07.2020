@@ -27,7 +27,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VoidedEyeRightClickedInAirProcedure extends MagicaModElements.ModElement {
 	public VoidedEyeRightClickedInAirProcedure(MagicaModElements instance) {
-		super(instance, 215);
+		super(instance, 310);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

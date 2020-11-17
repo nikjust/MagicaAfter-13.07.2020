@@ -16,7 +16,7 @@ public class GolemsHeartItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:golems_heart")
 	public static final Item block = null;
 	public GolemsHeartItem(MagicaModElements instance) {
-		super(instance, 338);
+		super(instance, 86);
 	}
 
 	@Override

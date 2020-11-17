@@ -51,7 +51,7 @@ public class AvantaCigarItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletavanta_cigar")
 	public static final EntityType arrow = null;
 	public AvantaCigarItem(MagicaModElements instance) {
-		super(instance, 309);
+		super(instance, 106);
 	}
 
 	@Override

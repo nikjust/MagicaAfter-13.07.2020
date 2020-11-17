@@ -21,7 +21,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicaSellXProcedure extends MagicaModElements.ModElement {
 	public MagicaSellXProcedure(MagicaModElements instance) {
-		super(instance, 232);
+		super(instance, 323);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

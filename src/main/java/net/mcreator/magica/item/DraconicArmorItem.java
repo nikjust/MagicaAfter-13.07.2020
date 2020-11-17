@@ -34,7 +34,7 @@ public class DraconicArmorItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:draconic_armor_boots")
 	public static final Item boots = null;
 	public DraconicArmorItem(MagicaModElements instance) {
-		super(instance, 163);
+		super(instance, 48);
 	}
 
 	@Override

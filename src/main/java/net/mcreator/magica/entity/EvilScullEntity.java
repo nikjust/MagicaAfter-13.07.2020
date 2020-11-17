@@ -52,7 +52,7 @@ import java.util.Random;
 public class EvilScullEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public EvilScullEntity(MagicaModElements instance) {
-		super(instance, 183);
+		super(instance, 142);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -30,7 +30,7 @@ public class AltarBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:altar")
 	public static final Block block = null;
 	public AltarBlock(MagicaModElements instance) {
-		super(instance, 269);
+		super(instance, 70);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class UngrowedCrystalLivingEntityIsHitWithItemProcedure extends MagicaModElements.ModElement {
 	public UngrowedCrystalLivingEntityIsHitWithItemProcedure(MagicaModElements instance) {
-		super(instance, 66);
+		super(instance, 201);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

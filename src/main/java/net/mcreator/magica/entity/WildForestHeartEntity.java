@@ -42,7 +42,7 @@ import java.util.HashMap;
 public class WildForestHeartEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public WildForestHeartEntity(MagicaModElements instance) {
-		super(instance, 248);
+		super(instance, 335);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

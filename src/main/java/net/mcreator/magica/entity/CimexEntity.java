@@ -52,7 +52,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 public class CimexEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public CimexEntity(MagicaModElements instance) {
-		super(instance, 312);
+		super(instance, 132);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

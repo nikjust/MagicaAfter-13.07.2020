@@ -36,7 +36,7 @@ public class ToolDrainerBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:tool_drainer")
 	public static final Block block = null;
 	public ToolDrainerBlock(MagicaModElements instance) {
-		super(instance, 322);
+		super(instance, 81);
 	}
 
 	@Override

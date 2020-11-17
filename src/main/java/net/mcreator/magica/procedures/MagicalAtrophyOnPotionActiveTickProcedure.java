@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicalAtrophyOnPotionActiveTickProcedure extends MagicaModElements.ModElement {
 	public MagicalAtrophyOnPotionActiveTickProcedure(MagicaModElements instance) {
-		super(instance, 217);
+		super(instance, 313);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -66,7 +66,7 @@ public class VoidAvatarStage2Entity extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletvoid_avatar_stage_2")
 	public static final EntityType arrow = null;
 	public VoidAvatarStage2Entity(MagicaModElements instance) {
-		super(instance, 209);
+		super(instance, 114);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

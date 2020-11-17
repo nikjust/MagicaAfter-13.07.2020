@@ -31,7 +31,7 @@ import java.util.Random;
 @MagicaModElements.ModElement.Tag
 public class YsalamiriTreeStructure extends MagicaModElements.ModElement {
 	public YsalamiriTreeStructure(MagicaModElements instance) {
-		super(instance, 238);
+		super(instance, 329);
 	}
 
 	@Override

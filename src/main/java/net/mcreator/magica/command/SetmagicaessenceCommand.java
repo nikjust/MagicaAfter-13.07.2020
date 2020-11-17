@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @MagicaModElements.ModElement.Tag
 public class SetmagicaessenceCommand extends MagicaModElements.ModElement {
 	public SetmagicaessenceCommand(MagicaModElements instance) {
-		super(instance, 286);
+		super(instance, 368);
 	}
 
 	@Override

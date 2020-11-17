@@ -45,7 +45,7 @@ public class AvantaBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:avanta")
 	public static final Block block = null;
 	public AvantaBlock(MagicaModElements instance) {
-		super(instance, 308);
+		super(instance, 77);
 	}
 
 	@Override

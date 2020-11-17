@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class GhostMagicalTombstoneUpdateTickProcedure extends MagicaModElements.ModElement {
 	public GhostMagicalTombstoneUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 54);
+		super(instance, 192);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -31,7 +31,7 @@ public class FloveryOfNetherBiome extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:flovery_of_nether")
 	public static final CustomBiome biome = null;
 	public FloveryOfNetherBiome(MagicaModElements instance) {
-		super(instance, 83);
+		super(instance, 210);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CmcombOnStructureInstanceGeneratedProcedure extends MagicaModElements.ModElement {
 	public CmcombOnStructureInstanceGeneratedProcedure(MagicaModElements instance) {
-		super(instance, 315);
+		super(instance, 388);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

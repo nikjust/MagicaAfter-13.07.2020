@@ -20,7 +20,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class StrangeCubeRightClickedInAirProcedure extends MagicaModElements.ModElement {
 	public StrangeCubeRightClickedInAirProcedure(MagicaModElements instance) {
-		super(instance, 214);
+		super(instance, 309);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -57,6 +57,7 @@ public class StrangeCubeRightClickedInAirProcedure extends MagicaModElements.Mod
 		if (world instanceof World && !world.getWorld().isRemote) {
 			Entity entityToSpawn = new FriendlyVoidAvatarEntity.CustomEntity(FriendlyVoidAvatarEntity.entity, world.getWorld());
 			entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
+			entityToSpawn.setRenderYawOffset((float) 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

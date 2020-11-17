@@ -1,0 +1,30 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "minecraft:sand"
+    },
+    "3": {
+      "tag": "minecraft:sand"
+    },
+    "4": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "5": {
+      "tag": "minecraft:sand"
+    },
+    "7": {
+      "tag": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "magica:ungrowed_crystal",
+    "count": 4
+  }
+}

@@ -13,7 +13,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class DimensionIDCommandExecutedProcedure extends MagicaModElements.ModElement {
 	public DimensionIDCommandExecutedProcedure(MagicaModElements instance) {
-		super(instance, 216);
+		super(instance, 311);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

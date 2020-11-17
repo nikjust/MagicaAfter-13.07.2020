@@ -14,7 +14,7 @@ import java.io.File;
 @MagicaModElements.ModElement.Tag
 public class MagicaConfigPleaseCommandExecutedProcedure extends MagicaModElements.ModElement {
 	public MagicaConfigPleaseCommandExecutedProcedure(MagicaModElements instance) {
-		super(instance, 206);
+		super(instance, 304);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

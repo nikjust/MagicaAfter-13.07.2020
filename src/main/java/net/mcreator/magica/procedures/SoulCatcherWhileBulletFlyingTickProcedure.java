@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class SoulCatcherWhileBulletFlyingTickProcedure extends MagicaModElements.ModElement {
 	public SoulCatcherWhileBulletFlyingTickProcedure(MagicaModElements instance) {
-		super(instance, 79);
+		super(instance, 208);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

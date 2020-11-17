@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class PureJungleLeavesFoodEatenProcedure extends MagicaModElements.ModElement {
 	public PureJungleLeavesFoodEatenProcedure(MagicaModElements instance) {
-		super(instance, 219);
+		super(instance, 316);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

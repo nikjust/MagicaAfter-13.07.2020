@@ -47,7 +47,7 @@ public class WildForestBiome extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:wild_forest")
 	public static final CustomBiome biome = null;
 	public WildForestBiome(MagicaModElements instance) {
-		super(instance, 241);
+		super(instance, 332);
 	}
 
 	@Override

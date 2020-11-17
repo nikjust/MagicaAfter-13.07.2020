@@ -16,7 +16,7 @@ public class CortosisShovelItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_shovel")
 	public static final Item block = null;
 	public CortosisShovelItem(MagicaModElements instance) {
-		super(instance, 137);
+		super(instance, 160);
 	}
 
 	@Override

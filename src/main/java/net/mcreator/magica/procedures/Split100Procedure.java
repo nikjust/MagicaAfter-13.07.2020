@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class Split100Procedure extends MagicaModElements.ModElement {
 	public Split100Procedure(MagicaModElements instance) {
-		super(instance, 126);
+		super(instance, 247);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

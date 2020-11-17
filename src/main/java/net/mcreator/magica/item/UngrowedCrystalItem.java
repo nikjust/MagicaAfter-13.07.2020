@@ -30,7 +30,7 @@ public class UngrowedCrystalItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:ungrowed_crystal")
 	public static final Item block = null;
 	public UngrowedCrystalItem(MagicaModElements instance) {
-		super(instance, 66);
+		super(instance, 28);
 	}
 
 	@Override

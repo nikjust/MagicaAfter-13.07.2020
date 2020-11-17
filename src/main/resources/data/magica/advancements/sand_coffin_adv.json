@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "magica:sand_coffin"
+    },
+    "title": {
+      "translate": "advancements.sand_coffin_adv.title"
+    },
+    "description": {
+      "translate": "advancements.sand_coffin_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sand_coffin_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 42,
+    "loot": [
+      "magica:sand_coffin_loot"
+    ]
+  }
+}

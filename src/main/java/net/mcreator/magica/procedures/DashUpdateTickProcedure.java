@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class DashUpdateTickProcedure extends MagicaModElements.ModElement {
 	public DashUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 90);
+		super(instance, 218);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

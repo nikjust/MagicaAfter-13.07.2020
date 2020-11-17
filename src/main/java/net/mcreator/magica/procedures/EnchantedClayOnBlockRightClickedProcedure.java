@@ -19,7 +19,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class EnchantedClayOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public EnchantedClayOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 336);
+		super(instance, 405);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -60,7 +60,7 @@ public class EnchantedClayOnBlockRightClickedProcedure extends MagicaModElements
 						&& (Blocks.CLAY.getDefaultState()
 								.getBlock() == (world.getBlockState(new BlockPos((int) (x - 0), (int) (y + 1), (int) (z - 0)))).getBlock())))) {
 			if (world instanceof World && !world.getWorld().isRemote) {
-				world.getWorld().createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.BREAK);
+				world.getWorld().createExplosion(null, (int) x, (int) y, (int) z, (float) 1, Explosion.Mode.BREAK);
 			}
 			if (world instanceof World && !world.getWorld().isRemote) {
 				Entity entityToSpawn = new EnchantedGolemEntity.CustomEntity(EnchantedGolemEntity.entity, world.getWorld());

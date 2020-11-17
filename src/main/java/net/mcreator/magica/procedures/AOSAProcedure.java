@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class AOSAProcedure extends MagicaModElements.ModElement {
 	public AOSAProcedure(MagicaModElements instance) {
-		super(instance, 65);
+		super(instance, 200);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

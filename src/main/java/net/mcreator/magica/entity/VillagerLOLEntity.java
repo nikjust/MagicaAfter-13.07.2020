@@ -59,7 +59,6 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.entity.model.VillagerModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.magica.procedures.VillagerLOLOnEntityTickUpdateProcedure;
 import net.mcreator.magica.procedures.TestingMagicaSellProcedure;
 import net.mcreator.magica.gui.MagicaVillagerGui;
 import net.mcreator.magica.MagicaModElements;
@@ -76,7 +75,7 @@ import io.netty.buffer.Unpooled;
 public class VillagerLOLEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public VillagerLOLEntity(MagicaModElements instance) {
-		super(instance, 227);
+		super(instance, 122);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -226,24 +225,6 @@ public class VillagerLOLEntity extends MagicaModElements.ModElement {
 				TestingMagicaSellProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
-		}
-
-		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.posX;
-			double y = this.posY;
-			double z = this.posZ;
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				VillagerLOLOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

@@ -25,7 +25,7 @@ public class CortosisSwordItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_sword")
 	public static final Item block = null;
 	public CortosisSwordItem(MagicaModElements instance) {
-		super(instance, 136);
+		super(instance, 96);
 	}
 
 	@Override

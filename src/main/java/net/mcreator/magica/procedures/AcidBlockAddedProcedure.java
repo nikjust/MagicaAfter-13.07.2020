@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class AcidBlockAddedProcedure extends MagicaModElements.ModElement {
 	public AcidBlockAddedProcedure(MagicaModElements instance) {
-		super(instance, 58);
+		super(instance, 196);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

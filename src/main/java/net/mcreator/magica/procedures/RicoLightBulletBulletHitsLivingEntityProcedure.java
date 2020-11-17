@@ -14,7 +14,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class RicoLightBulletBulletHitsLivingEntityProcedure extends MagicaModElements.ModElement {
 	public RicoLightBulletBulletHitsLivingEntityProcedure(MagicaModElements instance) {
-		super(instance, 155);
+		super(instance, 264);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

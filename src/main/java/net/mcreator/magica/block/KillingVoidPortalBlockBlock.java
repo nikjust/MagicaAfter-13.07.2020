@@ -23,7 +23,7 @@ public class KillingVoidPortalBlockBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:killing_void_portal_block")
 	public static final Block block = null;
 	public KillingVoidPortalBlockBlock(MagicaModElements instance) {
-		super(instance, 69);
+		super(instance, 31);
 	}
 
 	@Override

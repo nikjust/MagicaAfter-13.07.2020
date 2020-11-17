@@ -55,7 +55,7 @@ import java.util.HashMap;
 public class KamikazeEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public KamikazeEntity(MagicaModElements instance) {
-		super(instance, 82);
+		super(instance, 130);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

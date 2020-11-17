@@ -68,7 +68,7 @@ public class MagicQuartzGeneratorBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magic_quartz_generator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public MagicQuartzGeneratorBlock(MagicaModElements instance) {
-		super(instance, 2);
+		super(instance, 1);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

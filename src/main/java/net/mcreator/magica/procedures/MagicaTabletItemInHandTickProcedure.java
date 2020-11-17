@@ -10,7 +10,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicaTabletItemInHandTickProcedure extends MagicaModElements.ModElement {
 	public MagicaTabletItemInHandTickProcedure(MagicaModElements instance) {
-		super(instance, 6);
+		super(instance, 166);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

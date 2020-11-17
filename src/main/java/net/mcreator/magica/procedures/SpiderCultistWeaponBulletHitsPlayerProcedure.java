@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class SpiderCultistWeaponBulletHitsPlayerProcedure extends MagicaModElements.ModElement {
 	public SpiderCultistWeaponBulletHitsPlayerProcedure(MagicaModElements instance) {
-		super(instance, 189);
+		super(instance, 288);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

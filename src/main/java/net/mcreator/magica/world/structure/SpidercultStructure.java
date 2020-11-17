@@ -34,7 +34,7 @@ import java.util.HashMap;
 @MagicaModElements.ModElement.Tag
 public class SpidercultStructure extends MagicaModElements.ModElement {
 	public SpidercultStructure(MagicaModElements instance) {
-		super(instance, 186);
+		super(instance, 286);
 	}
 
 	@Override

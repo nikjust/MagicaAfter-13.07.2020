@@ -34,7 +34,7 @@ import java.util.HashMap;
 @MagicaModElements.ModElement.Tag
 public class CmcombStructure extends MagicaModElements.ModElement {
 	public CmcombStructure(MagicaModElements instance) {
-		super(instance, 314);
+		super(instance, 387);
 	}
 
 	@Override

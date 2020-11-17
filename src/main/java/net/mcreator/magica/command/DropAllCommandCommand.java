@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @MagicaModElements.ModElement.Tag
 public class DropAllCommandCommand extends MagicaModElements.ModElement {
 	public DropAllCommandCommand(MagicaModElements instance) {
-		super(instance, 293);
+		super(instance, 373);
 	}
 
 	@Override

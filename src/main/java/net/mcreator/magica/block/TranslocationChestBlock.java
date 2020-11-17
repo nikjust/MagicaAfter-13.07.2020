@@ -70,7 +70,7 @@ public class TranslocationChestBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:translocation_chest")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public TranslocationChestBlock(MagicaModElements instance) {
-		super(instance, 259);
+		super(instance, 67);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

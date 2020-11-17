@@ -19,7 +19,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class XpReaperOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public XpReaperOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 117);
+		super(instance, 239);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -54,6 +54,7 @@ public class XpReaperOnBlockRightClickedProcedure extends MagicaModElements.ModE
 				if (world instanceof World && !world.getWorld().isRemote) {
 					Entity entityToSpawn = new ExperienceBottleEntity(EntityType.EXPERIENCE_BOTTLE, world.getWorld());
 					entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
+					entityToSpawn.setRenderYawOffset((float) 0);
 					entityToSpawn.setMotion(0, 2, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),

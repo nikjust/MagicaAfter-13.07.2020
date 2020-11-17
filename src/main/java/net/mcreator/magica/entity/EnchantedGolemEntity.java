@@ -53,7 +53,7 @@ import net.mcreator.magica.MagicaModElements;
 public class EnchantedGolemEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public EnchantedGolemEntity(MagicaModElements instance) {
-		super(instance, 337);
+		super(instance, 135);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

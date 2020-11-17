@@ -15,7 +15,7 @@ public class SoulSplitterEnchantment extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:soul_splitter")
 	public static final Enchantment enchantment = null;
 	public SoulSplitterEnchantment(MagicaModElements instance) {
-		super(instance, 104);
+		super(instance, 231);
 	}
 
 	@Override

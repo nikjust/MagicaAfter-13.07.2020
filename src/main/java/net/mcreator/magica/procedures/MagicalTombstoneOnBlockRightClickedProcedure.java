@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicalTombstoneOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public MagicalTombstoneOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 55);
+		super(instance, 193);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

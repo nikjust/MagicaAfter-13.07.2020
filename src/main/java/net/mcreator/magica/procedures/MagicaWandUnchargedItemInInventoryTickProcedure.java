@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MagicaWandUnchargedItemInInventoryTickProcedure extends MagicaModElements.ModElement {
 	public MagicaWandUnchargedItemInInventoryTickProcedure(MagicaModElements instance) {
-		super(instance, 20);
+		super(instance, 179);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class BlockAnalyserRightClickedOnBlockProcedure extends MagicaModElements.ModElement {
 	public BlockAnalyserRightClickedOnBlockProcedure(MagicaModElements instance) {
-		super(instance, 330);
+		super(instance, 399);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

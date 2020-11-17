@@ -22,7 +22,7 @@ public class ItemsForSellItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:items_for_sell")
 	public static final Item block = null;
 	public ItemsForSellItem(MagicaModElements instance) {
-		super(instance, 231);
+		super(instance, 153);
 	}
 
 	@Override

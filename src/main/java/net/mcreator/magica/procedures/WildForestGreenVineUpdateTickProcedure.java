@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class WildForestGreenVineUpdateTickProcedure extends MagicaModElements.ModElement {
 	public WildForestGreenVineUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 246);
+		super(instance, 333);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

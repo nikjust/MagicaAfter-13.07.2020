@@ -27,7 +27,7 @@ import java.util.HashMap;
 @MagicaModElements.ModElement.Tag
 public class SoulProcedure extends MagicaModElements.ModElement {
 	public SoulProcedure(MagicaModElements instance) {
-		super(instance, 291);
+		super(instance, 371);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

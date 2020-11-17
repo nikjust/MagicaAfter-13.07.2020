@@ -105,7 +105,7 @@ public class SausagesDimensionDimension extends MagicaModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public SausagesDimensionDimension(MagicaModElements instance) {
-		super(instance, 181);
+		super(instance, 283);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

@@ -13,7 +13,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class AcWaveTickProcedure extends MagicaModElements.ModElement {
 	public AcWaveTickProcedure(MagicaModElements instance) {
-		super(instance, 257);
+		super(instance, 344);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

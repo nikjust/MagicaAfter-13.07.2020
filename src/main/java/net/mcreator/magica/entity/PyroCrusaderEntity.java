@@ -51,7 +51,7 @@ import java.util.Random;
 public class PyroCrusaderEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public PyroCrusaderEntity(MagicaModElements instance) {
-		super(instance, 225);
+		super(instance, 121);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

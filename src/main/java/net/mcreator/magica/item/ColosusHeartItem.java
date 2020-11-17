@@ -54,7 +54,7 @@ public class ColosusHeartItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletcolosus_heart")
 	public static final EntityType arrow = null;
 	public ColosusHeartItem(MagicaModElements instance) {
-		super(instance, 84);
+		super(instance, 95);
 	}
 
 	@Override

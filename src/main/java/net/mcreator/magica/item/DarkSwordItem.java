@@ -23,7 +23,7 @@ public class DarkSwordItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:dark_sword")
 	public static final Item block = null;
 	public DarkSwordItem(MagicaModElements instance) {
-		super(instance, 33);
+		super(instance, 18);
 	}
 
 	@Override

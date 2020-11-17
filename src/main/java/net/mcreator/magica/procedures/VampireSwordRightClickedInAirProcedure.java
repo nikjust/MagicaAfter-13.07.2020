@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VampireSwordRightClickedInAirProcedure extends MagicaModElements.ModElement {
 	public VampireSwordRightClickedInAirProcedure(MagicaModElements instance) {
-		super(instance, 329);
+		super(instance, 398);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

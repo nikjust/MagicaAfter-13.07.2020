@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:soul_shard"
+    },
+    "1": {
+      "item": "magica:stable_soul"
+    },
+    "2": {
+      "item": "magica:dark_soul_shard"
+    },
+    "3": {
+      "item": "minecraft:ender_eye"
+    },
+    "4": {
+      "tag": "minecraft:small_flowers"
+    },
+    "5": {
+      "item": "minecraft:ender_eye"
+    },
+    "6": {
+      "item": "minecraft:green_dye"
+    },
+    "7": {
+      "item": "minecraft:lime_dye"
+    },
+    "8": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "result": {
+    "item": "magica:creeper_search_amulet",
+    "count": 1
+  }
+}

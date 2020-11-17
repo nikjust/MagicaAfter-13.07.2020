@@ -34,7 +34,7 @@ public class XpReaperBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:xp_reaper")
 	public static final Block block = null;
 	public XpReaperBlock(MagicaModElements instance) {
-		super(instance, 117);
+		super(instance, 40);
 	}
 
 	@Override

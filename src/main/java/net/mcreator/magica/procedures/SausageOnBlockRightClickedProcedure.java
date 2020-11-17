@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class SausageOnBlockRightClickedProcedure extends MagicaModElements.ModElement {
 	public SausageOnBlockRightClickedProcedure(MagicaModElements instance) {
-		super(instance, 239);
+		super(instance, 330);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

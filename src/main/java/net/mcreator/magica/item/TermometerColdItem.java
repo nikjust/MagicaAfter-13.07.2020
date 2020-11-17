@@ -25,7 +25,7 @@ public class TermometerColdItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:termometer_cold")
 	public static final Item block = null;
 	public TermometerColdItem(MagicaModElements instance) {
-		super(instance, 175);
+		super(instance, 277);
 	}
 
 	@Override

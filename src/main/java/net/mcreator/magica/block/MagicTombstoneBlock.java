@@ -40,7 +40,7 @@ public class MagicTombstoneBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magic_tombstone")
 	public static final Block block = null;
 	public MagicTombstoneBlock(MagicaModElements instance) {
-		super(instance, 80);
+		super(instance, 112);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class WildForestGreenVineBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:wild_forest_green_vine")
 	public static final Block block = null;
 	public WildForestGreenVineBlock(MagicaModElements instance) {
-		super(instance, 242);
+		super(instance, 60);
 	}
 
 	@Override

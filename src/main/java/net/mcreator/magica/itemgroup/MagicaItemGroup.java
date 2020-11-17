@@ -13,7 +13,7 @@ import net.mcreator.magica.MagicaModElements;
 @MagicaModElements.ModElement.Tag
 public class MagicaItemGroup extends MagicaModElements.ModElement {
 	public MagicaItemGroup(MagicaModElements instance) {
-		super(instance, 103);
+		super(instance, 230);
 	}
 
 	@Override

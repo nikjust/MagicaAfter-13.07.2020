@@ -63,7 +63,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 public class OctospiderEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public OctospiderEntity(MagicaModElements instance) {
-		super(instance, 116);
+		super(instance, 140);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

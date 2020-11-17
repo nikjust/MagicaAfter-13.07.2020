@@ -104,7 +104,7 @@ public class CarribandimDimension extends MagicaModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public CarribandimDimension(MagicaModElements instance) {
-		super(instance, 120);
+		super(instance, 41);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

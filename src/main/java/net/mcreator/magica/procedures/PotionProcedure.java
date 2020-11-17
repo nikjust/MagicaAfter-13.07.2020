@@ -19,7 +19,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class PotionProcedure extends MagicaModElements.ModElement {
 	public PotionProcedure(MagicaModElements instance) {
-		super(instance, 333);
+		super(instance, 401);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

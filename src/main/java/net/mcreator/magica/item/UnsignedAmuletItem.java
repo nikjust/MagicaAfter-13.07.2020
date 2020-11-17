@@ -24,7 +24,7 @@ public class UnsignedAmuletItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:unsigned_amulet")
 	public static final Item block = null;
 	public UnsignedAmuletItem(MagicaModElements instance) {
-		super(instance, 326);
+		super(instance, 82);
 	}
 
 	@Override

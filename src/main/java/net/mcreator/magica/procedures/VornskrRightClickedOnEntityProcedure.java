@@ -18,7 +18,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VornskrRightClickedOnEntityProcedure extends MagicaModElements.ModElement {
 	public VornskrRightClickedOnEntityProcedure(MagicaModElements instance) {
-		super(instance, 222);
+		super(instance, 318);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -34,7 +34,7 @@ import net.mcreator.magica.MagicaModElements;
 public class HTdummyEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public HTdummyEntity(MagicaModElements instance) {
-		super(instance, 287);
+		super(instance, 128);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

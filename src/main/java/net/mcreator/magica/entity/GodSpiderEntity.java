@@ -57,7 +57,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 public class GodSpiderEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public GodSpiderEntity(MagicaModElements instance) {
-		super(instance, 339);
+		super(instance, 136);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

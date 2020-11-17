@@ -9,7 +9,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class TestEvokerOnInitialEntitySpawnProcedure extends MagicaModElements.ModElement {
 	public TestEvokerOnInitialEntitySpawnProcedure(MagicaModElements instance) {
-		super(instance, 240);
+		super(instance, 331);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

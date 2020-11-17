@@ -13,7 +13,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class UnsignedAmuletItemInInventoryTickProcedure extends MagicaModElements.ModElement {
 	public UnsignedAmuletItemInInventoryTickProcedure(MagicaModElements instance) {
-		super(instance, 326);
+		super(instance, 395);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

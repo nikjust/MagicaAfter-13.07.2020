@@ -40,7 +40,7 @@ public class CortosisOreBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_ore")
 	public static final Block block = null;
 	public CortosisOreBlock(MagicaModElements instance) {
-		super(instance, 129);
+		super(instance, 44);
 	}
 
 	@Override

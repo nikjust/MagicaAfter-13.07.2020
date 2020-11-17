@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/grblozk",
+    "up": "magica:blocks/antigravityblozk",
+    "north": "magica:blocks/grblozk",
+    "east": "magica:blocks/grblozk",
+    "south": "magica:blocks/grblozk",
+    "west": "magica:blocks/grblozk",
+    "particle": "magica:blocks/grblozk"
+  }
+}

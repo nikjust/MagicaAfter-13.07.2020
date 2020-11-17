@@ -29,7 +29,7 @@ public class GoodRuneBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:good_rune")
 	public static final Block block = null;
 	public GoodRuneBlock(MagicaModElements instance) {
-		super(instance, 301);
+		super(instance, 76);
 	}
 
 	@Override

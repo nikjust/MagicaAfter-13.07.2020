@@ -16,7 +16,7 @@ public class CortosisIngotItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_ingot")
 	public static final Item block = null;
 	public CortosisIngotItem(MagicaModElements instance) {
-		super(instance, 128);
+		super(instance, 150);
 	}
 
 	@Override

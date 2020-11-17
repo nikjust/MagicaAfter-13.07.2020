@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ActivateMagicaSoulCommandExecutedProcedure extends MagicaModElements.ModElement {
 	public ActivateMagicaSoulCommandExecutedProcedure(MagicaModElements instance) {
-		super(instance, 307);
+		super(instance, 383);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

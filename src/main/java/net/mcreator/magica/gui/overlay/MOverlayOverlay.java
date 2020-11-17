@@ -18,7 +18,7 @@ import net.mcreator.magica.MagicaModElements;
 @MagicaModElements.ModElement.Tag
 public class MOverlayOverlay extends MagicaModElements.ModElement {
 	public MOverlayOverlay(MagicaModElements instance) {
-		super(instance, 5);
+		super(instance, 165);
 	}
 
 	@Override

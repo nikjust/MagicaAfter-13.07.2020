@@ -16,7 +16,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class SpawnspidercultCommandExecutedProcedure extends MagicaModElements.ModElement {
 	public SpawnspidercultCommandExecutedProcedure(MagicaModElements instance) {
-		super(instance, 192);
+		super(instance, 292);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

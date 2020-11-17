@@ -19,7 +19,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CosmoportCarribanOnStructureInstanceGeneratedProcedure extends MagicaModElements.ModElement {
 	public CosmoportCarribanOnStructureInstanceGeneratedProcedure(MagicaModElements instance) {
-		super(instance, 119);
+		super(instance, 241);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

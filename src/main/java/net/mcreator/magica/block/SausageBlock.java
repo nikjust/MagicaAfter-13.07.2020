@@ -35,7 +35,7 @@ public class SausageBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:sausage")
 	public static final Block block = null;
 	public SausageBlock(MagicaModElements instance) {
-		super(instance, 180);
+		super(instance, 53);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @MagicaModElements.ModElement.Tag
 public class SetpaindimCommand extends MagicaModElements.ModElement {
 	public SetpaindimCommand(MagicaModElements instance) {
-		super(instance, 255);
+		super(instance, 342);
 	}
 
 	@Override

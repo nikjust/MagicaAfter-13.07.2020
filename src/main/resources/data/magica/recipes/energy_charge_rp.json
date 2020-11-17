@@ -1,0 +1,24 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blaze_powder"
+    },
+    "1": {
+      "item": "minecraft:ghast_tear"
+    },
+    "2": {
+      "tag": "forge:dyes"
+    }
+  },
+  "result": {
+    "item": "magica:energy_charge",
+    "count": 12
+  }
+}

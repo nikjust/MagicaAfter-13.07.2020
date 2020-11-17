@@ -49,7 +49,7 @@ public class SplitterItemItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:splitter_item")
 	public static final Item block = null;
 	public SplitterItemItem(MagicaModElements instance) {
-		super(instance, 127);
+		super(instance, 43);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

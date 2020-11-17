@@ -1,0 +1,42 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond_block"
+    },
+    "1": {
+      "item": "minecraft:coal_block"
+    },
+    "2": {
+      "item": "minecraft:diamond_block"
+    },
+    "3": {
+      "item": "magica:dark_soul_shard"
+    },
+    "4": {
+      "item": "minecraft:ender_eye"
+    },
+    "5": {
+      "item": "magica:dark_soul_shard"
+    },
+    "6": {
+      "item": "minecraft:lava_bucket"
+    },
+    "7": {
+      "item": "minecraft:dragon_egg"
+    },
+    "8": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "result": {
+    "item": "magica:pain_dimension",
+    "count": 1
+  }
+}

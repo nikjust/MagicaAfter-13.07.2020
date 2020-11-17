@@ -9,7 +9,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class BouncySlimeBlockEntityWalksOnTheBlockProcedure extends MagicaModElements.ModElement {
 	public BouncySlimeBlockEntityWalksOnTheBlockProcedure(MagicaModElements instance) {
-		super(instance, 261);
+		super(instance, 347);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

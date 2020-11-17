@@ -74,7 +74,7 @@ public class BookDestroyerBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:book_destroyer")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BookDestroyerBlock(MagicaModElements instance) {
-		super(instance, 14);
+		super(instance, 174);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Items.SPIDER_EYE"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Items.SPIDER_EYE"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.SPIDER_EYE"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Items.SPIDER_EYE"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EyeBlock"
+    },
+    "name": "eye_block_rp",
+    "namespace": "mod"
+  }
+}

@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class GodSpiderWeaponBulletHitsBlockProcedure extends MagicaModElements.ModElement {
 	public GodSpiderWeaponBulletHitsBlockProcedure(MagicaModElements instance) {
-		super(instance, 341);
+		super(instance, 407);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

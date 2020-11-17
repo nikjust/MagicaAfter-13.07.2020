@@ -24,7 +24,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ZugurukTradeProcedure extends MagicaModElements.ModElement {
 	public ZugurukTradeProcedure(MagicaModElements instance) {
-		super(instance, 113);
+		super(instance, 238);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

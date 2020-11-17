@@ -106,7 +106,7 @@ public class KillingVoidDimDimension extends MagicaModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public KillingVoidDimDimension(MagicaModElements instance) {
-		super(instance, 72);
+		super(instance, 33);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

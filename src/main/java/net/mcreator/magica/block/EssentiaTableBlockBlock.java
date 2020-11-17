@@ -32,7 +32,7 @@ public class EssentiaTableBlockBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:essentia_table_block")
 	public static final Block block = null;
 	public EssentiaTableBlockBlock(MagicaModElements instance) {
-		super(instance, 281);
+		super(instance, 71);
 	}
 
 	@Override

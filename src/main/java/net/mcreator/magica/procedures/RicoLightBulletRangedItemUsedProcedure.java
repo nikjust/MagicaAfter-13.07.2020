@@ -14,7 +14,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class RicoLightBulletRangedItemUsedProcedure extends MagicaModElements.ModElement {
 	public RicoLightBulletRangedItemUsedProcedure(MagicaModElements instance) {
-		super(instance, 156);
+		super(instance, 265);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

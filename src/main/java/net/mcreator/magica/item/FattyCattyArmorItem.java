@@ -29,7 +29,7 @@ public class FattyCattyArmorItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:fatty_catty_armor_boots")
 	public static final Item boots = null;
 	public FattyCattyArmorItem(MagicaModElements instance) {
-		super(instance, 263);
+		super(instance, 69);
 	}
 
 	@Override

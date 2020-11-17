@@ -104,7 +104,7 @@ public class ParallelWorldDimension extends MagicaModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public ParallelWorldDimension(MagicaModElements instance) {
-		super(instance, 164);
+		super(instance, 49);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

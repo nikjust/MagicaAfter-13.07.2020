@@ -34,7 +34,7 @@ public class ExoSkeletonLegsItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:exo_skeleton_legs_boots")
 	public static final Item boots = null;
 	public ExoSkeletonLegsItem(MagicaModElements instance) {
-		super(instance, 320);
+		super(instance, 107);
 	}
 
 	@Override

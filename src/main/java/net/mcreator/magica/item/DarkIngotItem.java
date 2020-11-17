@@ -16,7 +16,7 @@ public class DarkIngotItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:dark_ingot")
 	public static final Item block = null;
 	public DarkIngotItem(MagicaModElements instance) {
-		super(instance, 32);
+		super(instance, 17);
 	}
 
 	@Override

@@ -30,7 +30,7 @@ public class StrangeCubeItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:strange_cube")
 	public static final Item block = null;
 	public StrangeCubeItem(MagicaModElements instance) {
-		super(instance, 214);
+		super(instance, 56);
 	}
 
 	@Override

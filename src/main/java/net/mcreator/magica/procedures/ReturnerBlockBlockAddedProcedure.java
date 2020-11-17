@@ -10,7 +10,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ReturnerBlockBlockAddedProcedure extends MagicaModElements.ModElement {
 	public ReturnerBlockBlockAddedProcedure(MagicaModElements instance) {
-		super(instance, 235);
+		super(instance, 327);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

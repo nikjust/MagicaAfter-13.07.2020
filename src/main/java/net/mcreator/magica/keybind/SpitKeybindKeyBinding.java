@@ -31,7 +31,7 @@ public class SpitKeybindKeyBinding extends MagicaModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public SpitKeybindKeyBinding(MagicaModElements instance) {
-		super(instance, 89);
+		super(instance, 217);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class GoodRuneEntityWalksOnTheBlockProcedure extends MagicaModElements.ModElement {
 	public GoodRuneEntityWalksOnTheBlockProcedure(MagicaModElements instance) {
-		super(instance, 302);
+		super(instance, 379);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

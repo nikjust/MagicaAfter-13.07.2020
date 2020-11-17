@@ -68,7 +68,7 @@ public class UltimateRenamerBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:ultimate_renamer")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public UltimateRenamerBlock(MagicaModElements instance) {
-		super(instance, 168);
+		super(instance, 50);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

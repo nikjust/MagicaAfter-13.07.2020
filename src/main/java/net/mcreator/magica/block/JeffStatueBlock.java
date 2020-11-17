@@ -28,7 +28,7 @@ public class JeffStatueBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:jeff_statue")
 	public static final Block block = null;
 	public JeffStatueBlock(MagicaModElements instance) {
-		super(instance, 50);
+		super(instance, 24);
 	}
 
 	@Override

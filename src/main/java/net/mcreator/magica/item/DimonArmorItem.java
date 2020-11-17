@@ -29,7 +29,7 @@ public class DimonArmorItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:dimon_armor_boots")
 	public static final Item boots = null;
 	public DimonArmorItem(MagicaModElements instance) {
-		super(instance, 267);
+		super(instance, 103);
 	}
 
 	@Override

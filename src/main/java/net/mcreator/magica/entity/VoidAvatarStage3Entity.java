@@ -59,7 +59,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 public class VoidAvatarStage3Entity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public VoidAvatarStage3Entity(MagicaModElements instance) {
-		super(instance, 211);
+		super(instance, 115);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

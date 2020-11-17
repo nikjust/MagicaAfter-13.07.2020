@@ -51,7 +51,7 @@ import net.mcreator.magica.MagicaModElements;
 public class HyperEntEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public HyperEntEntity(MagicaModElements instance) {
-		super(instance, 106);
+		super(instance, 138);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -14,7 +14,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class HyperTowerRuneBlockDestroyedByExplosionProcedure extends MagicaModElements.ModElement {
 	public HyperTowerRuneBlockDestroyedByExplosionProcedure(MagicaModElements instance) {
-		super(instance, 172);
+		super(instance, 274);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

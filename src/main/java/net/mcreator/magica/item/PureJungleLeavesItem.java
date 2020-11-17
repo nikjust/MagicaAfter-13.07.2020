@@ -27,7 +27,7 @@ public class PureJungleLeavesItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:pure_jungle_leaves")
 	public static final Item block = null;
 	public PureJungleLeavesItem(MagicaModElements instance) {
-		super(instance, 219);
+		super(instance, 57);
 	}
 
 	@Override

@@ -35,7 +35,7 @@ public class HyperTowerRuneBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:hyper_tower_rune")
 	public static final Block block = null;
 	public HyperTowerRuneBlock(MagicaModElements instance) {
-		super(instance, 169);
+		super(instance, 51);
 	}
 
 	@Override

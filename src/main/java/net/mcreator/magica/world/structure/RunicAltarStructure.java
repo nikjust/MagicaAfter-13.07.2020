@@ -31,7 +31,7 @@ import java.util.Random;
 @MagicaModElements.ModElement.Tag
 public class RunicAltarStructure extends MagicaModElements.ModElement {
 	public RunicAltarStructure(MagicaModElements instance) {
-		super(instance, 111);
+		super(instance, 236);
 	}
 
 	@Override

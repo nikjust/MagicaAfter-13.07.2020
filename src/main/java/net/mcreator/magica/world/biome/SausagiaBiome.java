@@ -46,7 +46,7 @@ public class SausagiaBiome extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:sausagia")
 	public static final CustomBiome biome = null;
 	public SausagiaBiome(MagicaModElements instance) {
-		super(instance, 181);
+		super(instance, 282);
 	}
 
 	@Override

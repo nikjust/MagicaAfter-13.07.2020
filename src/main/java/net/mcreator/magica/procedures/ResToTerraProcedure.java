@@ -9,7 +9,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ResToTerraProcedure extends MagicaModElements.ModElement {
 	public ResToTerraProcedure(MagicaModElements instance) {
-		super(instance, 278);
+		super(instance, 361);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

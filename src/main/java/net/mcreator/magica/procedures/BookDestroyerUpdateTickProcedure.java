@@ -19,7 +19,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class BookDestroyerUpdateTickProcedure extends MagicaModElements.ModElement {
 	public BookDestroyerUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 15);
+		super(instance, 173);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -22,7 +22,7 @@ import java.util.HashMap;
 @MagicaModElements.ModElement.Tag
 public class StartedProcedure extends MagicaModElements.ModElement {
 	public StartedProcedure(MagicaModElements instance) {
-		super(instance, 237);
+		super(instance, 328);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

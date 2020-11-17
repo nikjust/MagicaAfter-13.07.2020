@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class RangedBoofProcedure extends MagicaModElements.ModElement {
 	public RangedBoofProcedure(MagicaModElements instance) {
-		super(instance, 42);
+		super(instance, 186);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -53,6 +53,13 @@ public class RangedBoofProcedure extends MagicaModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (72); index0++) {
 			entity.rotationYaw = (float) ((MagicaModVariables.MapVariables.get(world).Gradus));
+			entity.setRenderYawOffset(entity.rotationYaw);
+			entity.prevRotationYaw = entity.rotationYaw;
+			if (entity instanceof LivingEntity) {
+				((LivingEntity) entity).prevRenderYawOffset = entity.rotationYaw;
+				((LivingEntity) entity).rotationYawHead = entity.rotationYaw;
+				((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
+			}
 			entity.rotationPitch = (float) (0);
 			if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
 				ArrowEntity entityToSpawn = new ArrowEntity(world.getWorld(), (LivingEntity) entity);

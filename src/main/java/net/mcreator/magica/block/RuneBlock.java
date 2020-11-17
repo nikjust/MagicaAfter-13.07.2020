@@ -23,7 +23,7 @@ public class RuneBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:rune")
 	public static final Block block = null;
 	public RuneBlock(MagicaModElements instance) {
-		super(instance, 300);
+		super(instance, 75);
 	}
 
 	@Override

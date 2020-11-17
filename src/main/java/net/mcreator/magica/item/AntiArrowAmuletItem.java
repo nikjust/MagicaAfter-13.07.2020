@@ -22,7 +22,7 @@ public class AntiArrowAmuletItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:anti_arrow_amulet")
 	public static final Item block = null;
 	public AntiArrowAmuletItem(MagicaModElements instance) {
-		super(instance, 334);
+		super(instance, 148);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class AltarUpdateTickProcedure extends MagicaModElements.ModElement {
 	public AltarUpdateTickProcedure(MagicaModElements instance) {
-		super(instance, 270);
+		super(instance, 353);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

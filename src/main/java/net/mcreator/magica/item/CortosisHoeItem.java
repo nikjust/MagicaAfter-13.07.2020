@@ -16,7 +16,7 @@ public class CortosisHoeItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_hoe")
 	public static final Item block = null;
 	public CortosisHoeItem(MagicaModElements instance) {
-		super(instance, 138);
+		super(instance, 161);
 	}
 
 	@Override

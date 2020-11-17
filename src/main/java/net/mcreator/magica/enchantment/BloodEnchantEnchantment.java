@@ -15,7 +15,7 @@ public class BloodEnchantEnchantment extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:blood_enchant")
 	public static final Enchantment enchantment = null;
 	public BloodEnchantEnchantment(MagicaModElements instance) {
-		super(instance, 102);
+		super(instance, 229);
 	}
 
 	@Override

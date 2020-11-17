@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ColosusHeartBulletHitsPlayerProcedure extends MagicaModElements.ModElement {
 	public ColosusHeartBulletHitsPlayerProcedure(MagicaModElements instance) {
-		super(instance, 85);
+		super(instance, 212);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

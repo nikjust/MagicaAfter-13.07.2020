@@ -25,7 +25,7 @@ public class VornskrParalyticItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:vornskr_paralytic")
 	public static final Item block = null;
 	public VornskrParalyticItem(MagicaModElements instance) {
-		super(instance, 221);
+		super(instance, 58);
 	}
 
 	@Override

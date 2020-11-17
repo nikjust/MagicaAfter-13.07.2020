@@ -32,7 +32,7 @@ import java.util.Random;
 @MagicaModElements.ModElement.Tag
 public class WildForestHeartStructureStructure extends MagicaModElements.ModElement {
 	public WildForestHeartStructureStructure(MagicaModElements instance) {
-		super(instance, 252);
+		super(instance, 340);
 	}
 
 	@Override

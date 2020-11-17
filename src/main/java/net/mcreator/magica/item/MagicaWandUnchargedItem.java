@@ -22,7 +22,7 @@ public class MagicaWandUnchargedItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:magica_wand_uncharged")
 	public static final Item block = null;
 	public MagicaWandUnchargedItem(MagicaModElements instance) {
-		super(instance, 20);
+		super(instance, 8);
 	}
 
 	@Override

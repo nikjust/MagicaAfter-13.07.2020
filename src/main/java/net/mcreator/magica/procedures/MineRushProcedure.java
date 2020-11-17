@@ -11,7 +11,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class MineRushProcedure extends MagicaModElements.ModElement {
 	public MineRushProcedure(MagicaModElements instance) {
-		super(instance, 75);
+		super(instance, 205);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

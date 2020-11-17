@@ -15,7 +15,7 @@ public class TestItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:test")
 	public static final Item block = null;
 	public TestItem(MagicaModElements instance) {
-		super(instance, 74);
+		super(instance, 204);
 	}
 
 	@Override

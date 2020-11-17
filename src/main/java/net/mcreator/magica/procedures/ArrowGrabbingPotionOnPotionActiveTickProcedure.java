@@ -20,7 +20,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class ArrowGrabbingPotionOnPotionActiveTickProcedure extends MagicaModElements.ModElement {
 	public ArrowGrabbingPotionOnPotionActiveTickProcedure(MagicaModElements instance) {
-		super(instance, 335);
+		super(instance, 403);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

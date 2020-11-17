@@ -28,7 +28,7 @@ public class CrystaliumColumnBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:crystalium_column")
 	public static final Block block = null;
 	public CrystaliumColumnBlock(MagicaModElements instance) {
-		super(instance, 297);
+		super(instance, 73);
 	}
 
 	@Override

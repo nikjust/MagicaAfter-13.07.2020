@@ -75,7 +75,7 @@ public class GeneratorBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:generator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GeneratorBlock(MagicaModElements instance) {
-		super(instance, 160);
+		super(instance, 47);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -16,7 +16,7 @@ public class BloodyCrystalItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:bloody_crystal")
 	public static final Item block = null;
 	public BloodyCrystalItem(MagicaModElements instance) {
-		super(instance, 67);
+		super(instance, 29);
 	}
 
 	@Override

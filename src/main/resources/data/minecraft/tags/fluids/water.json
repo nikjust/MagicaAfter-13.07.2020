@@ -4,6 +4,8 @@
     "magica:dash",
     "magica:dash_flowing",
     "magica:chlorine",
-    "magica:chlorine_flowing"
+    "magica:chlorine_flowing",
+    "magica:acid",
+    "magica:acid_flowing"
   ]
 }

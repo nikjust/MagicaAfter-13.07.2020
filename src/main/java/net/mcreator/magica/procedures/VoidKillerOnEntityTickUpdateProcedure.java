@@ -10,7 +10,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class VoidKillerOnEntityTickUpdateProcedure extends MagicaModElements.ModElement {
 	public VoidKillerOnEntityTickUpdateProcedure(MagicaModElements instance) {
-		super(instance, 316);
+		super(instance, 389);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

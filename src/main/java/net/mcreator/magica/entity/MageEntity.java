@@ -17,11 +17,14 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -41,6 +44,7 @@ import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.magica.procedures.MageRightClickedOnEntityProcedure;
 import net.mcreator.magica.procedures.MageOnEntityTickUpdateProcedure;
 import net.mcreator.magica.MagicaModElements;
 
@@ -51,7 +55,7 @@ import java.util.HashMap;
 public class MageEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public MageEntity(MagicaModElements instance) {
-		super(instance, 272);
+		super(instance, 125);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -126,6 +130,24 @@ public class MageEntity extends MagicaModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean processInteract(PlayerEntity sourceentity, Hand hand) {
+			ItemStack itemstack = sourceentity.getHeldItem(hand);
+			boolean retval = true;
+			super.processInteract(sourceentity, hand);
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				MageRightClickedOnEntityProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 
 		@Override

@@ -24,7 +24,7 @@ import java.util.Comparator;
 @MagicaModElements.ModElement.Tag
 public class HyperTowerRuneBlockAddedProcedure extends MagicaModElements.ModElement {
 	public HyperTowerRuneBlockAddedProcedure(MagicaModElements instance) {
-		super(instance, 171);
+		super(instance, 273);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

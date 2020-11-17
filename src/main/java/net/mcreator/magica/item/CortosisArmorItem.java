@@ -29,7 +29,7 @@ public class CortosisArmorItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:cortosis_armor_boots")
 	public static final Item boots = null;
 	public CortosisArmorItem(MagicaModElements instance) {
-		super(instance, 144);
+		super(instance, 97);
 	}
 
 	@Override

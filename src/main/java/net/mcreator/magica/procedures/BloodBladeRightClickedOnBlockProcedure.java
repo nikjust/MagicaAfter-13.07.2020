@@ -15,7 +15,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class BloodBladeRightClickedOnBlockProcedure extends MagicaModElements.ModElement {
 	public BloodBladeRightClickedOnBlockProcedure(MagicaModElements instance) {
-		super(instance, 86);
+		super(instance, 213);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

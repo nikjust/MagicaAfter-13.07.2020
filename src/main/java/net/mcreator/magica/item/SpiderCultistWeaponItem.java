@@ -52,7 +52,7 @@ public class SpiderCultistWeaponItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletspider_cultist_weapon")
 	public static final EntityType arrow = null;
 	public SpiderCultistWeaponItem(MagicaModElements instance) {
-		super(instance, 189);
+		super(instance, 290);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class DarkSoulShardItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:dark_soul_shard")
 	public static final Item block = null;
 	public DarkSoulShardItem(MagicaModElements instance) {
-		super(instance, 31);
+		super(instance, 16);
 	}
 
 	@Override

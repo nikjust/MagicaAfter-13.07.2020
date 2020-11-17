@@ -48,7 +48,7 @@ public class KillingVoidBiome extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:killing_void")
 	public static final CustomBiome biome = null;
 	public KillingVoidBiome(MagicaModElements instance) {
-		super(instance, 71);
+		super(instance, 202);
 	}
 
 	@Override

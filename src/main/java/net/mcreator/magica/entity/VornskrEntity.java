@@ -63,7 +63,7 @@ import java.util.HashMap;
 public class VornskrEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public VornskrEntity(MagicaModElements instance) {
-		super(instance, 220);
+		super(instance, 119);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

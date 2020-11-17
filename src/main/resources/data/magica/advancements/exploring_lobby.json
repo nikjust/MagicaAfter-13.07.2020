@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "magica:textures/eclay.png",
+    "icon": {
+      "item": "magica:magica_icon"
+    },
+    "title": {
+      "translate": "advancements.exploring_lobby.title"
+    },
+    "description": {
+      "translate": "advancements.exploring_lobby.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "exploring_lobby": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

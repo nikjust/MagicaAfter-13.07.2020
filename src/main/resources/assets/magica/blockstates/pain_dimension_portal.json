@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "magica:block/pain_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "magica:block/pain_dimension_portal_ns"
+    }
+  }
+}

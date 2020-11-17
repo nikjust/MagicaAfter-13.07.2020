@@ -17,7 +17,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CortosisKatanaRightClickedOnBlockProcedure extends MagicaModElements.ModElement {
 	public CortosisKatanaRightClickedOnBlockProcedure(MagicaModElements instance) {
-		super(instance, 151);
+		super(instance, 262);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

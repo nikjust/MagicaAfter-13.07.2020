@@ -48,7 +48,7 @@ public class CosmoportUnpackerItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletcosmoport_unpacker")
 	public static final EntityType arrow = null;
 	public CosmoportUnpackerItem(MagicaModElements instance) {
-		super(instance, 121);
+		super(instance, 42);
 	}
 
 	@Override

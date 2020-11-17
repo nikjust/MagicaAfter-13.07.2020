@@ -16,7 +16,7 @@ public class ParalyticDartItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:paralytic_dart")
 	public static final Item block = null;
 	public ParalyticDartItem(MagicaModElements instance) {
-		super(instance, 223);
+		super(instance, 152);
 	}
 
 	@Override

@@ -69,7 +69,7 @@ import io.netty.buffer.Unpooled;
 public class ZugurukEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public ZugurukEntity(MagicaModElements instance) {
-		super(instance, 114);
+		super(instance, 139);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

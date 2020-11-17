@@ -16,7 +16,7 @@ public class StableSoulItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:stable_soul")
 	public static final Item block = null;
 	public StableSoulItem(MagicaModElements instance) {
-		super(instance, 77);
+		super(instance, 34);
 	}
 
 	@Override

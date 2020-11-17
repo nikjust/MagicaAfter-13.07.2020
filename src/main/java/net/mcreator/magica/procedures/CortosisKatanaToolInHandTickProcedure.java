@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CortosisKatanaToolInHandTickProcedure extends MagicaModElements.ModElement {
 	public CortosisKatanaToolInHandTickProcedure(MagicaModElements instance) {
-		super(instance, 150);
+		super(instance, 261);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

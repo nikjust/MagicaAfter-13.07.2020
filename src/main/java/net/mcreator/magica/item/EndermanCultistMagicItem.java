@@ -52,7 +52,7 @@ public class EndermanCultistMagicItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:entitybulletenderman_cultist_magic")
 	public static final EntityType arrow = null;
 	public EndermanCultistMagicItem(MagicaModElements instance) {
-		super(instance, 185);
+		super(instance, 54);
 	}
 
 	@Override

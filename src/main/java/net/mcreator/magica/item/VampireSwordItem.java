@@ -29,7 +29,7 @@ public class VampireSwordItem extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:vampire_sword")
 	public static final Item block = null;
 	public VampireSwordItem(MagicaModElements instance) {
-		super(instance, 268);
+		super(instance, 104);
 	}
 
 	@Override

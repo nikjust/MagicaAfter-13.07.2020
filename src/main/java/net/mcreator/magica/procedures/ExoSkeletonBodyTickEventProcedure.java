@@ -18,7 +18,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class ExoSkeletonBodyTickEventProcedure extends MagicaModElements.ModElement {
 	public ExoSkeletonBodyTickEventProcedure(MagicaModElements instance) {
-		super(instance, 264);
+		super(instance, 349);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

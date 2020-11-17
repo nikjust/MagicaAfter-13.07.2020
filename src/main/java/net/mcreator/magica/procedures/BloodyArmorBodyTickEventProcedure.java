@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class BloodyArmorBodyTickEventProcedure extends MagicaModElements.ModElement {
 	public BloodyArmorBodyTickEventProcedure(MagicaModElements instance) {
-		super(instance, 198);
+		super(instance, 298);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -22,6 +22,7 @@ public class BloodyArmorBodyTickEventProcedure extends MagicaModElements.ModElem
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		entity.setNoGravity((true));
 		if (((new ItemStack(BloodyArmorItem.boots, (int) (1))
 				.getItem() == ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get((int) 0) : ItemStack.EMPTY)
 						.getItem())
@@ -31,6 +32,7 @@ public class BloodyArmorBodyTickEventProcedure extends MagicaModElements.ModElem
 						&& (new ItemStack(BloodyArmorItem.helmet, (int) (1)).getItem() == ((entity instanceof PlayerEntity)
 								? ((PlayerEntity) entity).inventory.armorInventory.get((int) 3)
 								: ItemStack.EMPTY).getItem())))) {
+			entity.setSilent((true));
 		}
 	}
 }

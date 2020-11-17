@@ -31,7 +31,7 @@ public class MineRushKeyKeyBinding extends MagicaModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public MineRushKeyKeyBinding(MagicaModElements instance) {
-		super(instance, 76);
+		super(instance, 206);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

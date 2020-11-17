@@ -28,7 +28,7 @@ public class HeartiumGrassBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:heartium_grass")
 	public static final Block block = null;
 	public HeartiumGrassBlock(MagicaModElements instance) {
-		super(instance, 25);
+		super(instance, 10);
 	}
 
 	@Override

@@ -12,7 +12,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class EndermanCultistMagicBulletHitsPlayerProcedure extends MagicaModElements.ModElement {
 	public EndermanCultistMagicBulletHitsPlayerProcedure(MagicaModElements instance) {
-		super(instance, 185);
+		super(instance, 285);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

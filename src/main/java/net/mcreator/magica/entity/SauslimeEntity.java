@@ -52,7 +52,7 @@ import net.mcreator.magica.MagicaModElements;
 public class SauslimeEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public SauslimeEntity(MagicaModElements instance) {
-		super(instance, 289);
+		super(instance, 127);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

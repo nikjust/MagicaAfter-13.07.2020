@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @MagicaModElements.ModElement.Tag
 public class DimensionIDCommand extends MagicaModElements.ModElement {
 	public DimensionIDCommand(MagicaModElements instance) {
-		super(instance, 216);
+		super(instance, 312);
 	}
 
 	@Override

@@ -49,7 +49,7 @@ public class HeartiBiome extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:hearti")
 	public static final CustomBiome biome = null;
 	public HeartiBiome(MagicaModElements instance) {
-		super(instance, 28);
+		super(instance, 181);
 	}
 
 	@Override

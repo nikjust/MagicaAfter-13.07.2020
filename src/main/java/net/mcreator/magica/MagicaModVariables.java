@@ -229,6 +229,7 @@ public class MagicaModVariables {
 			nbt.put("soulUsed", instance.soulUsed.write(new CompoundNBT()));
 			nbt.putDouble("Intoxication", instance.Intoxication);
 			nbt.put("ItemStackBuffer", instance.ItemStackBuffer.write(new CompoundNBT()));
+			nbt.putDouble("replTimer", instance.replTimer);
 			return nbt;
 		}
 
@@ -238,6 +239,7 @@ public class MagicaModVariables {
 			instance.soulUsed = ItemStack.read(nbt.getCompound("soulUsed"));
 			instance.Intoxication = nbt.getDouble("Intoxication");
 			instance.ItemStackBuffer = ItemStack.read(nbt.getCompound("ItemStackBuffer"));
+			instance.replTimer = nbt.getDouble("replTimer");
 		}
 	}
 
@@ -245,6 +247,7 @@ public class MagicaModVariables {
 		public ItemStack soulUsed = ItemStack.EMPTY;
 		public double Intoxication = 0;
 		public ItemStack ItemStackBuffer = ItemStack.EMPTY;
+		public double replTimer = 0;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				MagicaMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
@@ -280,6 +283,7 @@ public class MagicaModVariables {
 		clone.ItemStackBuffer = original.ItemStackBuffer;
 		if (!event.isWasDeath()) {
 			clone.Intoxication = original.Intoxication;
+			clone.replTimer = original.replTimer;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -306,6 +310,7 @@ public class MagicaModVariables {
 					variables.soulUsed = message.data.soulUsed;
 					variables.Intoxication = message.data.Intoxication;
 					variables.ItemStackBuffer = message.data.ItemStackBuffer;
+					variables.replTimer = message.data.replTimer;
 				}
 			});
 			context.setPacketHandled(true);

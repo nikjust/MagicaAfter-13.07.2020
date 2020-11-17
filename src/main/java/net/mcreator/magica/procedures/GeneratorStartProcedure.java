@@ -19,7 +19,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class GeneratorStartProcedure extends MagicaModElements.ModElement {
 	public GeneratorStartProcedure(MagicaModElements instance) {
-		super(instance, 162);
+		super(instance, 269);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

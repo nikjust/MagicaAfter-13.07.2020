@@ -51,7 +51,7 @@ import java.util.HashMap;
 public class SpiderCultistEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public SpiderCultistEntity(MagicaModElements instance) {
-		super(instance, 188);
+		super(instance, 144);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

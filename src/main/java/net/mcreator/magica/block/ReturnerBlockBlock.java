@@ -32,7 +32,7 @@ public class ReturnerBlockBlock extends MagicaModElements.ModElement {
 	@ObjectHolder("magica:returner_block")
 	public static final Block block = null;
 	public ReturnerBlockBlock(MagicaModElements instance) {
-		super(instance, 233);
+		super(instance, 325);
 	}
 
 	@Override

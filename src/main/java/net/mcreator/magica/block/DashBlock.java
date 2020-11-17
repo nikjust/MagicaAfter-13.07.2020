@@ -45,7 +45,7 @@ public class DashBlock extends MagicaModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public DashBlock(MagicaModElements instance) {
-		super(instance, 24);
+		super(instance, 9);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

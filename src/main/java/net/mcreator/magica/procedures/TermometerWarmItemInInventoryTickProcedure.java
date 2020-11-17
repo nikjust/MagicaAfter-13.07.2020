@@ -18,7 +18,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class TermometerWarmItemInInventoryTickProcedure extends MagicaModElements.ModElement {
 	public TermometerWarmItemInInventoryTickProcedure(MagicaModElements instance) {
-		super(instance, 177);
+		super(instance, 279);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

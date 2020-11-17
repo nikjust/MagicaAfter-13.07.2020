@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/burneddirt",
+    "up": "magica:blocks/burnedgrasstop",
+    "north": "magica:blocks/burnedgrass",
+    "east": "magica:blocks/burnedgrass",
+    "south": "magica:blocks/burnedgrass",
+    "west": "magica:blocks/burnedgrass",
+    "particle": "magica:blocks/burneddirt"
+  }
+}

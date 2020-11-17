@@ -47,7 +47,7 @@ import java.util.HashMap;
 public class JeffEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public JeffEntity(MagicaModElements instance) {
-		super(instance, 44);
+		super(instance, 123);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

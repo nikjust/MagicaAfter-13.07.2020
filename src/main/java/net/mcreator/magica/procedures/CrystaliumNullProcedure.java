@@ -9,7 +9,7 @@ import java.util.Map;
 @MagicaModElements.ModElement.Tag
 public class CrystaliumNullProcedure extends MagicaModElements.ModElement {
 	public CrystaliumNullProcedure(MagicaModElements instance) {
-		super(instance, 295);
+		super(instance, 374);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

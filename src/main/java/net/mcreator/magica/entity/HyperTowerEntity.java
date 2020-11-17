@@ -50,7 +50,7 @@ import java.util.Random;
 public class HyperTowerEntity extends MagicaModElements.ModElement {
 	public static EntityType entity = null;
 	public HyperTowerEntity(MagicaModElements instance) {
-		super(instance, 170);
+		super(instance, 141);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
