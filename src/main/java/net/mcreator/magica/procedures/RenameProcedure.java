@@ -47,7 +47,7 @@ public class RenameProcedure extends MagicaModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0)))).setDisplayName(new StringTextComponent((new Object() {
+		}.getItemStack((int) (0)))).setDisplayName(new StringTextComponent(("\u00A7".replace("&", (new Object() {
 			public String getText() {
 				TextFieldWidget textField = (TextFieldWidget) guistate.get("text:name");
 				if (textField != null) {
@@ -55,6 +55,6 @@ public class RenameProcedure extends MagicaModElements.ModElement {
 				}
 				return "";
 			}
-		}.getText())));
+		}.getText())))));
 	}
 }

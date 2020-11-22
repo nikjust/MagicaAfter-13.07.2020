@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "magica:block/black_wood_slab"
+    },
+    "type=top": {
+      "model": "magica:block/black_wood_slab_top"
+    },
+    "type=double": {
+      "model": "magica:block/black_wood_slab_full"
+    }
+  }
+}

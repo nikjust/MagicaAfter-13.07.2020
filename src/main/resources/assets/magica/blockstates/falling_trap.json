@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "magica:block/falling_trap"
+    },
+    "facing=east": {
+      "model": "magica:block/falling_trap",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "magica:block/falling_trap",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magica:block/falling_trap",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "magica:block/falling_trap",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "magica:block/falling_trap",
+      "x": 90
+    }
+  }
+}

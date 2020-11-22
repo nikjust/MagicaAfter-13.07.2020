@@ -6950,6 +6950,452 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "slug"
+    },
+    {
+      "name": "AbsoluteShieldOnKeyPressed",
+      "type": "procedure",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "absolute_shield_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AbsoluteShieldOnKeyPressedg",
+      "type": "procedure",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "absolute_shield_on_key_pressedg",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AbsoluteShield",
+      "type": "keybind",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "absolute_shield"
+    },
+    {
+      "name": "FallingTrap",
+      "type": "block",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "falling_trap"
+    },
+    {
+      "name": "FallingTrapUpdateTick",
+      "type": "procedure",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "falling_trap_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicaBottomDownCommandExecuted",
+      "type": "procedure",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_bottom_down_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicaBottomDown",
+      "type": "command",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magica_bottom_down"
+    },
+    {
+      "name": "TracerEyeOnKeyPressed",
+      "type": "procedure",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tracer_eye_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TracerEye",
+      "type": "keybind",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tracer_eye"
+    },
+    {
+      "name": "Tracer",
+      "type": "function",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tracer"
+    },
+    {
+      "name": "OnTick",
+      "type": "tag",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "on_tick"
+    },
+    {
+      "name": "TracerEyeTickEvent",
+      "type": "procedure",
+      "sortid": 470,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tracer_eye_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FruitOfMagicToolInInventoryTick",
+      "type": "procedure",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fruit_of_magic_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FruitOfMagic",
+      "type": "tool",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fruit_of_magic"
+    },
+    {
+      "name": "SetMagicaCommandExecuted",
+      "type": "procedure",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "set_magica_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetMagica",
+      "type": "command",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "set_magica"
+    },
+    {
+      "name": "TracerParticle",
+      "type": "particle",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tracer_particle"
+    },
+    {
+      "name": "BlackWoodWood",
+      "type": "block",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_wood"
+    },
+    {
+      "name": "BlackWoodLog",
+      "type": "block",
+      "sortid": 475,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_log"
+    },
+    {
+      "name": "BlackWoodPlanks",
+      "type": "block",
+      "sortid": 476,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_planks"
+    },
+    {
+      "name": "BlackWoodLeaves",
+      "type": "block",
+      "sortid": 477,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_leaves"
+    },
+    {
+      "name": "BlackWoodStairs",
+      "type": "block",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_stairs"
+    },
+    {
+      "name": "BlackWoodSlab",
+      "type": "block",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_slab"
+    },
+    {
+      "name": "BlackWoodFence",
+      "type": "block",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_fence"
+    },
+    {
+      "name": "BlackWoodFenceGate",
+      "type": "block",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_fence_gate"
+    },
+    {
+      "name": "BlackWoodItemsTag",
+      "type": "tag",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_items_tag"
+    },
+    {
+      "name": "BlackWoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_wood_recipe"
+    },
+    {
+      "name": "BlackWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 484,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_planks_recipe"
+    },
+    {
+      "name": "BlackWoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_stairs_recipe"
+    },
+    {
+      "name": "BlackWoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 486,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_slab_recipe"
+    },
+    {
+      "name": "BlackWoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 487,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_fence_recipe"
+    },
+    {
+      "name": "BlackWoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 488,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_fence_gate_recipe"
+    },
+    {
+      "name": "BlackWoodStickRecipe",
+      "type": "recipe",
+      "sortid": 489,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wood_stick_recipe"
+    },
+    {
+      "name": "Bwtree",
+      "type": "structure",
+      "sortid": 490,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bwtree"
     }
   ],
   "variable_elements": [
@@ -7030,6 +7476,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "AbsShieldStatus",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "TracerEye",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -7065,6 +7523,7 @@
   "language_map": {
     "en_us": {
       "biome.magica.entia_biome": "Entia Biome",
+      "block.magica.black_wood_fence": "BlackWood Fence",
       "biome.magica.korriban": "Korriban",
       "item.minecraft.splash_potion.effect.magical_atrophy": "Splash Magical Atrophy",
       "item.magica.marionette_spawn_egg": "Marionette Spawn Egg",
@@ -7111,12 +7570,14 @@
       "block.magica.bouncy_slime_block": "Bouncy Slime Block",
       "item.magica.ungrowed_crystal": "Ungrowed Crystal",
       "advancements.bad_trip.descr": "Have A Bad Trip",
+      "block.magica.black_wood_leaves": "BlackWood Leaves",
       "item.magica.marionette_item": "Marionette",
       "item.magica.jeff_phase_2": "Jeff Phase 2 Spawn Egg",
       "item.magica.jeff_phase_3": "Jeff Phase 3 Spawn Egg",
       "item.magica.test": "Test",
       "item.magica.jeff_phase_3_spawn_egg": "Jeff Phase 3 Spawn Egg",
       "item.magica.magica_wand": "Magica Wand",
+      "key.mcreator.tracer_eye": "Tracer Eye",
       "item.magica.draconic_armorlegs": "Draconic Armor Leggings",
       "item.magica.exo_skeleton_leggings": "Exo Skeleton Leggings",
       "item.magica.void_avatar_stage_3_spawn_egg": "Void Avatar Stage 3 Spawn Egg",
@@ -7176,6 +7637,7 @@
       "item.magica.shuriken_of_dark": "Shuriken Of Dark",
       "item.magica.good_sword": "Good Sword",
       "item.magica.amulet_of_salvation_active": "Amulet Of Salvation",
+      "key.mcreator.absolute_shield": "Absolute Shield",
       "item.minecraft.potion.effect.arrow_grabbing_potion": "Arrow Grabbing",
       "item.magica.dash_bucket": "Dash Bucket",
       "fluid.chlorine": "Chlorine",
@@ -7208,12 +7670,14 @@
       "item.magica.cortosis_armor_helmet": "Iron-Cortosis Helmet",
       "entity.magica.h_tdummy": "H Tdummy",
       "block.magica.heartium_portal_block": "Heartium Portal Block",
+      "block.magica.falling_trap": "Falling Trap",
       "block.magica.killing_void_portal_block": "Killing Void Portal Block",
       "item.magica.evil_scull_spawn_egg": "Evil Skull Spawn Egg",
       "item.magica.bloody_armorboots": "Bloody Boots",
       "item.magica.tesseract": "Tesseract",
       "item.magica.zuguruk": "Zuguruk Spawn Egg",
       "block.magica.burned_stone": "Burned Stone",
+      "block.magica.black_wood_stairs": "BlackWood Stairs",
       "item.magica.cortosis_armorbody": "Iron-Cortosis Chestplate",
       "item.magica.enchanted_golem_spawn_egg": "Enchanted Golem Spawn Egg",
       "entity.magica.enderman_cultist": "Enderman\u0027s Cultist",
@@ -7259,6 +7723,7 @@
       "item.magica.wild_forest_dim": "Wild Forest Charm",
       "item.magica.h_tdummy_spawn_egg": "H Tdummy Spawn Egg",
       "entity.magica.marionette": "Marionette",
+      "block.magica.black_wood_wood": "BlackWood Wood",
       "item.magica.void_avatar_spawn_egg": "Void Avatar Spawn Egg",
       "item.magica.magic_quartz": "Magic Quartz",
       "item.magica.mystery_creeper": "Mystery Creeper Spawn Egg",
@@ -7293,6 +7758,8 @@
       "block.magica.rune": "Rune",
       "block.magica.dead_wild_forest_light_vine": "Wild Forest Green Vine",
       "amulet.rarity.ideal": "ideal ",
+      "block.magica.black_wood_planks": "BlackWood Planks",
+      "item.magica.fruit_of_magic": "Fruit Of Magic",
       "item.minecraft.tipped_arrow.effect.magical_atrophy": "Arrow of Magical Atrophy",
       "block.magica.xp_reaper": "Xp Reaper",
       "block.magica.cortosis_ore": "Cortosis Ore",
@@ -7304,6 +7771,7 @@
       "item.magica.bloody_armorlegs": "Bloody Leggings",
       "item.magica.dark_soul_shard": "Dark Soul Shard",
       "entity.magica.void_avatar": "Void Avatar",
+      "block.magica.black_wood_fence_gate": "BlackWood Fence Gate",
       "item.magica.soul_shard": "Light Soul Shard",
       "entity.magica.mystery_creeper": "Mystery Creeper",
       "item.magica.dimon_armor_chestplate": "Dimon Armor Body",
@@ -7342,6 +7810,7 @@
       "item.magica.cortosis_pickaxe": "Cortosis Pickaxe",
       "item.magica.draconic_armor_helmet": "Draconic Armor Helmet",
       "item.magica.bloody_crystal": "Bloody Crystal",
+      "block.magica.black_wood_slab": "BlackWood Slab",
       "item.magica.vampire_sword": "Vampire Sword",
       "effect.magical_atrophy": "Magical Atrophy",
       "item.magica.amulet_of_salvation": "Amulet Of Salvation",
@@ -7408,6 +7877,7 @@
       "item.magica.magic_exo_skeleton_legs_helmet": "Exo Skeleton Legs Helmet",
       "item.magica.hyper_tower_spawn_egg": "Hyper Tower Spawn Egg",
       "block.magica.heartium": "Heartium Dirt",
+      "block.magica.black_wood_log": "BlackWood Log",
       "item.magica.block_analyzer": "Block Analyzer",
       "block.magica.magica_furnace": "Magica Furnace",
       "item.magica.avanta_cigar": "Avanta Cigar",

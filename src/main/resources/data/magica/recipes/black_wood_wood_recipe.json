@@ -1,0 +1,26 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "magica:black_wood_log"
+    },
+    "1": {
+      "item": "magica:black_wood_log"
+    },
+    "2": {
+      "item": "magica:black_wood_log"
+    },
+    "3": {
+      "item": "magica:black_wood_log"
+    }
+  },
+  "result": {
+    "item": "magica:black_wood_wood",
+    "count": 3
+  }
+}

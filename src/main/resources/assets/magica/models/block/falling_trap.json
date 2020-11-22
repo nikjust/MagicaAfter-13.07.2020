@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/furnace0",
+    "up": "magica:blocks/plant",
+    "north": "magica:blocks/jeff2",
+    "east": "magica:blocks/dirt",
+    "south": "magica:blocks/mgfurntop",
+    "west": "magica:blocks/cobble",
+    "particle": "magica:blocks/furnace0"
+  }
+}

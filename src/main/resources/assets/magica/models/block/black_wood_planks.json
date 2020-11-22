@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magica:blocks/blackwood_planks",
+    "particle": "magica:blocks/blackwood_planks"
+  }
+}

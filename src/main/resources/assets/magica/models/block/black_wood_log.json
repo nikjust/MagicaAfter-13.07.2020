@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magica:blocks/blackwood_log_top",
+    "up": "magica:blocks/blackwood_log_top",
+    "north": "magica:blocks/blackwood_log_side",
+    "east": "magica:blocks/blackwood_log_side",
+    "south": "magica:blocks/blackwood_log_side",
+    "west": "magica:blocks/blackwood_log_side",
+    "particle": "magica:blocks/blackwood_log_top"
+  }
+}

@@ -230,6 +230,8 @@ public class MagicaModVariables {
 			nbt.putDouble("Intoxication", instance.Intoxication);
 			nbt.put("ItemStackBuffer", instance.ItemStackBuffer.write(new CompoundNBT()));
 			nbt.putDouble("replTimer", instance.replTimer);
+			nbt.putBoolean("AbsShieldStatus", instance.AbsShieldStatus);
+			nbt.putBoolean("TracerEye", instance.TracerEye);
 			return nbt;
 		}
 
@@ -240,6 +242,8 @@ public class MagicaModVariables {
 			instance.Intoxication = nbt.getDouble("Intoxication");
 			instance.ItemStackBuffer = ItemStack.read(nbt.getCompound("ItemStackBuffer"));
 			instance.replTimer = nbt.getDouble("replTimer");
+			instance.AbsShieldStatus = nbt.getBoolean("AbsShieldStatus");
+			instance.TracerEye = nbt.getBoolean("TracerEye");
 		}
 	}
 
@@ -248,6 +252,8 @@ public class MagicaModVariables {
 		public double Intoxication = 0;
 		public ItemStack ItemStackBuffer = ItemStack.EMPTY;
 		public double replTimer = 0;
+		public boolean AbsShieldStatus = false;
+		public boolean TracerEye = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				MagicaMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
@@ -284,6 +290,8 @@ public class MagicaModVariables {
 		if (!event.isWasDeath()) {
 			clone.Intoxication = original.Intoxication;
 			clone.replTimer = original.replTimer;
+			clone.AbsShieldStatus = original.AbsShieldStatus;
+			clone.TracerEye = original.TracerEye;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -311,6 +319,8 @@ public class MagicaModVariables {
 					variables.Intoxication = message.data.Intoxication;
 					variables.ItemStackBuffer = message.data.ItemStackBuffer;
 					variables.replTimer = message.data.replTimer;
+					variables.AbsShieldStatus = message.data.AbsShieldStatus;
+					variables.TracerEye = message.data.TracerEye;
 				}
 			});
 			context.setPacketHandled(true);

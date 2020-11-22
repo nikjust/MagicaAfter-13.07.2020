@@ -356,15 +356,15 @@ public class UltimateRenamerGUIGui extends MagicaModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			name = new TextFieldWidget(this.font, this.guiLeft + 31, this.guiTop + 11, 120, 20, "<BNBT:text:current>") {
+			name = new TextFieldWidget(this.font, this.guiLeft + 31, this.guiTop + 11, 120, 20, "name") {
 				{
-					setSuggestion("<BNBT:text:current>");
+					setSuggestion("name");
 				}
 				@Override
 				public void writeText(String text) {
 					super.writeText(text);
 					if (getText().isEmpty())
-						setSuggestion("<BNBT:text:current>");
+						setSuggestion("name");
 					else
 						setSuggestion(null);
 				}
@@ -373,7 +373,7 @@ public class UltimateRenamerGUIGui extends MagicaModElements.ModElement {
 				public void setCursorPosition(int pos) {
 					super.setCursorPosition(pos);
 					if (getText().isEmpty())
-						setSuggestion("<BNBT:text:current>");
+						setSuggestion("name");
 					else
 						setSuggestion(null);
 				}

@@ -1,0 +1,13 @@
+{
+  "group": "magica",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:blackwood_log"
+    }
+  ],
+  "result": {
+    "item": "magica:black_wood_planks",
+    "count": 4
+  }
+}
